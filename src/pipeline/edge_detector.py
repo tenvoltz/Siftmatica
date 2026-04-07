@@ -14,7 +14,7 @@ class EdgeDetector(ABC):
         pass
 
 class CannyDetector(EdgeDetector):
-    def __init__(self, t1=50, t2=150, logger=LOGGER):
+    def __init__(self, t1=50, t2=100, logger=LOGGER):
         super().__init__(logger)
         self.t1 = t1
         self.t2 = t2

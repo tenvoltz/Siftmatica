@@ -49,6 +49,18 @@ def config_to_name(cfg):
         parts.append("+".join(cfg["post"]))
     return "_".join(parts)
 
+def display_canny_parameters_effect(img, pipeline, t1_values, t2_values):
+    fig, axes = plt.subplots(len(t1_values), len(t2_values), figsize=(12, 12))
+    for i, t1 in enumerate(t1_values):
+        for j, t2 in enumerate(t2_values):
+            pipeline.detector.t1 = t1
+            pipeline.detector.t2 = t2
+            edges = pipeline.run(img)
+            axes[i, j].imshow(edges, cmap="gray")
+            axes[i, j].set_title(f"t1={t1}, t2={t2}")
+            axes[i, j].axis("off")
+    plt.tight_layout()
+    plt.show()
 
 # ===== CONTOURS =====
 
@@ -201,9 +213,12 @@ def extract_edges(contours):
 
     for c in contours:
         pts = c["contour"].reshape(-1, 2)
-        for i in range(4):
+        if len(pts) < 2:
+            continue
+
+        for i in range(len(pts)):
             p1 = pts[i]
-            p2 = pts[(i + 1) % 4]
+            p2 = pts[(i + 1) % len(pts)]
             dx = p2[0] - p1[0]
             dy = p2[1] - p1[1]
             edges.append((p1, p2))
@@ -237,6 +252,7 @@ def plot_edge_direction_on_unit_circle(
     counts, bin_edges, _ = ax.hist(
         angles,
         bins=num_bins,
+        weights=norms,
         color="#3182bd",
         alpha=0.75,
         edgecolor="black",
@@ -253,31 +269,12 @@ def plot_edge_direction_on_unit_circle(
     plt.savefig(output_path, dpi=150)
     plt.close(fig)
 
-    # ---- Top direction bins ----
-    print(f"\nTop {top_k} directions — {title}:")
-
-    bin_width = 180 / num_bins
-    bin_ids = (degrees // bin_width) * bin_width
-
-    direction_counts = {}
-    for b in bin_ids:
-        key = int(b)
-        direction_counts[key] = direction_counts.get(key, 0) + 1
-
-    top_dirs = sorted(direction_counts.items(), key=lambda x: x[1], reverse=True)[
-        :top_k
-    ]
-
-    for deg, cnt in top_dirs:
-        print(f"{deg:3d}°–{int(deg+bin_width):3d}° : {cnt}")
-
-
 # ===== CONFIG =====
 
 CONTOUR_FILTER_CONFIG = {
     "min_vertices": 3,
-    "require_convex": True,
-    "require_quadrilateral": True,
+    "require_convex": False,
+    "require_quadrilateral": False,
     "enable_min_area": False,
     "min_area": 10,
     "enable_min_aspect_ratio": False,
@@ -307,7 +304,8 @@ os.makedirs(HIST_DIR, exist_ok=True)
 
 # ===== MAIN =====
 
-img = cv2.imread("data\\house1\\images\\2026-03-23_19.31.05.png")
+# img = cv2.imread("data\\house1\\images\\2026-03-23_19.31.05.png")
+img = cv2.imread("data\\elven-house\\images\\2026-04-01_23.44.16.png")
 kernel = np.ones((3, 3), np.uint8)
 
 for cfg in configs:
@@ -315,6 +313,7 @@ for cfg in configs:
     edges = pipeline.run(img)
     name = config_to_name(cfg)
     cv2.imwrite(os.path.join(EDGE_DIR, f"{name}.png"), edges)
+    # display_canny_parameters_effect(img, pipeline, t1_values=[50, 100, 150], t2_values=[150, 200, 250])
 
     edges_clean = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel)
     contours, hierarchy = cv2.findContours(
