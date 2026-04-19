@@ -9,17 +9,18 @@ from PIL import Image
 import glob
 from litemapy import Schematic
 
-logger = get_logger(__name__)
+LOGGER = get_logger(__name__)
 
 class Dataset(object):
-    def __init__(self, name, logger=None):
+
+    def __init__(self, name, logger=LOGGER):
         self.name = name
         self.path = os.path.join(DATA_PATH, name)
         self.images = []
         self.metadata = None
         self.litematica = None
-        self.logger = logger or globals()['logger']
-    
+        self.logger = logger
+
     def load_images(self):
         self.logger.info(f"Loading images from {os.path.join(self.path, IMAGE_FOLDER)}")
         image_files = glob.glob(os.path.join(self.path, IMAGE_FOLDER, '*.png'))
@@ -28,6 +29,7 @@ class Dataset(object):
             self.images.append(image)
 
     def load_metadata(self):
+        # TODO: Implement metadata loading if needed
         pass
 
     def load_litematica(self):
@@ -36,8 +38,7 @@ class Dataset(object):
         if litematica_files:
             self.litematica = Schematic.load(litematica_files[0])
 
-def load_dataset(name, logger=None):
-    logger = logger or globals()['logger']
+def load_dataset(name, logger=LOGGER):
     dataset = Dataset(name, logger)
     dataset.load_images()
     dataset.load_metadata()
@@ -52,4 +53,3 @@ if __name__ == "__main__":
         dataset.logger.info("Litematica schematic loaded successfully.")
     else:
         dataset.logger.warning("No Litematica schematic found.")
-    

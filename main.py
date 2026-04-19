@@ -1,341 +1,128 @@
 import os
 import cv2
 import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-
 from env import OUTPUT_FOLDER
-from src.pipeline.edge_detector import (
-    CannyDetector,
-    DoGEdgeDetector,
-    FDoGDetector,
-    SobelDetector,
-    XDoGDetector,
-)
-from src.pipeline.orchestrator import EdgePipeline
-from src.pipeline.postprocessing import Dilate, Pixelate
-from src.pipeline.preprocess import BilateralFilter, ETFComputer, GaussianBlur
-
-# ===== PIPELINE =====
-
-
-def build_pipeline(config):
-    pre_map = {
-        "gaussian": GaussianBlur(),
-        "bilateral": BilateralFilter(),
-        "etf": ETFComputer(),
-    }
-    det_map = {
-        "canny": CannyDetector(),
-        "sobel": SobelDetector(),
-        "xdog": XDoGDetector(),
-        "fdog": FDoGDetector(),
-        "dog": DoGEdgeDetector(),
-    }
-    post_map = {"pixelate": Pixelate(), "dilate": Dilate()}
-    pre = [pre_map[n] for n in config["pre"]]
-    det = det_map[config["detector"]]
-    post = [post_map[n] for n in config["post"]]
-    return EdgePipeline(pre, det, post)
-
-
-def config_to_name(cfg):
-    parts = []
-    if cfg["pre"]:
-        parts.append("+".join(cfg["pre"]))
-    parts.append(cfg["detector"])
-    if cfg["post"]:
-        parts.append("+".join(cfg["post"]))
-    return "_".join(parts)
-
-def display_canny_parameters_effect(img, pipeline, t1_values, t2_values):
-    fig, axes = plt.subplots(len(t1_values), len(t2_values), figsize=(12, 12))
-    for i, t1 in enumerate(t1_values):
-        for j, t2 in enumerate(t2_values):
-            pipeline.detector.t1 = t1
-            pipeline.detector.t2 = t2
-            edges = pipeline.run(img)
-            axes[i, j].imshow(edges, cmap="gray")
-            axes[i, j].set_title(f"t1={t1}, t2={t2}")
-            axes[i, j].axis("off")
-    plt.tight_layout()
-    plt.show()
-
-# ===== CONTOURS =====
-
-
-def simplify_contours(contours, hierarchy, epsilon=2.0, filters=None):
-    if filters is None:
-        filters = {}
-
-    min_vertices = filters.get("min_vertices", 3)
-    require_convex = filters.get("require_convex", True)
-    require_quadrilateral = filters.get("require_quadrilateral", True)
-
-    enable_min_area = filters.get("enable_min_area", False)
-    min_area = filters.get("min_area", 10)
-
-    enable_min_aspect_ratio = filters.get("enable_min_aspect_ratio", False)
-    min_aspect_ratio = filters.get("min_aspect_ratio", 0.1)
-
-    simplified = []
-    if hierarchy is None or len(contours) == 0:
-        return simplified
-
-    hierarchy = hierarchy[0]
-    for i, c in enumerate(contours):
-        approx = cv2.approxPolyDP(c, epsilon, True)
-        if len(approx) < min_vertices:  # remove degenerate contours
-            continue
-
-        parent = hierarchy[i][3]
-
-        if require_convex and not cv2.isContourConvex(approx):  # remove non-convex contours
-            continue
-
-        if require_quadrilateral and len(approx) != 4:  # keep only quadrilaterals
-            continue
-
-        if enable_min_area and cv2.contourArea(approx) < min_area:  # remove very small contours
-            continue
-
-        if enable_min_aspect_ratio:  # remove very elongated contours
-            rect = cv2.minAreaRect(approx)
-            w, h = rect[1]
-            if max(w, h) == 0:
-                continue
-            if min(w, h) / max(w, h) < min_aspect_ratio:
-                continue
-
-        simplified.append(
-            {"contour": approx, "vertex_count": len(approx), "filled": parent != -1}
-        )
-    return simplified
-
-
-def draw_contours(edges, contours):
-    canvas = cv2.cvtColor(edges, cv2.COLOR_GRAY2BGR)
-
-    for c in contours:
-        if c["filled"]:
-            cv2.drawContours(canvas, [c["contour"]], -1, (0, 200, 0), -1)
-
-    for c in contours:
-        if not c["filled"]:
-            cv2.drawContours(canvas, [c["contour"]], -1, (0, 0, 255), 1)
-
-    return canvas
-
-
-# ===== HISTOGRAM =====
-
-
-def save_vertex_histogram(contours, output_path, title):
-    sns.set(style="whitegrid")
-
-    bins = list(range(0, 11)) + list(range(11, 105, 5))
-    filled_counts = []
-    open_counts = []
-
-    for c in contours:
-        vc = c["vertex_count"]
-        if c["filled"]:
-            filled_counts.append(vc)
-        else:
-            open_counts.append(vc)
-
-    hist_filled, bin_edges = np.histogram(filled_counts, bins=bins)
-    hist_open, _ = np.histogram(open_counts, bins=bins)
-
-    labels = []
-    for i in range(len(bin_edges) - 1):
-        s = bin_edges[i]
-        e = bin_edges[i + 1] - 1
-        labels.append(str(s) if s == e else f"{s}-{e}")
-
-    x = np.arange(len(labels))
-
-    plt.figure(figsize=(12, 5))
-    plt.bar(x, hist_open, label="Open", color="#fdae6b")
-    plt.bar(x, hist_filled, bottom=hist_open, label="Filled", color="#2ca25f")
-    plt.xlabel("Vertex Count")
-    plt.ylabel("Number of Contours")
-    plt.title(title)
-    plt.xticks(x, labels, rotation=45)
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig(output_path)
-    plt.close()
-
-
-def save_vertex_histogram_csv(contours, output_path):
-    bins = list(range(0, 11)) + list(range(11, 105, 5))
-    filled_counts = []
-    open_counts = []
-
-    for c in contours:
-        vc = c["vertex_count"]
-
-        if c["filled"]:
-            filled_counts.append(vc)
-        else:
-            open_counts.append(vc)
-
-    hist_filled, bin_edges = np.histogram(filled_counts, bins=bins)
-    hist_open, _ = np.histogram(open_counts, bins=bins)
-    labels = []
-
-    for i in range(len(bin_edges) - 1):
-        s = bin_edges[i]
-        e = bin_edges[i + 1] - 1
-
-        if s == e:
-            labels.append(str(s))
-        else:
-            labels.append(f"{s}-{e}")
-
-    total = hist_open + hist_filled
-    df = pd.DataFrame(
-        {
-            "vertex_bin": labels,
-            "open_count": hist_open,
-            "filled_count": hist_filled,
-            "total_count": total,
-        }
-    )
-    df.to_csv(output_path, index=False)
-
-# ===== EDGE =====
-def extract_edges(contours):
-    edges = []
-    edges_directions = []
-
-    for c in contours:
-        pts = c["contour"].reshape(-1, 2)
-        if len(pts) < 2:
-            continue
-
-        for i in range(len(pts)):
-            p1 = pts[i]
-            p2 = pts[(i + 1) % len(pts)]
-            dx = p2[0] - p1[0]
-            dy = p2[1] - p1[1]
-            edges.append((p1, p2))
-            edges_directions.append((dx, dy))
-    return edges, edges_directions
-
-def plot_edge_direction_on_unit_circle(
-    edges_directions,
-    output_path,
-    title,
-    num_bins=36,
-    top_k=4,
-):
-    if not edges_directions:
-        print(f"No edge directions for {title}")
-        return
-
-    # Convert to array and normalize
-    dirs = np.array(edges_directions, dtype=float)
-    norms = np.linalg.norm(dirs, axis=1)
-    dirs = dirs[norms > 0] / norms[norms > 0][:, None]
-
-    # Compute angles (mod π → opposite directions merged)
-    angles = np.arctan2(dirs[:, 1], dirs[:, 0]) % np.pi
-    degrees = np.degrees(angles)
-
-    # ---- Polar histogram ----
-    fig = plt.figure(figsize=(6, 6))
-    ax = fig.add_subplot(111, projection="polar")
-
-    counts, bin_edges, _ = ax.hist(
-        angles,
-        bins=num_bins,
-        weights=norms,
-        color="#3182bd",
-        alpha=0.75,
-        edgecolor="black",
-        linewidth=0.5,
-    )
-
-    ax.set_title(title, pad=15)
-    ax.set_theta_zero_location("E")
-    ax.set_theta_direction(-1)
-    ax.set_thetagrids(range(0, 180, 15))
-    ax.grid(True, linestyle="--", alpha=0.5)
-
-    plt.tight_layout()
-    plt.savefig(output_path, dpi=150)
-    plt.close(fig)
-
-# ===== CONFIG =====
-
-CONTOUR_FILTER_CONFIG = {
-    "min_vertices": 3,
-    "require_convex": False,
-    "require_quadrilateral": False,
-    "enable_min_area": False,
-    "min_area": 10,
-    "enable_min_aspect_ratio": False,
-    "min_aspect_ratio": 0.1,
-}
-
-configs = [
-    {"pre": [], "detector": "canny", "post": []},
-    {"pre": ["gaussian"], "detector": "canny", "post": []},
-    {"pre": ["bilateral"], "detector": "canny", "post": []},
-    # {"pre": [], "detector": "sobel", "post": []},             // Doesn't have sufficient contour amount for analysis
-    # {"pre": ["gaussian"], "detector": "sobel", "post": []},   // Doesn't have sufficient contour amount for analysis
-    # {"pre": ["bilateral"], "detector": "sobel", "post": []},  // Doesn't have sufficient contour amount for analysis
-]
-
-# ===== OUTPUT FOLDERS =====
-
-EDGE_DIR = os.path.join(OUTPUT_FOLDER, "edges")
-CONTOUR_DIR = os.path.join(OUTPUT_FOLDER, "contours")
-HIST_DIR = os.path.join(OUTPUT_FOLDER, "histograms")
-CSV_DIR = os.path.join(OUTPUT_FOLDER, "csv")
-
-os.makedirs(CSV_DIR, exist_ok=True)
-os.makedirs(EDGE_DIR, exist_ok=True)
-os.makedirs(CONTOUR_DIR, exist_ok=True)
-os.makedirs(HIST_DIR, exist_ok=True)
-
-# ===== MAIN =====
-
-# img = cv2.imread("data\\house1\\images\\2026-03-23_19.31.05.png")
-img = cv2.imread("data\\elven-house\\images\\2026-04-01_23.44.16.png")
-kernel = np.ones((3, 3), np.uint8)
-
-for cfg in configs:
-    pipeline = build_pipeline(cfg)
-    edges = pipeline.run(img)
-    name = config_to_name(cfg)
-    cv2.imwrite(os.path.join(EDGE_DIR, f"{name}.png"), edges)
-    # display_canny_parameters_effect(img, pipeline, t1_values=[50, 100, 150], t2_values=[150, 200, 250])
-
-    edges_clean = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel)
-    contours, hierarchy = cv2.findContours(
-        edges_clean, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE
-    )
-
-    contours = simplify_contours(contours, hierarchy, filters=CONTOUR_FILTER_CONFIG)
-    contour_img = draw_contours(edges_clean, contours)
-    cv2.imwrite(os.path.join(CONTOUR_DIR, f"{name}.png"), contour_img)
-
-    save_vertex_histogram(
-        contours,
-        os.path.join(HIST_DIR, f"{name}_vertex_hist.png"),
-        title=f"{name} - Vertex Count Histogram",
-    )
-    save_vertex_histogram_csv(
-        contours, os.path.join(CSV_DIR, f"{name}_vertex_hist.csv")
-    )
-    
-    edges_directions = extract_edges(contours)[1]
-    plot_edge_direction_on_unit_circle(
-        edges_directions,
-        os.path.join(HIST_DIR, f"{name}_edge_direction.png"),
-        title=f"{name} - Edge Direction Distribution",
-    )
+from src.util.logger import get_logger
+from src.config import PipelineConfig
+from src.data.camera import MinecraftCamera
+from src.pipeline.orchestrator import PipelineBuilder
+from src.pipeline.line_extraction import LineExtractionFactory
+from src.pipeline.vanishing_points import VanishingPointEstimator
+from src.util.visualization import Visualizer
+from src.util.perf import PerfContext
+
+logger = get_logger(__name__)
+
+
+if __name__ == "__main__":
+    dirs_to_create = ["edges", "contours", "hough", "histograms", "vps"]
+    for d in dirs_to_create:
+        os.makedirs(os.path.join(OUTPUT_FOLDER, d), exist_ok=True)
+
+    configs = [
+        # PipelineConfig(preprocessors=[], detector="canny", postprocessors=[]), # Really noisy, not useful
+        PipelineConfig(preprocessors=["gaussian"], detector="canny", postprocessors=[]),
+        PipelineConfig(preprocessors=["bilateral"], detector="canny", postprocessors=[]),
+        # PipelineConfig(preprocessors=[], detector="sobel", postprocessors=[]), # Too little edges, not useful
+        # PipelineConfig(preprocessors=["gaussian"], detector="sobel", postprocessors=[]), # Too little edges, not useful
+        # PipelineConfig(preprocessors=["bilateral"], detector="sobel", postprocessors=[]), # Too little edges, not useful
+    ]
+
+    # img_path = "data/house1/images/2026-03-23_19.31.05.png" # 2-point perspective, should find 2 VPs
+    img_path = "data/house1/images/2026-03-23_19.30.49.png" # 1-point perspective, should find 1 VPs
+    # img_path = "data/elven-house/images/2026-04-01_23.44.16.png"
+
+    img = cv2.imread(img_path)
+    if img is None:
+        raise FileNotFoundError(f"Cannot load image: {img_path}")
+    logger.validate("image_loaded", img is not None, f"Shape: {img.shape}")
+    logger.trace("initialization", "Starting pipeline", {"image_path": img_path})
+
+    for cfg_idx, cfg in enumerate(configs, 1):
+        with PerfContext(f"config_{cfg_idx}_total", logger):
+            logger.trace("config", f"Processing pipeline {cfg_idx}/{len(configs)}", cfg.to_dict())
+            cfg_name = PipelineBuilder.config_to_name(cfg)
+
+            with PerfContext("camera_init", logger):
+                camera = MinecraftCamera(width=img.shape[1], height=img.shape[0], fov=cfg.camera_fov)
+                K = camera.get_intrinsic_matrix()
+                logger.trace("camera", "Initialized MinecraftCamera", camera.get_parameters())
+
+            with PerfContext("edge_detection", logger):
+                builder = PipelineBuilder()
+                pipeline = builder.build(cfg)
+                edges = pipeline.run(img)
+                kernel = np.ones((3, 3), np.uint8)
+                edges_clean = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel)
+                logger.trace("edge_detection", "Detected edges", {"shape": edges_clean.shape, "nonzero": np.count_nonzero(edges_clean)})
+            Visualizer.plot_filtered_img(edges_clean, os.path.join(OUTPUT_FOLDER, "edges", f"{cfg_name}_edges.png"), f"{cfg_name} - Edges")
+
+            if cfg.line_extractor == "contour":
+                with PerfContext("contour_line_extraction", logger):
+                    extractor = LineExtractionFactory.create("contour", logger_instance=logger, **cfg.to_dict())
+                    contours = extractor.extract_contours(edges_clean, min_area=100)
+                    logger.trace("contours", f"Found {len(contours)} contours")
+                    contour_filters = {
+                        "min_vertices": cfg.min_vertices,
+                        "require_convex": cfg.require_convex,
+                        "require_quadrilateral": cfg.require_quadrilateral,
+                        "enable_min_area": cfg.enable_min_area,
+                        "min_area": cfg.min_area,
+                        "enable_min_aspect_ratio": cfg.enable_min_aspect_ratio,
+                        "min_aspect_ratio": cfg.min_aspect_ratio
+                    }
+                    lines, line_metadata = extractor.extract_lines([c.reshape(-1, 1, 2) for c in contours])
+            else:
+                with PerfContext("hough_line_extraction", logger):
+                    hough_extractor = LineExtractionFactory.create("hough", logger_instance=logger, **cfg.to_dict())
+                    lines, line_metadata = hough_extractor.extract_lines(edges)
+                    logger.trace("hough_lines", f"Found {len(lines)} Hough lines")
+
+            if cfg.remove_horizontal_vertical:
+                filtered_lines = []
+                for line in lines:
+                    x1, y1 = line[0]
+                    x2, y2 = line[1]
+                    angle = np.arctan2(y2 - y1, x2 - x1)
+                    threshold_rad = np.deg2rad(cfg.removal_angle_threshold_deg)
+                    if not (abs(angle) < threshold_rad or abs(angle - np.pi/2) < threshold_rad or abs(angle + np.pi/2) < threshold_rad):
+                        filtered_lines.append(line)
+                logger.trace("line_filtering", f"Removed horizontal/vertical lines, {len(filtered_lines)} remain", {"removed": len(lines) - len(filtered_lines)})
+                lines = filtered_lines
+                
+            if cfg.line_extractor == "contour":
+                Visualizer.plot_contours(img, contours, os.path.join(OUTPUT_FOLDER, "contours", f"{cfg_name}_contours.png"), f"{cfg_name} - Contours")
+                logger.trace("visualization", "Plotted contours", {"output": f"{cfg_name}_contours.png"})
+            else:
+                Visualizer.plot_hough_lines(edges, lines, os.path.join(OUTPUT_FOLDER, "hough", f"{cfg_name}_hough_lines.png"), f"{cfg_name} - Hough Lines")
+                logger.trace("visualization", "Plotted Hough lines", {"output": f"{cfg_name}_hough_lines.png"})
+                
+
+            with PerfContext("edge_visualization", logger):
+                Visualizer.plot_polar_histogram(
+                        lines,
+                        os.path.join(OUTPUT_FOLDER, "histograms", f"{cfg_name}_edge_direction.png"),
+                        f"{cfg_name} - Edge Direction Distribution"
+                    )
+                logger.trace("visualization", "Plotted edge directions", {"output": f"{cfg_name}_edge_direction.png"})
+
+            with PerfContext("vanishing_point_extraction", logger):
+                vp_est = VanishingPointEstimator(inlier_decision_method=cfg.inlier_decision_method, 
+                                                angle_threshold=cfg.angle_threshold, 
+                                                distance_threshold=cfg.distance_threshold)
+                vps, inlier_line_indices_list = vp_est.extract_multiple_vps(lines=lines, iterations=cfg.ransac_iterations, vp_distance_threshold=cfg.vp_distance_threshold)
+                if vps:
+                    logger.validate("vanishing_points", True, f"Found {len(vps)} vanishing points")
+                    for i, vp in enumerate(vps):
+                        d = np.linalg.inv(K) @ np.array([vp[0], vp[1], 1])
+                        d = d / np.linalg.norm(d)
+                        logger.trace("vp_detail", f"VP {i+1}", {"vp": vp[:2].tolist(), "direction": d.tolist(), "inlier_count": len(inlier_line_indices_list[i])})
+                else:
+                    logger.validate("vanishing_points", False, "No vanishing points found")
+
+            filtered_vps, filtered_inlier_line_indices_list = vp_est.filter_vps(vps, inlier_line_indices_list, min_inliers=cfg.vp_inlier_amount_threshold)
+            logger.trace("vp_filtering", f"Filtered VPs with at least {cfg.vp_inlier_amount_threshold} inliers", {"initial_count": len(vps), "filtered_count": len(filtered_vps)})
+            Visualizer.plot_vanishing_points(edges_clean, lines, filtered_vps, filtered_inlier_line_indices_list, os.path.join(OUTPUT_FOLDER, "vps", f"{cfg_name}_vps.png"), f"{cfg_name} - Vanishing Points", plot_line_extensions=cfg.plot_line_extensions)
+
+
+    logger.validate("pipeline", True, "Pipeline execution completed successfully")

@@ -1,9 +1,9 @@
 from abc import ABC, abstractmethod
-from logging import getLogger
+from src.util.logger import get_logger
 import time
 import cv2
 import numpy as np
-LOGGER = getLogger(__name__)
+LOGGER = get_logger(__name__)
 
 class EdgeDetector(ABC):
     def __init__(self, logger=LOGGER):
@@ -21,12 +21,9 @@ class CannyDetector(EdgeDetector):
 
     def detect(self, img):
         start = time.time()
-
         out = cv2.Canny(img, self.t1, self.t2)
-        self.logger.info(
-            f"CannyDetector: shape={img.shape} -> {out.shape} "
-            f"time={(time.time() - start):.4f}s"
-        )
+        elapsed = time.time() - start
+        self.logger.trace("canny_detector", "Edge detection completed", {"input_shape": str(img.shape), "output_shape": str(out.shape), "time_s": round(elapsed, 4)})
         return out
 
 class SobelDetector(EdgeDetector):
@@ -36,32 +33,17 @@ class SobelDetector(EdgeDetector):
 
     def detect(self, img):
         start = time.time()
-
-        # 1. Convert to grayscale
-        if len(img.shape) == 3:
-            gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-        else:
-            gray = img
-
+        if len(img.shape) == 3: gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        else: gray = img
         gray = gray.astype(np.float32)
-
-        # 2. Compute gradients
         gx = cv2.Sobel(gray, cv2.CV_32F, 1, 0, ksize=3)
         gy = cv2.Sobel(gray, cv2.CV_32F, 0, 1, ksize=3)
-
         mag = cv2.magnitude(gx, gy)
-
-        # 3. Normalize to 0–255
         mag = cv2.normalize(mag, None, 0, 255, cv2.NORM_MINMAX)
-
-        # 4. Threshold → binary
         edges = np.where(mag > self.threshold, 255, 0).astype(np.uint8)
 
-        if self.logger:
-            self.logger.info(
-                f"SobelDetector | shape={img.shape} | "
-                f"time={time.time() - start:.4f}s"
-            )
+        elapsed = time.time() - start
+        self.logger.trace("sobel_detector", "Edge detection completed", {"shape": str(img.shape), "time_s": round(elapsed, 4)})
 
         return edges
 
@@ -76,30 +58,19 @@ class XDoGDetector(EdgeDetector):
 
     def detect(self, img):
         start = time.time()
-
-        if len(img.shape) == 3:
-            img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
+        if len(img.shape) == 3: img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         img = img.astype(np.float32) / 255.0
-
         g1 = cv2.GaussianBlur(img, (0, 0), self.sigma)
         g2 = cv2.GaussianBlur(img, (0, 0), self.sigma * self.k)
-
         dog = g1 - self.p * g2
-
-        xdog = np.where(
-            dog < self.epsilon, 1.0, 1.0 + np.tanh(self.phi * (dog - self.epsilon))
-        )
-
+        xdog = np.where(dog < self.epsilon, 1.0, 1.0 + np.tanh(self.phi * (dog - self.epsilon)))
         xdog = (xdog * 255).astype(np.uint8)
 
         if self.logger:
-            self.logger.debug(
-                f"XDoG | sigma={self.sigma} | time={time.time()-start:.4f}s"
-            )
+            elapsed = time.time() - start
+            self.logger.trace("xdog_detector", "XDoG detection completed", {"sigma": self.sigma, "time_s": round(elapsed, 4)})
 
         return xdog
-
 
 class FDoGDetector(EdgeDetector):
     def __init__(
@@ -120,20 +91,15 @@ class FDoGDetector(EdgeDetector):
 
     def detect(self, data):
         start = time.time()
-
         img, (tx, ty) = data
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY).astype(np.float32) / 255.0
-
         h, w = gray.shape
         response = np.zeros_like(gray)
 
         for y in range(h):
             for x in range(w):
-
                 t = np.array([tx[y, x], ty[y, x]])
-                n = np.array([-t[1], t[0]])  # normal direction
-
-                # --- Step 1: DoG along normal ---
+                n = np.array([-t[1], t[0]])
                 sum1 = 0.0
                 sum2 = 0.0
                 w1 = 0.0
@@ -142,71 +108,47 @@ class FDoGDetector(EdgeDetector):
                 for s in np.arange(-self.max_len, self.max_len + self.step, self.step):
                     px = x + n[0] * s
                     py = y + n[1] * s
-
-                    if px < 0 or px >= w or py < 0 or py >= h:
-                        continue
-
+                    if px < 0 or px >= w or py < 0 or py >= h: continue
                     val = bilinear_sample(gray, px, py)
-
                     g1 = gaussian_weight(s, self.sigma_c)
                     g2 = gaussian_weight(s, self.sigma_c * 1.6)
-
                     sum1 += val * g1
                     sum2 += val * g2
-
                     w1 += g1
                     w2 += g2
-
-                if w1 == 0 or w2 == 0:
-                    continue
-
+                if w1 == 0 or w2 == 0: continue
                 dog = (sum1 / w1) - self.tau * (sum2 / w2)
 
-                # --- Step 2: accumulate along tangent ---
                 acc = 0.0
                 w_acc = 0.0
-
                 for s in np.arange(-self.max_len, self.max_len + self.step, self.step):
                     px = x + t[0] * s
                     py = y + t[1] * s
-
-                    if px < 0 or px >= w or py < 0 or py >= h:
-                        continue
-
+                    if px < 0 or px >= w or py < 0 or py >= h: continue
                     weight = gaussian_weight(s, self.sigma_s)
-
                     acc += dog * weight
                     w_acc += weight
+                if w_acc > 0: response[y, x] = acc / w_acc
 
-                if w_acc > 0:
-                    response[y, x] = acc / w_acc
-
-        # --- Step 3: threshold ---
         edges = np.where(response < 0, 1.0, 0.0)
-
         edges = (edges * 255).astype(np.uint8)
-
         if self.logger:
-            self.logger.info(f"True FDoG complete | time={time.time()-start:.2f}s")
+            elapsed = time.time() - start
+            self.logger.trace("fdog_detector", "FDoG detection completed", {"time_s": round(elapsed, 2)})
 
         return edges
-
 
 def gaussian_weight(x, sigma):
     return np.exp(-(x * x) / (2 * sigma * sigma))
 
-
 def bilinear_sample(img, x, y):
     h, w = img.shape
-
     x0 = int(np.floor(x))
     x1 = min(x0 + 1, w - 1)
     y0 = int(np.floor(y))
     y1 = min(y0 + 1, h - 1)
-
     dx = x - x0
     dy = y - y0
-
     val = (
         img[y0, x0] * (1 - dx) * (1 - dy)
         + img[y0, x1] * dx * (1 - dy)
@@ -215,7 +157,6 @@ def bilinear_sample(img, x, y):
     )
 
     return val
-
 
 class DoGEdgeDetector(EdgeDetector):
     def __init__(self, sigma=1.0, k=1.6, tau=1.0, threshold=0.0, logger=None):
@@ -228,14 +169,9 @@ class DoGEdgeDetector(EdgeDetector):
     def detect(self, img):
         if len(img.shape) == 3:
             img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
         img = img.astype(np.float32) / 255.0
-
         g1 = cv2.GaussianBlur(img, (0, 0), self.sigma)
         g2 = cv2.GaussianBlur(img, (0, 0), self.sigma * self.k)
-
         dog = g1 - self.tau * g2
-
         edges = np.where(dog > self.threshold, 255, 0).astype(np.uint8)
-
         return edges
