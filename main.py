@@ -2,6 +2,7 @@ import os
 import cv2
 import numpy as np
 from env import OUTPUT_FOLDER
+from src.util.geometry import image_to_homogeneous
 from src.util.logger import get_logger
 from src.config import PipelineConfig
 from src.data.camera import MinecraftCamera
@@ -28,8 +29,8 @@ if __name__ == "__main__":
         # PipelineConfig(preprocessors=["bilateral"], detector="sobel", postprocessors=[]), # Too little edges, not useful
     ]
 
-    # img_path = "data/house1/images/2026-03-23_19.31.05.png" # 2-point perspective, should find 2 VPs
-    img_path = "data/house1/images/2026-03-23_19.30.49.png" # 1-point perspective, should find 1 VPs
+    img_path = "data/house1/images/2026-03-23_19.31.05.png" # 2-point perspective, should find 2 VPs
+    # img_path = "data/house1/images/2026-03-23_19.30.49.png" # 1-point perspective, should find 1 VPs
     # img_path = "data/elven-house/images/2026-04-01_23.44.16.png"
 
     img = cv2.imread(img_path)
@@ -89,14 +90,13 @@ if __name__ == "__main__":
                         filtered_lines.append(line)
                 logger.trace("line_filtering", f"Removed horizontal/vertical lines, {len(filtered_lines)} remain", {"removed": len(lines) - len(filtered_lines)})
                 lines = filtered_lines
-                
+
             if cfg.line_extractor == "contour":
                 Visualizer.plot_contours(img, contours, os.path.join(OUTPUT_FOLDER, "contours", f"{cfg_name}_contours.png"), f"{cfg_name} - Contours")
                 logger.trace("visualization", "Plotted contours", {"output": f"{cfg_name}_contours.png"})
             else:
                 Visualizer.plot_hough_lines(edges, lines, os.path.join(OUTPUT_FOLDER, "hough", f"{cfg_name}_hough_lines.png"), f"{cfg_name} - Hough Lines")
                 logger.trace("visualization", "Plotted Hough lines", {"output": f"{cfg_name}_hough_lines.png"})
-                
 
             with PerfContext("edge_visualization", logger):
                 Visualizer.plot_polar_histogram(
@@ -124,5 +124,8 @@ if __name__ == "__main__":
             logger.trace("vp_filtering", f"Filtered VPs with at least {cfg.vp_inlier_amount_threshold} inliers", {"initial_count": len(vps), "filtered_count": len(filtered_vps)})
             Visualizer.plot_vanishing_points(edges_clean, lines, filtered_vps, filtered_inlier_line_indices_list, os.path.join(OUTPUT_FOLDER, "vps", f"{cfg_name}_vps.png"), f"{cfg_name} - Vanishing Points", plot_line_extensions=cfg.plot_line_extensions)
 
+            with PerfContext("extrinsic_calibration", logger):
+                R = camera.compute_extrinsics_from_vps(filtered_vps)
+                Visualizer.plot_camera_3d(R, K, os.path.join(OUTPUT_FOLDER, "vps", f"{cfg_name}_camera.png"), f"{cfg_name} - Camera Extrinsics Visualization")
 
     logger.validate("pipeline", True, "Pipeline execution completed successfully")

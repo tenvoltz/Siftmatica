@@ -85,3 +85,34 @@ class MinecraftCamera:
             f"fov={self.fov}°, "
             f"fx={self.fx:.2f}, fy={self.fy:.2f})"
         )
+        
+    def compute_extrinsics_from_vps(self, vps_image):
+        if not vps_image or len(vps_image) == 0:
+            return None
+
+        K_inv = np.linalg.inv(self.K)
+
+        dirs = []
+        for vp in vps_image[:3]:  # assume Manhattan: max 3
+            v = np.array([vp[0], vp[1], 1.0], dtype=np.float64)
+            d = K_inv @ v
+            d /= np.linalg.norm(d)
+            dirs.append(d)
+
+        # pad if fewer than 3 VPs
+        while len(dirs) < 3:
+            dirs.append(np.eye(3)[len(dirs)])
+
+        D = np.column_stack(dirs)
+
+        # SVD orthonormalization (Procrustes)
+        U, _, Vt = np.linalg.svd(D)
+        R = U @ Vt
+
+        # Enforce right-handed system
+        if np.linalg.det(R) < 0:
+            U[:, -1] *= -1
+            R = U @ Vt
+
+        return R
+        
