@@ -126,6 +126,8 @@ if __name__ == "__main__":
 
             with PerfContext("extrinsic_calibration", logger):
                 R = camera.compute_extrinsics_from_vps(filtered_vps)
+                yaw, pitch, roll = camera.rotation_matrix_to_euler_angles(R)
+                print(f"Yaw: {np.degrees(yaw):.2f}°, Pitch: {np.degrees(pitch):.2f}°, Roll: {np.degrees(roll):.2f}°")
                 Visualizer.plot_camera_3d(R, K, os.path.join(OUTPUT_FOLDER, "vps", f"{cfg_name}_camera.png"), f"{cfg_name} - Camera Extrinsics Visualization")
 
     logger.validate("pipeline", True, "Pipeline execution completed successfully")

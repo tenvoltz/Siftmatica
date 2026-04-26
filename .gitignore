@@ -209,3 +209,6 @@ __marimo__/
 
 # Project workspace outputs
 workspace/
+
+# Instant-NGP
+instant-ngp/
