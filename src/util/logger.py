@@ -40,6 +40,15 @@ class SiftmaticaLogger:
             f"[{stage}] {msg}{data_str}", (), None
         )
         self._logger.handle(record)
+        
+    def warning(self, stage: str, msg: str, data: Optional[Dict[str, Any]] = None):
+        data_str = f" | {data}" if data else ""
+        filename, lineno = self._get_caller_info(2)
+        record = self._logger.makeRecord(
+            self._logger.name, logging.WARNING, filename, lineno,
+            f"[{stage}] {msg}{data_str}", (), None
+        )
+        self._logger.handle(record)
     
     def perf(self, stage: str, duration: float, count: Optional[int] = None):
         rate = f" | {count/duration:.0f} ops/sec" if count else ""

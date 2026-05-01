@@ -72,7 +72,6 @@ def line_to_endpoints(line: Tuple[np.ndarray, np.ndarray], canvas_h: int, canvas
     
     return (int(p_min[0]), int(p_min[1])), (int(p_max[0]), int(p_max[1]))
 
-
 def draw_infinite_line(
     canvas: np.ndarray,
     p: Tuple[int, int],
@@ -95,3 +94,14 @@ def draw_infinite_line(
         color,
         1
     )
+
+def normalize_vector(v: np.ndarray) -> np.ndarray:
+    """Normalize a vector to unit length."""
+    norm = np.linalg.norm(v)
+    if norm < 1e-6:
+        return v
+    return v / norm
+
+def projected_onto_plane(v: np.ndarray, plane_normal: np.ndarray) -> np.ndarray:
+    """Project vector v onto a plane defined by its normal vector."""
+    return v - np.dot(v, plane_normal) * plane_normal
