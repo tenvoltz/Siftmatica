@@ -1,7 +1,5 @@
 from collections import defaultdict
-
 import cv2
-
 from src.util.geometry import normalize_vector, projected_onto_plane
 from src.util.logger import get_logger
 import numpy as np
@@ -171,8 +169,7 @@ class PointCloudAlignment:
 
         return voxel_grid
 
-    def _plot_voxel_grid(self, point_cloud, voxel_grid, resolution=16):
-        # Visualize the voxel grid using Open3D, with colors based on the mean color of the points in each voxel
+    def _plot_voxel_grid(self, point_cloud, voxel_grid, resolution=16, gap=0.02):
         geometries = []
 
         # # Define the 8 corner offsets of a unit cube relative to the min_bound (x, y, z)
@@ -252,7 +249,7 @@ class PointCloudAlignment:
         #         geometries.append(mesh)
 
         step = 1.0 / resolution
-
+        scale = 1.0 - gap
         for (vx, vy, vz), voxel in voxel_grid.items():
             voxel_min = np.array([vx, vy, vz])
 
@@ -291,6 +288,13 @@ class PointCloudAlignment:
                         elif face_key == "-z":
                             p, q, r, s = [u1, v0, 0], [u0, v0, 0], [u0, v1, 0], [u1, v1, 0]
 
+                        # Performed a scaling to create a gap between pixels for better visualization
+                        p = np.array(p); q = np.array(q); r = np.array(r); s = np.array(s)
+                        p = (p - 0.5) * scale + 0.5
+                        q = (q - 0.5) * scale + 0.5
+                        r = (r - 0.5) * scale + 0.5
+                        s = (s - 0.5) * scale + 0.5
+                        
                         # Add vertices (offset by voxel_min)
                         all_vertices.extend(
                             [voxel_min + p, voxel_min + q, voxel_min + r, voxel_min + s]
@@ -320,8 +324,7 @@ class PointCloudAlignment:
                     voxel[face_key], voxel_min, face_key, resolution=resolution
                 )
                 voxel_grid[(vx, vy, vz)][f"{face_key}_color_grid"] = color_grid
-        
-    
+
     def _pixelate_faces_helper(self, face_pcd, voxel_min, face_type, resolution=16):
         """
         Project points onto the 2D face plane and calculate a resolution x resolution color grid.
