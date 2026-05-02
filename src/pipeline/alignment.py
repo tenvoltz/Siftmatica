@@ -645,7 +645,7 @@ class PointCloudAlignment:
         plt.show()
 
     def _find_2D_gradient_peak_distance(
-        self, gradient_magnitude, threshold_percentile=90, collapsed_axis="y"
+        self, gradient_magnitude, threshold_percentile=80, collapsed_axis="y"
     ):
         axis_labels = {"x": ("y", "z"), "y": ("z", "x"), "z": ("y", "x")}
         if collapsed_axis not in axis_labels:
@@ -683,7 +683,7 @@ class PointCloudAlignment:
             h_label: (distances_h, peaks_h)
         }
 
-    def _estimate_scale_from_distances(self, distances, delta_factor=0.5, max_iters=100, tol=1e-6):
+    def _estimate_scale_from_distances(self, distances, delta_factor=0.3, max_iters=100, tol=1e-6):
         """
         Estimate the scale from a set of distance measurements using an iterative reweighted least squares approach 
         with weighted Huber loss to mitigate the influence of outliers.
