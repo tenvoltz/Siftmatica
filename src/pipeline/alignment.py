@@ -35,6 +35,7 @@ class PointCloudAlignment:
         )
         snapped_pcd = self._snap_to_grid(aligned_pcd)
         voxel_grid = self._voxelize_point_cloud(snapped_pcd)
+        self._pixelate_faces(voxel_grid, resolution=16)
         self._save_point_cloud(snapped_pcd, "snapped_point_cloud.ply")
         self._plot_voxel_grid(snapped_pcd, voxel_grid)
         return voxel_grid
@@ -170,9 +171,9 @@ class PointCloudAlignment:
 
         return voxel_grid
 
-    def _plot_voxel_grid(self, point_cloud, voxel_grid):
+    def _plot_voxel_grid(self, point_cloud, voxel_grid, resolution=16):
         # Visualize the voxel grid using Open3D, with colors based on the mean color of the points in each voxel
-        geometries = [point_cloud]
+        geometries = []
 
         # # Define the 8 corner offsets of a unit cube relative to the min_bound (x, y, z)
         # # Ordering: 0:(0,0,0), 1:(1,0,0), 2:(0,1,0), 3:(1,1,0), 4:(0,0,1), 5:(1,0,1), 6:(0,1,1), 7:(1,1,1)
@@ -250,8 +251,7 @@ class PointCloudAlignment:
         #         mesh.compute_vertex_normals()
         #         geometries.append(mesh)
 
-        res = 16  # Resolution
-        step = 1.0 / res
+        step = 1.0 / resolution
 
         for (vx, vy, vz), voxel in voxel_grid.items():
             voxel_min = np.array([vx, vy, vz])
@@ -262,15 +262,12 @@ class PointCloudAlignment:
             v_offset = 0
 
             for face_key in ["+x", "-x", "+y", "-y", "+z", "-z"]:
-                color_grid = self._pixelate_face(
-                    voxel[face_key], voxel_min, face_key, resolution=res
-                )
+                color_grid = voxel.get(f"{face_key}_color_grid", None)
 
-                if color_grid is None:
-                    continue
+                if color_grid is None: continue
 
-                for i in range(res):
-                    for j in range(res):
+                for i in range(resolution):
+                    for j in range(resolution):
                         # Only draw pixel if it has points (not NaN)
                         if np.isnan(color_grid[i, j]).any():
                             continue
@@ -282,35 +279,17 @@ class PointCloudAlignment:
                         u1, v1 = (i + 1) * step, (j + 1) * step
 
                         if face_key == "+x":
-                            p = [1, u0, v0]
-                            q = [1, u1, v0]
-                            r = [1, u1, v1]
-                            s = [1, u0, v1]
+                            p, q, r, s = [1, u0, v0], [1, u1, v0], [1, u1, v1], [1, u0, v1]
                         elif face_key == "-x":
-                            p = [0, u0, v0]
-                            q = [0, u1, v0]
-                            r = [0, u1, v1]
-                            s = [0, u0, v1]
+                            p, q, r, s = [0, u0, v1], [0, u1, v1], [0, u1, v0], [0, u0, v0]
                         elif face_key == "+y":
-                            p = [u0, 1, v0]
-                            q = [u1, 1, v0]
-                            r = [u1, 1, v1]
-                            s = [u0, 1, v1]
+                            p, q, r, s = [u1, 1, v0], [u0, 1, v0], [u0, 1, v1], [u1, 1, v1]
                         elif face_key == "-y":
-                            p = [u0, 0, v0]
-                            q = [u1, 0, v0]
-                            r = [u1, 0, v1]
-                            s = [u0, 0, v1]
+                            p, q, r, s = [u0, 0, v0], [u1, 0, v0], [u1, 0, v1], [u0, 0, v1]
                         elif face_key == "+z":
-                            p = [u0, v0, 1]
-                            q = [u1, v0, 1]
-                            r = [u1, v1, 1]
-                            s = [u0, v1, 1]
+                            p, q, r, s = [u0, v0, 1], [u1, v0, 1], [u1, v1, 1], [u0, v1, 1]
                         elif face_key == "-z":
-                            p = [u0, v0, 0]
-                            q = [u1, v0, 0]
-                            r = [u1, v1, 0]
-                            s = [u0, v1, 0]
+                            p, q, r, s = [u1, v0, 0], [u0, v0, 0], [u0, v1, 0], [u1, v1, 0]
 
                         # Add vertices (offset by voxel_min)
                         all_vertices.extend(
@@ -333,7 +312,17 @@ class PointCloudAlignment:
 
         o3d.visualization.draw_geometries(geometries)
 
-    def _pixelate_face(self, face_pcd, voxel_min, face_type, resolution=16):
+    def _pixelate_faces(self, voxel_grid, resolution=16):
+        for (vx, vy, vz), voxel in voxel_grid.items():
+            voxel_min = np.array([vx, vy, vz])
+            for face_key in ["+x", "-x", "+y", "-y", "+z", "-z"]:
+                color_grid = self._pixelate_faces_helper(
+                    voxel[face_key], voxel_min, face_key, resolution=resolution
+                )
+                voxel_grid[(vx, vy, vz)][f"{face_key}_color_grid"] = color_grid
+        
+    
+    def _pixelate_faces_helper(self, face_pcd, voxel_min, face_type, resolution=16):
         """
         Project points onto the 2D face plane and calculate a resolution x resolution color grid.
         """
