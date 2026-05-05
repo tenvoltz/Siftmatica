@@ -23,7 +23,7 @@ class PointCloudAlignment:
         aligned_planes_models = self._detect_planes(aligned_pcd)
         _, axical_plane_models = self.estimate_axes(aligned_planes_models)
         estimated_phase = self._estimate_phase_from_plane(axical_plane_models)
-        estimated_scale = self.estimate_scale_by_color_gradient(aligned_pcd, plot=False)
+        estimated_scale = self.estimate_scale_by_color_gradient(aligned_pcd, plot=True)
         aligned_pcd = self._conform_to_grid(aligned_pcd, estimated_scale, estimated_phase)
         self._draw_point_cloud(
             aligned_pcd,
