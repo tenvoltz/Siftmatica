@@ -178,6 +178,8 @@ class PlaneAnalyzer:
             plane_mesh = self._create_plane_mesh(plane_model, center, size=size)
             plane_mesh.paint_uniform_color(color)
             geometries.append(plane_mesh)
+            
+        geometries.append(point_cloud)
 
         o3d.visualization.draw_geometries(geometries, window_name=title)
 

@@ -27,33 +27,35 @@ class PointCloudAlignment:
         # self._draw_point_cloud(pc, title="Downsampled Point Cloud", plot_axis=False, plot_grid=False)
         pc = self._prepare_point_cloud(point_cloud)
         # self._draw_point_cloud(pc, title="Prepared Point Cloud", plot_axis=False, plot_grid=False)
-        pc, rotated_axes = self._align_to_axes(pc)
+        pc, planes = self._align_to_axes(pc)
+        # self.plane_analyzer._draw_planes(pc, planes, title="Detected Planes")
         # self._draw_point_cloud(pc, title="Aligned Point Cloud", plot_axis=False, plot_grid=True)
         scale, phase = self._estimate_grid_parameters(pc)
         pc = self._conform_to_grid_space(pc, scale, phase)
         # self._draw_point_cloud(pc, title="Conformed Point Cloud", plot_axis=False, plot_grid=True)
         voxel_grid = self._snap_and_voxelize(pc)
-        # self._plot_voxel_grid(pc, voxel_grid)
+        self._plot_voxel_grid(pc, voxel_grid)
         return voxel_grid
 
     def _prepare_point_cloud(self, pc: o3d.geometry.PointCloud) -> o3d.geometry.PointCloud:
         """Flip vertically and estimate surface normals."""
         pc = self._flip_vertical(pc)
+        pc.remove_statistical_outlier(nb_neighbors=20, std_ratio=2.0)
         return self._estimate_normals(pc)
 
     def _align_to_axes(self, pc: o3d.geometry.PointCloud) -> Tuple[o3d.geometry.PointCloud, np.ndarray]:
         """Detect planes and align to estimated axes."""
-        # downsample_pc = self._downsample_point_cloud(pc, voxel_size=0.1)
+        # downsample_pc = self._downsample_point_cloud(pc, voxel_size=0.2)
         planes = self.plane_analyzer._detect_planes(pc)
-        self.plane_analyzer._draw_planes(pc, planes, title="Detected Planes")
         axes, _ = self.plane_analyzer.estimate_axes(planes)
-        return self._align_point_cloud_to_axes(pc, axes), axes
+        # self._draw_point_cloud(pc, title="Point Cloud with Detected Axes", plot_axis=True, estimated_axes=axes.T, plot_grid=True)
+        return self._align_point_cloud_to_axes(pc, axes), planes
 
     def _estimate_grid_parameters(self, pc: o3d.geometry.PointCloud) -> Tuple[float, Dict[str, float]]:
         """Estimate scale and phase from color gradient and plane positions."""
         planes = self.plane_analyzer._detect_planes(pc)
         _, axical_plane_models = self.plane_analyzer.estimate_axes(planes)
-
+        # self.plane_analyzer._draw_planes(pc, axical_plane_models, title="Axial Planes for Phase Estimation")
         estimated_phase = self._estimate_phase_from_plane(axical_plane_models)
         estimated_scale = self.gradient_analyzer.estimate_scale(pc, plot=True)
 
@@ -82,6 +84,8 @@ class PointCloudAlignment:
     def _snap_and_voxelize(self, point_cloud: o3d.geometry.PointCloud) -> VoxelGridType:
         """Snap points to grid and voxelize."""
         snapped_pcd = self._snap_to_grid(point_cloud)
+        # self._draw_point_cloud(snapped_pcd, title="Snapped Point Cloud", plot_axis=False, plot_grid=True)
+        
         voxel_grid_obj = VoxelGrid.from_point_cloud(snapped_pcd)
         voxel_grid_obj.pixelate_faces(resolution=self.config.voxel_resolution, logger_instance=self.logger)
 

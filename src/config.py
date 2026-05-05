@@ -89,7 +89,7 @@ class AlignmentConfig:
     
     # Plane detection
     max_planes: int = 6
-    plane_distance_threshold: float = 0.02
+    plane_distance_threshold: float = 0.1
     plane_ransac_n: int = 3
     plane_num_iterations: int = 1000
     plane_min_inlier_ratio: float = 0.02
