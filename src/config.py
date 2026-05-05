@@ -81,3 +81,49 @@ class PipelineConfig:
 
     def to_json(self, path: str) -> None:
         with open(path, 'w') as f: json.dump(self.to_dict(), f, indent=2)
+
+
+@dataclass
+class AlignmentConfig:
+    """Configuration for point cloud alignment pipeline."""
+    
+    # Plane detection
+    max_planes: int = 6
+    plane_distance_threshold: float = 0.02
+    plane_ransac_n: int = 3
+    plane_num_iterations: int = 1000
+    plane_min_inlier_ratio: float = 0.02
+    
+    # Axis estimation
+    vertical_alignment_threshold: float = 0.90
+    orthogonality_threshold: float = 0.15
+    
+    # Normalization
+    normal_epsilon: float = 1e-8
+    
+    # Grid/Voxel
+    voxel_gap: float = 0.02
+    voxel_resolution: int = 16
+    
+    # Color gradient
+    gradient_resolution: float = 0.05
+    gradient_threshold_percentile: int = 80
+    
+    # Scale estimation
+    scale_delta_factor: float = 0.3
+    scale_max_iters: int = 100
+    scale_tolerance: float = 1e-6
+    
+    @classmethod
+    def from_dict(cls, d: Dict[str, Any]) -> "AlignmentConfig":
+        return cls(**{k: v for k, v in d.items() if k in cls.__dataclass_fields__})
+    
+    @classmethod
+    def from_json(cls, path: str) -> "AlignmentConfig":
+        with open(path) as f: return cls.from_dict(json.load(f))
+    
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
+    
+    def to_json(self, path: str) -> None:
+        with open(path, 'w') as f: json.dump(self.to_dict(), f, indent=2)
