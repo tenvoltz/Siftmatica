@@ -1,0 +1,3958 @@
+{
+  "acacia_door_bottom.png": {
+    "blockState": "acacia_door",
+    "blockName": "acacia_door"
+  },
+  "acacia_door_top.png": {
+    "blockState": "acacia_door",
+    "blockName": "acacia_door"
+  },
+  "acacia_leaves.png": {
+    "blockState": "acacia_leaves",
+    "blockName": "acacia_leaves"
+  },
+  "acacia_log.png": {
+    "blockState": "acacia_log",
+    "blockName": "acacia_log"
+  },
+  "acacia_log_top.png": {
+    "blockState": "acacia_log",
+    "blockName": "acacia_log"
+  },
+  "acacia_planks.png": {
+    "blockState": "acacia_planks",
+    "blockName": "acacia_planks"
+  },
+  "acacia_sapling.png": {
+    "blockState": "acacia_sapling",
+    "blockName": "acacia_sapling"
+  },
+  "acacia_trapdoor.png": {
+    "blockState": "acacia_trapdoor",
+    "blockName": "acacia_trapdoor"
+  },
+  "activator_rail.png": {
+    "blockState": "activator_rail",
+    "blockName": "activator_rail"
+  },
+  "activator_rail_on.png": {
+    "blockState": "activator_rail",
+    "blockName": "activator_rail"
+  },
+  "allium.png": {
+    "blockState": "allium",
+    "blockName": "allium"
+  },
+  "amethyst_block.png": {
+    "blockState": "amethyst_block",
+    "blockName": "amethyst_block"
+  },
+  "amethyst_cluster.png": {
+    "blockState": "amethyst_cluster",
+    "blockName": "amethyst_cluster"
+  },
+  "ancient_debris_side.png": {
+    "blockState": "ancient_debris",
+    "blockName": "ancient_debris"
+  },
+  "ancient_debris_top.png": {
+    "blockState": "ancient_debris",
+    "blockName": "ancient_debris"
+  },
+  "andesite.png": {
+    "blockState": "andesite",
+    "blockName": "andesite"
+  },
+  "anvil.png": {
+    "blockState": "anvil",
+    "blockName": "anvil"
+  },
+  "anvil_top.png": {
+    "blockState": "anvil",
+    "blockName": "anvil"
+  },
+  "attached_melon_stem.png": {
+    "blockState": "attached_melon_stem",
+    "blockName": "attached_melon_stem"
+  },
+  "attached_pumpkin_stem.png": {
+    "blockState": "attached_pumpkin_stem",
+    "blockName": "attached_pumpkin_stem"
+  },
+  "azalea_leaves.png": {
+    "blockState": "azalea_leaves",
+    "blockName": "azalea_leaves"
+  },
+  "azalea_plant.png": {
+    "blockState": "azalea",
+    "blockName": "azalea"
+  },
+  "azalea_side.png": {
+    "blockState": "azalea",
+    "blockName": "azalea"
+  },
+  "azalea_top.png": {
+    "blockState": "azalea",
+    "blockName": "azalea"
+  },
+  "azure_bluet.png": {
+    "blockState": "azure_bluet",
+    "blockName": "azure_bluet"
+  },
+  "bamboo_block.png": {
+    "blockState": "bamboo_block",
+    "blockName": "bamboo_block"
+  },
+  "bamboo_block_top.png": {
+    "blockState": "bamboo_block",
+    "blockName": "bamboo_block"
+  },
+  "bamboo_door_bottom.png": {
+    "blockState": "bamboo_door",
+    "blockName": "bamboo_door"
+  },
+  "bamboo_door_top.png": {
+    "blockState": "bamboo_door",
+    "blockName": "bamboo_door"
+  },
+  "bamboo_fence.png": {
+    "blockState": "bamboo_fence",
+    "blockName": "bamboo_fence"
+  },
+  "bamboo_fence_gate.png": {
+    "blockState": "bamboo_fence_gate",
+    "blockName": "bamboo_fence_gate"
+  },
+  "bamboo_fence_gate_particle.png": {
+    "blockState": "bamboo_fence_gate",
+    "blockName": "bamboo_fence_gate"
+  },
+  "bamboo_fence_particle.png": {
+    "blockState": "bamboo_fence",
+    "blockName": "bamboo_fence"
+  },
+  "bamboo_large_leaves.png": {
+    "blockState": "bamboo",
+    "blockName": "bamboo"
+  },
+  "bamboo_mosaic.png": {
+    "blockState": "bamboo_mosaic",
+    "blockName": "bamboo_mosaic"
+  },
+  "bamboo_planks.png": {
+    "blockState": "bamboo_planks",
+    "blockName": "bamboo_planks"
+  },
+  "bamboo_singleleaf.png": {
+    "blockState": "bamboo",
+    "blockName": "bamboo"
+  },
+  "bamboo_small_leaves.png": {
+    "blockState": "bamboo",
+    "blockName": "bamboo"
+  },
+  "bamboo_stage0.png": {
+    "blockState": "bamboo",
+    "blockName": "bamboo"
+  },
+  "bamboo_stalk.png": {
+    "blockState": "bamboo",
+    "blockName": "bamboo"
+  },
+  "bamboo_trapdoor.png": {
+    "blockState": "bamboo_trapdoor",
+    "blockName": "bamboo_trapdoor"
+  },
+  "barrel_bottom.png": {
+    "blockState": "barrel",
+    "blockName": "barrel"
+  },
+  "barrel_side.png": {
+    "blockState": "barrel",
+    "blockName": "barrel"
+  },
+  "barrel_top.png": {
+    "blockState": "barrel",
+    "blockName": "barrel"
+  },
+  "barrel_top_open.png": {
+    "blockState": "barrel",
+    "blockName": "barrel"
+  },
+  "basalt_side.png": {
+    "blockState": "basalt",
+    "blockName": "basalt"
+  },
+  "basalt_top.png": {
+    "blockState": "basalt",
+    "blockName": "basalt"
+  },
+  "beacon.png": {
+    "blockState": "beacon",
+    "blockName": "beacon"
+  },
+  "bedrock.png": {
+    "blockState": "bedrock",
+    "blockName": "bedrock"
+  },
+  "bee_nest_bottom.png": {
+    "blockState": "bee_nest",
+    "blockName": "bee_nest"
+  },
+  "bee_nest_front.png": {
+    "blockState": "bee_nest",
+    "blockName": "bee_nest"
+  },
+  "bee_nest_front_honey.png": {
+    "blockState": "bee_nest",
+    "blockName": "bee_nest"
+  },
+  "bee_nest_side.png": {
+    "blockState": "bee_nest",
+    "blockName": "bee_nest"
+  },
+  "bee_nest_top.png": {
+    "blockState": "bee_nest",
+    "blockName": "bee_nest"
+  },
+  "beehive_end.png": {
+    "blockState": "beehive",
+    "blockName": "beehive"
+  },
+  "beehive_front.png": {
+    "blockState": "beehive",
+    "blockName": "beehive"
+  },
+  "beehive_front_honey.png": {
+    "blockState": "beehive",
+    "blockName": "beehive"
+  },
+  "beehive_side.png": {
+    "blockState": "beehive",
+    "blockName": "beehive"
+  },
+  "beetroots_stage0.png": {
+    "blockState": "beetroots",
+    "blockName": "beetroots"
+  },
+  "beetroots_stage1.png": {
+    "blockState": "beetroots",
+    "blockName": "beetroots"
+  },
+  "beetroots_stage2.png": {
+    "blockState": "beetroots",
+    "blockName": "beetroots"
+  },
+  "beetroots_stage3.png": {
+    "blockState": "beetroots",
+    "blockName": "beetroots"
+  },
+  "bell_bottom.png": {
+    "blockState": "bell",
+    "blockName": "bell"
+  },
+  "bell_side.png": {
+    "blockState": "bell",
+    "blockName": "bell"
+  },
+  "bell_top.png": {
+    "blockState": "bell",
+    "blockName": "bell"
+  },
+  "big_dripleaf_side.png": {
+    "blockState": "big_dripleaf",
+    "blockName": "big_dripleaf"
+  },
+  "big_dripleaf_stem.png": {
+    "blockState": "big_dripleaf_stem",
+    "blockName": "big_dripleaf_stem"
+  },
+  "big_dripleaf_tip.png": {
+    "blockState": "big_dripleaf",
+    "blockName": "big_dripleaf"
+  },
+  "big_dripleaf_top.png": {
+    "blockState": "big_dripleaf",
+    "blockName": "big_dripleaf"
+  },
+  "birch_door_bottom.png": {
+    "blockState": "birch_door",
+    "blockName": "birch_door"
+  },
+  "birch_door_top.png": {
+    "blockState": "birch_door",
+    "blockName": "birch_door"
+  },
+  "birch_leaves.png": {
+    "blockState": "birch_leaves",
+    "blockName": "birch_leaves"
+  },
+  "birch_log.png": {
+    "blockState": "birch_log",
+    "blockName": "birch_log"
+  },
+  "birch_log_top.png": {
+    "blockState": "birch_log",
+    "blockName": "birch_log"
+  },
+  "birch_planks.png": {
+    "blockState": "birch_planks",
+    "blockName": "birch_planks"
+  },
+  "birch_sapling.png": {
+    "blockState": "birch_sapling",
+    "blockName": "birch_sapling"
+  },
+  "birch_trapdoor.png": {
+    "blockState": "birch_trapdoor",
+    "blockName": "birch_trapdoor"
+  },
+  "black_candle.png": {
+    "blockState": "black_candle",
+    "blockName": "black_candle"
+  },
+  "black_candle_lit.png": {
+    "blockState": "black_candle",
+    "blockName": "black_candle"
+  },
+  "black_concrete.png": {
+    "blockState": "black_concrete",
+    "blockName": "black_concrete"
+  },
+  "black_concrete_powder.png": {
+    "blockState": "black_concrete_powder",
+    "blockName": "black_concrete_powder"
+  },
+  "black_glazed_terracotta.png": {
+    "blockState": "black_glazed_terracotta",
+    "blockName": "black_glazed_terracotta"
+  },
+  "black_shulker_box.png": {
+    "blockState": "black_shulker_box",
+    "blockName": "black_shulker_box"
+  },
+  "black_stained_glass.png": {
+    "blockState": "black_stained_glass",
+    "blockName": "black_stained_glass"
+  },
+  "black_stained_glass_pane_top.png": {
+    "blockState": "black_stained_glass_pane",
+    "blockName": "black_stained_glass_pane"
+  },
+  "black_terracotta.png": {
+    "blockState": "black_terracotta",
+    "blockName": "black_terracotta"
+  },
+  "black_wool.png": {
+    "blockState": "black_wool",
+    "blockName": "black_wool"
+  },
+  "blackstone.png": {
+    "blockState": "blackstone",
+    "blockName": "blackstone"
+  },
+  "blackstone_top.png": {
+    "blockState": "blackstone",
+    "blockName": "blackstone"
+  },
+  "blast_furnace_front.png": {
+    "blockState": "blast_furnace",
+    "blockName": "blast_furnace"
+  },
+  "blast_furnace_front_on.png": {
+    "blockState": "blast_furnace",
+    "blockName": "blast_furnace"
+  },
+  "blast_furnace_side.png": {
+    "blockState": "blast_furnace",
+    "blockName": "blast_furnace"
+  },
+  "blast_furnace_top.png": {
+    "blockState": "blast_furnace",
+    "blockName": "blast_furnace"
+  },
+  "blue_candle.png": {
+    "blockState": "blue_candle",
+    "blockName": "blue_candle"
+  },
+  "blue_candle_lit.png": {
+    "blockState": "blue_candle",
+    "blockName": "blue_candle"
+  },
+  "blue_concrete.png": {
+    "blockState": "blue_concrete",
+    "blockName": "blue_concrete"
+  },
+  "blue_concrete_powder.png": {
+    "blockState": "blue_concrete_powder",
+    "blockName": "blue_concrete_powder"
+  },
+  "blue_glazed_terracotta.png": {
+    "blockState": "blue_glazed_terracotta",
+    "blockName": "blue_glazed_terracotta"
+  },
+  "blue_ice.png": {
+    "blockState": "blue_ice",
+    "blockName": "blue_ice"
+  },
+  "blue_orchid.png": {
+    "blockState": "blue_orchid",
+    "blockName": "blue_orchid"
+  },
+  "blue_shulker_box.png": {
+    "blockState": "blue_shulker_box",
+    "blockName": "blue_shulker_box"
+  },
+  "blue_stained_glass.png": {
+    "blockState": "blue_stained_glass",
+    "blockName": "blue_stained_glass"
+  },
+  "blue_stained_glass_pane_top.png": {
+    "blockState": "blue_stained_glass_pane",
+    "blockName": "blue_stained_glass_pane"
+  },
+  "blue_terracotta.png": {
+    "blockState": "blue_terracotta",
+    "blockName": "blue_terracotta"
+  },
+  "blue_wool.png": {
+    "blockState": "blue_wool",
+    "blockName": "blue_wool"
+  },
+  "bone_block_side.png": {
+    "blockState": "bone_block",
+    "blockName": "bone_block"
+  },
+  "bone_block_top.png": {
+    "blockState": "bone_block",
+    "blockName": "bone_block"
+  },
+  "bookshelf.png": {
+    "blockState": "bookshelf",
+    "blockName": "bookshelf"
+  },
+  "brain_coral.png": {
+    "blockState": "brain_coral",
+    "blockName": "brain_coral"
+  },
+  "brain_coral_block.png": {
+    "blockState": "brain_coral_block",
+    "blockName": "brain_coral_block"
+  },
+  "brain_coral_fan.png": {
+    "blockState": "brain_coral_fan",
+    "blockName": "brain_coral_fan"
+  },
+  "brewing_stand.png": {
+    "blockState": "brewing_stand",
+    "blockName": "brewing_stand"
+  },
+  "brewing_stand_base.png": {
+    "blockState": "brewing_stand",
+    "blockName": "brewing_stand"
+  },
+  "bricks.png": {
+    "blockState": "bricks",
+    "blockName": "bricks"
+  },
+  "brown_candle.png": {
+    "blockState": "brown_candle",
+    "blockName": "brown_candle"
+  },
+  "brown_candle_lit.png": {
+    "blockState": "brown_candle",
+    "blockName": "brown_candle"
+  },
+  "brown_concrete.png": {
+    "blockState": "brown_concrete",
+    "blockName": "brown_concrete"
+  },
+  "brown_concrete_powder.png": {
+    "blockState": "brown_concrete_powder",
+    "blockName": "brown_concrete_powder"
+  },
+  "brown_glazed_terracotta.png": {
+    "blockState": "brown_glazed_terracotta",
+    "blockName": "brown_glazed_terracotta"
+  },
+  "brown_mushroom.png": {
+    "blockState": "brown_mushroom",
+    "blockName": "brown_mushroom"
+  },
+  "brown_mushroom_block.png": {
+    "blockState": "brown_mushroom_block",
+    "blockName": "brown_mushroom_block"
+  },
+  "brown_shulker_box.png": {
+    "blockState": "brown_shulker_box",
+    "blockName": "brown_shulker_box"
+  },
+  "brown_stained_glass.png": {
+    "blockState": "brown_stained_glass",
+    "blockName": "brown_stained_glass"
+  },
+  "brown_stained_glass_pane_top.png": {
+    "blockState": "brown_stained_glass_pane",
+    "blockName": "brown_stained_glass_pane"
+  },
+  "brown_terracotta.png": {
+    "blockState": "brown_terracotta",
+    "blockName": "brown_terracotta"
+  },
+  "brown_wool.png": {
+    "blockState": "brown_wool",
+    "blockName": "brown_wool"
+  },
+  "bubble_coral.png": {
+    "blockState": "bubble_coral",
+    "blockName": "bubble_coral"
+  },
+  "bubble_coral_block.png": {
+    "blockState": "bubble_coral_block",
+    "blockName": "bubble_coral_block"
+  },
+  "bubble_coral_fan.png": {
+    "blockState": "bubble_coral_fan",
+    "blockName": "bubble_coral_fan"
+  },
+  "budding_amethyst.png": {
+    "blockState": "budding_amethyst",
+    "blockName": "budding_amethyst"
+  },
+  "cactus_bottom.png": {
+    "blockState": "cactus",
+    "blockName": "cactus"
+  },
+  "cactus_side.png": {
+    "blockState": "cactus",
+    "blockName": "cactus"
+  },
+  "cactus_top.png": {
+    "blockState": "cactus",
+    "blockName": "cactus"
+  },
+  "cake_bottom.png": {
+    "blockState": "cake",
+    "blockName": "cake"
+  },
+  "cake_inner.png": {
+    "blockState": "cake",
+    "blockName": "cake"
+  },
+  "cake_side.png": {
+    "blockState": "cake",
+    "blockName": "cake"
+  },
+  "cake_top.png": {
+    "blockState": "cake",
+    "blockName": "cake"
+  },
+  "calcite.png": {
+    "blockState": "calcite",
+    "blockName": "calcite"
+  },
+  "calibrated_sculk_sensor_amethyst.png": {
+    "blockState": "calibrated_sculk_sensor",
+    "blockName": "calibrated_sculk_sensor"
+  },
+  "calibrated_sculk_sensor_input_side.png": {
+    "blockState": "calibrated_sculk_sensor",
+    "blockName": "calibrated_sculk_sensor"
+  },
+  "calibrated_sculk_sensor_top.png": {
+    "blockState": "calibrated_sculk_sensor",
+    "blockName": "calibrated_sculk_sensor"
+  },
+  "campfire_fire.png": {
+    "blockState": "campfire",
+    "blockName": "campfire"
+  },
+  "campfire_log.png": {
+    "blockState": "campfire",
+    "blockName": "campfire"
+  },
+  "campfire_log_lit.png": {
+    "blockState": "campfire",
+    "blockName": "campfire"
+  },
+  "candle.png": {
+    "blockState": "candle",
+    "blockName": "candle"
+  },
+  "candle_lit.png": {
+    "blockState": "candle",
+    "blockName": "candle"
+  },
+  "carrots_stage0.png": {
+    "blockState": "carrots",
+    "blockName": "carrots"
+  },
+  "carrots_stage1.png": {
+    "blockState": "carrots",
+    "blockName": "carrots"
+  },
+  "carrots_stage2.png": {
+    "blockState": "carrots",
+    "blockName": "carrots"
+  },
+  "carrots_stage3.png": {
+    "blockState": "carrots",
+    "blockName": "carrots"
+  },
+  "cartography_table_side1.png": {
+    "blockState": "cartography_table",
+    "blockName": "cartography_table"
+  },
+  "cartography_table_side2.png": {
+    "blockState": "cartography_table",
+    "blockName": "cartography_table"
+  },
+  "cartography_table_side3.png": {
+    "blockState": "cartography_table",
+    "blockName": "cartography_table"
+  },
+  "cartography_table_top.png": {
+    "blockState": "cartography_table",
+    "blockName": "cartography_table"
+  },
+  "carved_pumpkin.png": {
+    "blockState": "carved_pumpkin",
+    "blockName": "carved_pumpkin"
+  },
+  "cauldron_bottom.png": {
+    "blockState": "cauldron",
+    "blockName": "cauldron"
+  },
+  "cauldron_inner.png": {
+    "blockState": "cauldron",
+    "blockName": "cauldron"
+  },
+  "cauldron_side.png": {
+    "blockState": "cauldron",
+    "blockName": "cauldron"
+  },
+  "cauldron_top.png": {
+    "blockState": "cauldron",
+    "blockName": "cauldron"
+  },
+  "cave_vines.png": {
+    "blockState": "cave_vines",
+    "blockName": "cave_vines"
+  },
+  "cave_vines_lit.png": {
+    "blockState": "cave_vines",
+    "blockName": "cave_vines"
+  },
+  "cave_vines_plant.png": {
+    "blockState": "cave_vines_plant",
+    "blockName": "cave_vines_plant"
+  },
+  "cave_vines_plant_lit.png": {
+    "blockState": "cave_vines_plant",
+    "blockName": "cave_vines_plant"
+  },
+  "chain.png": {
+    "blockState": "chain",
+    "blockName": "chain"
+  },
+  "chain_command_block_back.png": {
+    "blockState": "chain_command_block",
+    "blockName": "chain_command_block"
+  },
+  "chain_command_block_conditional.png": {
+    "blockState": "chain_command_block",
+    "blockName": "chain_command_block"
+  },
+  "chain_command_block_front.png": {
+    "blockState": "chain_command_block",
+    "blockName": "chain_command_block"
+  },
+  "chain_command_block_side.png": {
+    "blockState": "chain_command_block",
+    "blockName": "chain_command_block"
+  },
+  "cherry_door_bottom.png": {
+    "blockState": "cherry_door",
+    "blockName": "cherry_door"
+  },
+  "cherry_door_top.png": {
+    "blockState": "cherry_door",
+    "blockName": "cherry_door"
+  },
+  "cherry_leaves.png": {
+    "blockState": "cherry_leaves",
+    "blockName": "cherry_leaves"
+  },
+  "cherry_log.png": {
+    "blockState": "cherry_log",
+    "blockName": "cherry_log"
+  },
+  "cherry_log_top.png": {
+    "blockState": "cherry_log",
+    "blockName": "cherry_log"
+  },
+  "cherry_planks.png": {
+    "blockState": "cherry_planks",
+    "blockName": "cherry_planks"
+  },
+  "cherry_sapling.png": {
+    "blockState": "cherry_sapling",
+    "blockName": "cherry_sapling"
+  },
+  "cherry_trapdoor.png": {
+    "blockState": "cherry_trapdoor",
+    "blockName": "cherry_trapdoor"
+  },
+  "chipped_anvil_top.png": {
+    "blockState": "chipped_anvil",
+    "blockName": "chipped_anvil"
+  },
+  "chiseled_bookshelf_empty.png": {
+    "blockState": "chiseled_bookshelf",
+    "blockName": "chiseled_bookshelf"
+  },
+  "chiseled_bookshelf_occupied.png": {
+    "blockState": "chiseled_bookshelf",
+    "blockName": "chiseled_bookshelf"
+  },
+  "chiseled_bookshelf_side.png": {
+    "blockState": "chiseled_bookshelf",
+    "blockName": "chiseled_bookshelf"
+  },
+  "chiseled_bookshelf_top.png": {
+    "blockState": "chiseled_bookshelf",
+    "blockName": "chiseled_bookshelf"
+  },
+  "chiseled_copper.png": {
+    "blockState": "chiseled_copper",
+    "blockName": "chiseled_copper"
+  },
+  "chiseled_deepslate.png": {
+    "blockState": "chiseled_deepslate",
+    "blockName": "chiseled_deepslate"
+  },
+  "chiseled_nether_bricks.png": {
+    "blockState": "chiseled_nether_bricks",
+    "blockName": "chiseled_nether_bricks"
+  },
+  "chiseled_polished_blackstone.png": {
+    "blockState": "chiseled_polished_blackstone",
+    "blockName": "chiseled_polished_blackstone"
+  },
+  "chiseled_quartz_block.png": {
+    "blockState": "chiseled_quartz_block",
+    "blockName": "chiseled_quartz_block"
+  },
+  "chiseled_quartz_block_top.png": {
+    "blockState": "chiseled_quartz_block",
+    "blockName": "chiseled_quartz_block"
+  },
+  "chiseled_red_sandstone.png": {
+    "blockState": "chiseled_red_sandstone",
+    "blockName": "chiseled_red_sandstone"
+  },
+  "chiseled_sandstone.png": {
+    "blockState": "chiseled_sandstone",
+    "blockName": "chiseled_sandstone"
+  },
+  "chiseled_stone_bricks.png": {
+    "blockState": "chiseled_stone_bricks",
+    "blockName": "chiseled_stone_bricks"
+  },
+  "chiseled_tuff.png": {
+    "blockState": "chiseled_tuff",
+    "blockName": "chiseled_tuff"
+  },
+  "chiseled_tuff_bricks.png": {
+    "blockState": "chiseled_tuff_bricks",
+    "blockName": "chiseled_tuff_bricks"
+  },
+  "chiseled_tuff_bricks_top.png": {
+    "blockState": "chiseled_tuff_bricks",
+    "blockName": "chiseled_tuff_bricks"
+  },
+  "chiseled_tuff_top.png": {
+    "blockState": "chiseled_tuff",
+    "blockName": "chiseled_tuff"
+  },
+  "chorus_flower.png": {
+    "blockState": "chorus_flower",
+    "blockName": "chorus_flower"
+  },
+  "chorus_flower_dead.png": {
+    "blockState": "chorus_flower",
+    "blockName": "chorus_flower"
+  },
+  "chorus_plant.png": {
+    "blockState": "chorus_plant",
+    "blockName": "chorus_plant"
+  },
+  "clay.png": {
+    "blockState": "clay",
+    "blockName": "clay"
+  },
+  "coal_block.png": {
+    "blockState": "coal_block",
+    "blockName": "coal_block"
+  },
+  "coal_ore.png": {
+    "blockState": "coal_ore",
+    "blockName": "coal_ore"
+  },
+  "coarse_dirt.png": {
+    "blockState": "coarse_dirt",
+    "blockName": "coarse_dirt"
+  },
+  "cobbled_deepslate.png": {
+    "blockState": "cobbled_deepslate",
+    "blockName": "cobbled_deepslate"
+  },
+  "cobblestone.png": {
+    "blockState": "cobblestone",
+    "blockName": "cobblestone"
+  },
+  "cobweb.png": {
+    "blockState": "cobweb",
+    "blockName": "cobweb"
+  },
+  "cocoa_stage0.png": {
+    "blockState": "cocoa",
+    "blockName": "cocoa"
+  },
+  "cocoa_stage1.png": {
+    "blockState": "cocoa",
+    "blockName": "cocoa"
+  },
+  "cocoa_stage2.png": {
+    "blockState": "cocoa",
+    "blockName": "cocoa"
+  },
+  "command_block_back.png": {
+    "blockState": "command_block",
+    "blockName": "command_block"
+  },
+  "command_block_conditional.png": {
+    "blockState": "command_block",
+    "blockName": "command_block"
+  },
+  "command_block_front.png": {
+    "blockState": "command_block",
+    "blockName": "command_block"
+  },
+  "command_block_side.png": {
+    "blockState": "command_block",
+    "blockName": "command_block"
+  },
+  "comparator.png": {
+    "blockState": "comparator",
+    "blockName": "comparator"
+  },
+  "comparator_on.png": {
+    "blockState": "comparator",
+    "blockName": "comparator"
+  },
+  "composter_bottom.png": {
+    "blockState": "composter",
+    "blockName": "composter"
+  },
+  "composter_compost.png": {
+    "blockState": "composter",
+    "blockName": "composter"
+  },
+  "composter_ready.png": {
+    "blockState": "composter",
+    "blockName": "composter"
+  },
+  "composter_side.png": {
+    "blockState": "composter",
+    "blockName": "composter"
+  },
+  "composter_top.png": {
+    "blockState": "composter",
+    "blockName": "composter"
+  },
+  "conduit.png": {
+    "blockState": "conduit",
+    "blockName": "conduit"
+  },
+  "copper_block.png": {
+    "blockState": "copper_block",
+    "blockName": "copper_block"
+  },
+  "copper_bulb.png": {
+    "blockState": "copper_bulb",
+    "blockName": "copper_bulb"
+  },
+  "copper_bulb_lit.png": {
+    "blockState": "copper_bulb",
+    "blockName": "copper_bulb"
+  },
+  "copper_bulb_lit_powered.png": {
+    "blockState": "copper_bulb",
+    "blockName": "copper_bulb"
+  },
+  "copper_bulb_powered.png": {
+    "blockState": "copper_bulb",
+    "blockName": "copper_bulb"
+  },
+  "copper_door_bottom.png": {
+    "blockState": "copper_door",
+    "blockName": "copper_door"
+  },
+  "copper_door_top.png": {
+    "blockState": "copper_door",
+    "blockName": "copper_door"
+  },
+  "copper_grate.png": {
+    "blockState": "copper_grate",
+    "blockName": "copper_grate"
+  },
+  "copper_ore.png": {
+    "blockState": "copper_ore",
+    "blockName": "copper_ore"
+  },
+  "copper_trapdoor.png": {
+    "blockState": "copper_trapdoor",
+    "blockName": "copper_trapdoor"
+  },
+  "cornflower.png": {
+    "blockState": "cornflower",
+    "blockName": "cornflower"
+  },
+  "cracked_deepslate_bricks.png": {
+    "blockState": "cracked_deepslate_bricks",
+    "blockName": "cracked_deepslate_bricks"
+  },
+  "cracked_deepslate_tiles.png": {
+    "blockState": "cracked_deepslate_tiles",
+    "blockName": "cracked_deepslate_tiles"
+  },
+  "cracked_nether_bricks.png": {
+    "blockState": "cracked_nether_bricks",
+    "blockName": "cracked_nether_bricks"
+  },
+  "cracked_polished_blackstone_bricks.png": {
+    "blockState": "cracked_polished_blackstone_bricks",
+    "blockName": "cracked_polished_blackstone_bricks"
+  },
+  "cracked_stone_bricks.png": {
+    "blockState": "cracked_stone_bricks",
+    "blockName": "cracked_stone_bricks"
+  },
+  "crafter_bottom.png": {
+    "blockState": "crafter",
+    "blockName": "crafter"
+  },
+  "crafter_east.png": {
+    "blockState": "crafter",
+    "blockName": "crafter"
+  },
+  "crafter_east_crafting.png": {
+    "blockState": "crafter",
+    "blockName": "crafter"
+  },
+  "crafter_east_triggered.png": {
+    "blockState": "crafter",
+    "blockName": "crafter"
+  },
+  "crafter_north.png": {
+    "blockState": "crafter",
+    "blockName": "crafter"
+  },
+  "crafter_north_crafting.png": {
+    "blockState": "crafter",
+    "blockName": "crafter"
+  },
+  "crafter_south.png": {
+    "blockState": "crafter",
+    "blockName": "crafter"
+  },
+  "crafter_south_triggered.png": {
+    "blockState": "crafter",
+    "blockName": "crafter"
+  },
+  "crafter_top.png": {
+    "blockState": "crafter",
+    "blockName": "crafter"
+  },
+  "crafter_top_crafting.png": {
+    "blockState": "crafter",
+    "blockName": "crafter"
+  },
+  "crafter_top_triggered.png": {
+    "blockState": "crafter",
+    "blockName": "crafter"
+  },
+  "crafter_west.png": {
+    "blockState": "crafter",
+    "blockName": "crafter"
+  },
+  "crafter_west_crafting.png": {
+    "blockState": "crafter",
+    "blockName": "crafter"
+  },
+  "crafter_west_triggered.png": {
+    "blockState": "crafter",
+    "blockName": "crafter"
+  },
+  "crafting_table_front.png": {
+    "blockState": "crafting_table",
+    "blockName": "crafting_table"
+  },
+  "crafting_table_side.png": {
+    "blockState": "crafting_table",
+    "blockName": "crafting_table"
+  },
+  "crafting_table_top.png": {
+    "blockState": "crafting_table",
+    "blockName": "crafting_table"
+  },
+  "crimson_door_bottom.png": {
+    "blockState": "crimson_door",
+    "blockName": "crimson_door"
+  },
+  "crimson_door_top.png": {
+    "blockState": "crimson_door",
+    "blockName": "crimson_door"
+  },
+  "crimson_fungus.png": {
+    "blockState": "crimson_fungus",
+    "blockName": "crimson_fungus"
+  },
+  "crimson_nylium.png": {
+    "blockState": "crimson_nylium",
+    "blockName": "crimson_nylium"
+  },
+  "crimson_nylium_side.png": {
+    "blockState": "crimson_nylium",
+    "blockName": "crimson_nylium"
+  },
+  "crimson_planks.png": {
+    "blockState": "crimson_planks",
+    "blockName": "crimson_planks"
+  },
+  "crimson_roots.png": {
+    "blockState": "crimson_roots",
+    "blockName": "crimson_roots"
+  },
+  "crimson_roots_pot.png": {
+    "blockState": "crimson_roots",
+    "blockName": "crimson_roots"
+  },
+  "crimson_stem.png": {
+    "blockState": "crimson_stem",
+    "blockName": "crimson_stem"
+  },
+  "crimson_stem_top.png": {
+    "blockState": "crimson_stem",
+    "blockName": "crimson_stem"
+  },
+  "crimson_trapdoor.png": {
+    "blockState": "crimson_trapdoor",
+    "blockName": "crimson_trapdoor"
+  },
+  "crying_obsidian.png": {
+    "blockState": "crying_obsidian",
+    "blockName": "crying_obsidian"
+  },
+  "cut_copper.png": {
+    "blockState": "cut_copper",
+    "blockName": "cut_copper"
+  },
+  "cut_red_sandstone.png": {
+    "blockState": "cut_red_sandstone",
+    "blockName": "cut_red_sandstone"
+  },
+  "cut_sandstone.png": {
+    "blockState": "cut_sandstone",
+    "blockName": "cut_sandstone"
+  },
+  "cyan_candle.png": {
+    "blockState": "cyan_candle",
+    "blockName": "cyan_candle"
+  },
+  "cyan_candle_lit.png": {
+    "blockState": "cyan_candle",
+    "blockName": "cyan_candle"
+  },
+  "cyan_concrete.png": {
+    "blockState": "cyan_concrete",
+    "blockName": "cyan_concrete"
+  },
+  "cyan_concrete_powder.png": {
+    "blockState": "cyan_concrete_powder",
+    "blockName": "cyan_concrete_powder"
+  },
+  "cyan_glazed_terracotta.png": {
+    "blockState": "cyan_glazed_terracotta",
+    "blockName": "cyan_glazed_terracotta"
+  },
+  "cyan_shulker_box.png": {
+    "blockState": "cyan_shulker_box",
+    "blockName": "cyan_shulker_box"
+  },
+  "cyan_stained_glass.png": {
+    "blockState": "cyan_stained_glass",
+    "blockName": "cyan_stained_glass"
+  },
+  "cyan_stained_glass_pane_top.png": {
+    "blockState": "cyan_stained_glass_pane",
+    "blockName": "cyan_stained_glass_pane"
+  },
+  "cyan_terracotta.png": {
+    "blockState": "cyan_terracotta",
+    "blockName": "cyan_terracotta"
+  },
+  "cyan_wool.png": {
+    "blockState": "cyan_wool",
+    "blockName": "cyan_wool"
+  },
+  "damaged_anvil_top.png": {
+    "blockState": "damaged_anvil",
+    "blockName": "damaged_anvil"
+  },
+  "dandelion.png": {
+    "blockState": "dandelion",
+    "blockName": "dandelion"
+  },
+  "dark_oak_door_bottom.png": {
+    "blockState": "dark_oak_door",
+    "blockName": "dark_oak_door"
+  },
+  "dark_oak_door_top.png": {
+    "blockState": "dark_oak_door",
+    "blockName": "dark_oak_door"
+  },
+  "dark_oak_leaves.png": {
+    "blockState": "dark_oak_leaves",
+    "blockName": "dark_oak_leaves"
+  },
+  "dark_oak_log.png": {
+    "blockState": "dark_oak_log",
+    "blockName": "dark_oak_log"
+  },
+  "dark_oak_log_top.png": {
+    "blockState": "dark_oak_log",
+    "blockName": "dark_oak_log"
+  },
+  "dark_oak_planks.png": {
+    "blockState": "dark_oak_planks",
+    "blockName": "dark_oak_planks"
+  },
+  "dark_oak_sapling.png": {
+    "blockState": "dark_oak_sapling",
+    "blockName": "dark_oak_sapling"
+  },
+  "dark_oak_trapdoor.png": {
+    "blockState": "dark_oak_trapdoor",
+    "blockName": "dark_oak_trapdoor"
+  },
+  "dark_prismarine.png": {
+    "blockState": "dark_prismarine",
+    "blockName": "dark_prismarine"
+  },
+  "daylight_detector_inverted_top.png": {
+    "blockState": "daylight_detector",
+    "blockName": "daylight_detector"
+  },
+  "daylight_detector_side.png": {
+    "blockState": "daylight_detector",
+    "blockName": "daylight_detector"
+  },
+  "daylight_detector_top.png": {
+    "blockState": "daylight_detector",
+    "blockName": "daylight_detector"
+  },
+  "dead_brain_coral.png": {
+    "blockState": "dead_brain_coral",
+    "blockName": "dead_brain_coral"
+  },
+  "dead_brain_coral_block.png": {
+    "blockState": "dead_brain_coral_block",
+    "blockName": "dead_brain_coral_block"
+  },
+  "dead_brain_coral_fan.png": {
+    "blockState": "dead_brain_coral_fan",
+    "blockName": "dead_brain_coral_fan"
+  },
+  "dead_bubble_coral.png": {
+    "blockState": "dead_bubble_coral",
+    "blockName": "dead_bubble_coral"
+  },
+  "dead_bubble_coral_block.png": {
+    "blockState": "dead_bubble_coral_block",
+    "blockName": "dead_bubble_coral_block"
+  },
+  "dead_bubble_coral_fan.png": {
+    "blockState": "dead_bubble_coral_fan",
+    "blockName": "dead_bubble_coral_fan"
+  },
+  "dead_bush.png": {
+    "blockState": "dead_bush",
+    "blockName": "dead_bush"
+  },
+  "dead_fire_coral.png": {
+    "blockState": "dead_fire_coral",
+    "blockName": "dead_fire_coral"
+  },
+  "dead_fire_coral_block.png": {
+    "blockState": "dead_fire_coral_block",
+    "blockName": "dead_fire_coral_block"
+  },
+  "dead_fire_coral_fan.png": {
+    "blockState": "dead_fire_coral_fan",
+    "blockName": "dead_fire_coral_fan"
+  },
+  "dead_horn_coral.png": {
+    "blockState": "dead_horn_coral",
+    "blockName": "dead_horn_coral"
+  },
+  "dead_horn_coral_block.png": {
+    "blockState": "dead_horn_coral_block",
+    "blockName": "dead_horn_coral_block"
+  },
+  "dead_horn_coral_fan.png": {
+    "blockState": "dead_horn_coral_fan",
+    "blockName": "dead_horn_coral_fan"
+  },
+  "dead_tube_coral.png": {
+    "blockState": "dead_tube_coral",
+    "blockName": "dead_tube_coral"
+  },
+  "dead_tube_coral_block.png": {
+    "blockState": "dead_tube_coral_block",
+    "blockName": "dead_tube_coral_block"
+  },
+  "dead_tube_coral_fan.png": {
+    "blockState": "dead_tube_coral_fan",
+    "blockName": "dead_tube_coral_fan"
+  },
+  "deepslate.png": {
+    "blockState": "deepslate",
+    "blockName": "deepslate"
+  },
+  "deepslate_bricks.png": {
+    "blockState": "deepslate_bricks",
+    "blockName": "deepslate_bricks"
+  },
+  "deepslate_coal_ore.png": {
+    "blockState": "deepslate_coal_ore",
+    "blockName": "deepslate_coal_ore"
+  },
+  "deepslate_copper_ore.png": {
+    "blockState": "deepslate_copper_ore",
+    "blockName": "deepslate_copper_ore"
+  },
+  "deepslate_diamond_ore.png": {
+    "blockState": "deepslate_diamond_ore",
+    "blockName": "deepslate_diamond_ore"
+  },
+  "deepslate_emerald_ore.png": {
+    "blockState": "deepslate_emerald_ore",
+    "blockName": "deepslate_emerald_ore"
+  },
+  "deepslate_gold_ore.png": {
+    "blockState": "deepslate_gold_ore",
+    "blockName": "deepslate_gold_ore"
+  },
+  "deepslate_iron_ore.png": {
+    "blockState": "deepslate_iron_ore",
+    "blockName": "deepslate_iron_ore"
+  },
+  "deepslate_lapis_ore.png": {
+    "blockState": "deepslate_lapis_ore",
+    "blockName": "deepslate_lapis_ore"
+  },
+  "deepslate_redstone_ore.png": {
+    "blockState": "deepslate_redstone_ore",
+    "blockName": "deepslate_redstone_ore"
+  },
+  "deepslate_tiles.png": {
+    "blockState": "deepslate_tiles",
+    "blockName": "deepslate_tiles"
+  },
+  "deepslate_top.png": {
+    "blockState": "deepslate",
+    "blockName": "deepslate"
+  },
+  "detector_rail.png": {
+    "blockState": "detector_rail",
+    "blockName": "detector_rail"
+  },
+  "detector_rail_on.png": {
+    "blockState": "detector_rail",
+    "blockName": "detector_rail"
+  },
+  "diamond_block.png": {
+    "blockState": "diamond_block",
+    "blockName": "diamond_block"
+  },
+  "diamond_ore.png": {
+    "blockState": "diamond_ore",
+    "blockName": "diamond_ore"
+  },
+  "diorite.png": {
+    "blockState": "diorite",
+    "blockName": "diorite"
+  },
+  "dirt.png": {
+    "blockState": "dirt",
+    "blockName": "dirt"
+  },
+  "dirt_path_side.png": {
+    "blockState": "dirt_path",
+    "blockName": "dirt_path"
+  },
+  "dirt_path_top.png": {
+    "blockState": "dirt_path",
+    "blockName": "dirt_path"
+  },
+  "dispenser_front.png": {
+    "blockState": "dispenser",
+    "blockName": "dispenser"
+  },
+  "dispenser_front_vertical.png": {
+    "blockState": "dispenser",
+    "blockName": "dispenser"
+  },
+  "dragon_egg.png": {
+    "blockState": "dragon_egg",
+    "blockName": "dragon_egg"
+  },
+  "dripstone_block.png": {
+    "blockState": "dripstone_block",
+    "blockName": "dripstone_block"
+  },
+  "dropper_front.png": {
+    "blockState": "dropper",
+    "blockName": "dropper"
+  },
+  "dropper_front_vertical.png": {
+    "blockState": "dropper",
+    "blockName": "dropper"
+  },
+  "emerald_block.png": {
+    "blockState": "emerald_block",
+    "blockName": "emerald_block"
+  },
+  "emerald_ore.png": {
+    "blockState": "emerald_ore",
+    "blockName": "emerald_ore"
+  },
+  "enchanting_table_bottom.png": {
+    "blockState": "enchanting_table",
+    "blockName": "enchanting_table"
+  },
+  "enchanting_table_side.png": {
+    "blockState": "enchanting_table",
+    "blockName": "enchanting_table"
+  },
+  "enchanting_table_top.png": {
+    "blockState": "enchanting_table",
+    "blockName": "enchanting_table"
+  },
+  "end_portal_frame_eye.png": {
+    "blockState": "end_portal_frame",
+    "blockName": "end_portal_frame"
+  },
+  "end_portal_frame_side.png": {
+    "blockState": "end_portal_frame",
+    "blockName": "end_portal_frame"
+  },
+  "end_portal_frame_top.png": {
+    "blockState": "end_portal_frame",
+    "blockName": "end_portal_frame"
+  },
+  "end_rod.png": {
+    "blockState": "end_rod",
+    "blockName": "end_rod"
+  },
+  "end_stone.png": {
+    "blockState": "end_stone",
+    "blockName": "end_stone"
+  },
+  "end_stone_bricks.png": {
+    "blockState": "end_stone_bricks",
+    "blockName": "end_stone_bricks"
+  },
+  "exposed_chiseled_copper.png": {
+    "blockState": "exposed_chiseled_copper",
+    "blockName": "exposed_chiseled_copper"
+  },
+  "exposed_copper.png": {
+    "blockState": "exposed_copper",
+    "blockName": "exposed_copper"
+  },
+  "exposed_copper_bulb.png": {
+    "blockState": "exposed_copper_bulb",
+    "blockName": "exposed_copper_bulb"
+  },
+  "exposed_copper_bulb_lit.png": {
+    "blockState": "exposed_copper_bulb",
+    "blockName": "exposed_copper_bulb"
+  },
+  "exposed_copper_bulb_lit_powered.png": {
+    "blockState": "exposed_copper_bulb",
+    "blockName": "exposed_copper_bulb"
+  },
+  "exposed_copper_bulb_powered.png": {
+    "blockState": "exposed_copper_bulb",
+    "blockName": "exposed_copper_bulb"
+  },
+  "exposed_copper_door_bottom.png": {
+    "blockState": "exposed_copper_door",
+    "blockName": "exposed_copper_door"
+  },
+  "exposed_copper_door_top.png": {
+    "blockState": "exposed_copper_door",
+    "blockName": "exposed_copper_door"
+  },
+  "exposed_copper_grate.png": {
+    "blockState": "exposed_copper_grate",
+    "blockName": "exposed_copper_grate"
+  },
+  "exposed_copper_trapdoor.png": {
+    "blockState": "exposed_copper_trapdoor",
+    "blockName": "exposed_copper_trapdoor"
+  },
+  "exposed_cut_copper.png": {
+    "blockState": "exposed_cut_copper",
+    "blockName": "exposed_cut_copper"
+  },
+  "farmland.png": {
+    "blockState": "farmland",
+    "blockName": "farmland"
+  },
+  "farmland_moist.png": {
+    "blockState": "farmland",
+    "blockName": "farmland"
+  },
+  "fern.png": {
+    "blockState": "fern",
+    "blockName": "fern"
+  },
+  "fire_0.png": {
+    "blockState": "fire",
+    "blockName": "fire"
+  },
+  "fire_1.png": {
+    "blockState": "fire",
+    "blockName": "fire"
+  },
+  "fire_coral.png": {
+    "blockState": "fire_coral",
+    "blockName": "fire_coral"
+  },
+  "fire_coral_block.png": {
+    "blockState": "fire_coral_block",
+    "blockName": "fire_coral_block"
+  },
+  "fire_coral_fan.png": {
+    "blockState": "fire_coral_fan",
+    "blockName": "fire_coral_fan"
+  },
+  "fletching_table_front.png": {
+    "blockState": "fletching_table",
+    "blockName": "fletching_table"
+  },
+  "fletching_table_side.png": {
+    "blockState": "fletching_table",
+    "blockName": "fletching_table"
+  },
+  "fletching_table_top.png": {
+    "blockState": "fletching_table",
+    "blockName": "fletching_table"
+  },
+  "flower_pot.png": {
+    "blockState": "flower_pot",
+    "blockName": "flower_pot"
+  },
+  "flowering_azalea_leaves.png": {
+    "blockState": "flowering_azalea_leaves",
+    "blockName": "flowering_azalea_leaves"
+  },
+  "flowering_azalea_side.png": {
+    "blockState": "flowering_azalea",
+    "blockName": "flowering_azalea"
+  },
+  "flowering_azalea_top.png": {
+    "blockState": "flowering_azalea",
+    "blockName": "flowering_azalea"
+  },
+  "frogspawn.png": {
+    "blockState": "frogspawn",
+    "blockName": "frogspawn"
+  },
+  "frosted_ice_0.png": {
+    "blockState": "frosted_ice",
+    "blockName": "frosted_ice"
+  },
+  "frosted_ice_1.png": {
+    "blockState": "frosted_ice",
+    "blockName": "frosted_ice"
+  },
+  "frosted_ice_2.png": {
+    "blockState": "frosted_ice",
+    "blockName": "frosted_ice"
+  },
+  "frosted_ice_3.png": {
+    "blockState": "frosted_ice",
+    "blockName": "frosted_ice"
+  },
+  "furnace_front.png": {
+    "blockState": "furnace",
+    "blockName": "furnace"
+  },
+  "furnace_front_on.png": {
+    "blockState": "furnace",
+    "blockName": "furnace"
+  },
+  "furnace_side.png": {
+    "blockState": "furnace",
+    "blockName": "furnace"
+  },
+  "furnace_top.png": {
+    "blockState": "furnace",
+    "blockName": "furnace"
+  },
+  "gilded_blackstone.png": {
+    "blockState": "gilded_blackstone",
+    "blockName": "gilded_blackstone"
+  },
+  "glass.png": {
+    "blockState": "glass",
+    "blockName": "glass"
+  },
+  "glass_pane_top.png": {
+    "blockState": "glass_pane",
+    "blockName": "glass_pane"
+  },
+  "glow_lichen.png": {
+    "blockState": "glow_lichen",
+    "blockName": "glow_lichen"
+  },
+  "glowstone.png": {
+    "blockState": "glowstone",
+    "blockName": "glowstone"
+  },
+  "gold_block.png": {
+    "blockState": "gold_block",
+    "blockName": "gold_block"
+  },
+  "gold_ore.png": {
+    "blockState": "gold_ore",
+    "blockName": "gold_ore"
+  },
+  "granite.png": {
+    "blockState": "granite",
+    "blockName": "granite"
+  },
+  "grass_block_side.png": {
+    "blockState": "grass_block",
+    "blockName": "grass_block"
+  },
+  "grass_block_side_overlay.png": {
+    "blockState": "grass_block",
+    "blockName": "grass_block"
+  },
+  "grass_block_snow.png": {
+    "blockState": "grass_block",
+    "blockName": "grass_block"
+  },
+  "grass_block_top.png": {
+    "blockState": "grass_block",
+    "blockName": "grass_block"
+  },
+  "gravel.png": {
+    "blockState": "gravel",
+    "blockName": "gravel"
+  },
+  "gray_candle.png": {
+    "blockState": "gray_candle",
+    "blockName": "gray_candle"
+  },
+  "gray_candle_lit.png": {
+    "blockState": "gray_candle",
+    "blockName": "gray_candle"
+  },
+  "gray_concrete.png": {
+    "blockState": "gray_concrete",
+    "blockName": "gray_concrete"
+  },
+  "gray_concrete_powder.png": {
+    "blockState": "gray_concrete_powder",
+    "blockName": "gray_concrete_powder"
+  },
+  "gray_glazed_terracotta.png": {
+    "blockState": "gray_glazed_terracotta",
+    "blockName": "gray_glazed_terracotta"
+  },
+  "gray_shulker_box.png": {
+    "blockState": "gray_shulker_box",
+    "blockName": "gray_shulker_box"
+  },
+  "gray_stained_glass.png": {
+    "blockState": "gray_stained_glass",
+    "blockName": "gray_stained_glass"
+  },
+  "gray_stained_glass_pane_top.png": {
+    "blockState": "gray_stained_glass_pane",
+    "blockName": "gray_stained_glass_pane"
+  },
+  "gray_terracotta.png": {
+    "blockState": "gray_terracotta",
+    "blockName": "gray_terracotta"
+  },
+  "gray_wool.png": {
+    "blockState": "gray_wool",
+    "blockName": "gray_wool"
+  },
+  "green_candle.png": {
+    "blockState": "green_candle",
+    "blockName": "green_candle"
+  },
+  "green_candle_lit.png": {
+    "blockState": "green_candle",
+    "blockName": "green_candle"
+  },
+  "green_concrete.png": {
+    "blockState": "green_concrete",
+    "blockName": "green_concrete"
+  },
+  "green_concrete_powder.png": {
+    "blockState": "green_concrete_powder",
+    "blockName": "green_concrete_powder"
+  },
+  "green_glazed_terracotta.png": {
+    "blockState": "green_glazed_terracotta",
+    "blockName": "green_glazed_terracotta"
+  },
+  "green_shulker_box.png": {
+    "blockState": "green_shulker_box",
+    "blockName": "green_shulker_box"
+  },
+  "green_stained_glass.png": {
+    "blockState": "green_stained_glass",
+    "blockName": "green_stained_glass"
+  },
+  "green_stained_glass_pane_top.png": {
+    "blockState": "green_stained_glass_pane",
+    "blockName": "green_stained_glass_pane"
+  },
+  "green_terracotta.png": {
+    "blockState": "green_terracotta",
+    "blockName": "green_terracotta"
+  },
+  "green_wool.png": {
+    "blockState": "green_wool",
+    "blockName": "green_wool"
+  },
+  "grindstone_pivot.png": {
+    "blockState": "grindstone",
+    "blockName": "grindstone"
+  },
+  "grindstone_round.png": {
+    "blockState": "grindstone",
+    "blockName": "grindstone"
+  },
+  "grindstone_side.png": {
+    "blockState": "grindstone",
+    "blockName": "grindstone"
+  },
+  "hanging_roots.png": {
+    "blockState": "hanging_roots",
+    "blockName": "hanging_roots"
+  },
+  "hay_block_side.png": {
+    "blockState": "hay_block",
+    "blockName": "hay_block"
+  },
+  "hay_block_top.png": {
+    "blockState": "hay_block",
+    "blockName": "hay_block"
+  },
+  "heavy_core.png": {
+    "blockState": "heavy_core",
+    "blockName": "heavy_core"
+  },
+  "honey_block_bottom.png": {
+    "blockState": "honey_block",
+    "blockName": "honey_block"
+  },
+  "honey_block_side.png": {
+    "blockState": "honey_block",
+    "blockName": "honey_block"
+  },
+  "honey_block_top.png": {
+    "blockState": "honey_block",
+    "blockName": "honey_block"
+  },
+  "honeycomb_block.png": {
+    "blockState": "honeycomb_block",
+    "blockName": "honeycomb_block"
+  },
+  "hopper_inside.png": {
+    "blockState": "hopper",
+    "blockName": "hopper"
+  },
+  "hopper_outside.png": {
+    "blockState": "hopper",
+    "blockName": "hopper"
+  },
+  "hopper_top.png": {
+    "blockState": "hopper",
+    "blockName": "hopper"
+  },
+  "horn_coral.png": {
+    "blockState": "horn_coral",
+    "blockName": "horn_coral"
+  },
+  "horn_coral_block.png": {
+    "blockState": "horn_coral_block",
+    "blockName": "horn_coral_block"
+  },
+  "horn_coral_fan.png": {
+    "blockState": "horn_coral_fan",
+    "blockName": "horn_coral_fan"
+  },
+  "ice.png": {
+    "blockState": "ice",
+    "blockName": "ice"
+  },
+  "iron_bars.png": {
+    "blockState": "iron_bars",
+    "blockName": "iron_bars"
+  },
+  "iron_block.png": {
+    "blockState": "iron_block",
+    "blockName": "iron_block"
+  },
+  "iron_door_bottom.png": {
+    "blockState": "iron_door",
+    "blockName": "iron_door"
+  },
+  "iron_door_top.png": {
+    "blockState": "iron_door",
+    "blockName": "iron_door"
+  },
+  "iron_ore.png": {
+    "blockState": "iron_ore",
+    "blockName": "iron_ore"
+  },
+  "iron_trapdoor.png": {
+    "blockState": "iron_trapdoor",
+    "blockName": "iron_trapdoor"
+  },
+  "jack_o_lantern.png": {
+    "blockState": "jack_o_lantern",
+    "blockName": "jack_o_lantern"
+  },
+  "jigsaw_bottom.png": {
+    "blockState": "jigsaw",
+    "blockName": "jigsaw"
+  },
+  "jigsaw_lock.png": {
+    "blockState": "jigsaw",
+    "blockName": "jigsaw"
+  },
+  "jigsaw_side.png": {
+    "blockState": "jigsaw",
+    "blockName": "jigsaw"
+  },
+  "jigsaw_top.png": {
+    "blockState": "jigsaw",
+    "blockName": "jigsaw"
+  },
+  "jukebox_side.png": {
+    "blockState": "jukebox",
+    "blockName": "jukebox"
+  },
+  "jukebox_top.png": {
+    "blockState": "jukebox",
+    "blockName": "jukebox"
+  },
+  "jungle_door_bottom.png": {
+    "blockState": "jungle_door",
+    "blockName": "jungle_door"
+  },
+  "jungle_door_top.png": {
+    "blockState": "jungle_door",
+    "blockName": "jungle_door"
+  },
+  "jungle_leaves.png": {
+    "blockState": "jungle_leaves",
+    "blockName": "jungle_leaves"
+  },
+  "jungle_log.png": {
+    "blockState": "jungle_log",
+    "blockName": "jungle_log"
+  },
+  "jungle_log_top.png": {
+    "blockState": "jungle_log",
+    "blockName": "jungle_log"
+  },
+  "jungle_planks.png": {
+    "blockState": "jungle_planks",
+    "blockName": "jungle_planks"
+  },
+  "jungle_sapling.png": {
+    "blockState": "jungle_sapling",
+    "blockName": "jungle_sapling"
+  },
+  "jungle_trapdoor.png": {
+    "blockState": "jungle_trapdoor",
+    "blockName": "jungle_trapdoor"
+  },
+  "kelp.png": {
+    "blockState": "kelp",
+    "blockName": "kelp"
+  },
+  "kelp_plant.png": {
+    "blockState": "kelp_plant",
+    "blockName": "kelp_plant"
+  },
+  "ladder.png": {
+    "blockState": "ladder",
+    "blockName": "ladder"
+  },
+  "lantern.png": {
+    "blockState": "lantern",
+    "blockName": "lantern"
+  },
+  "lapis_block.png": {
+    "blockState": "lapis_block",
+    "blockName": "lapis_block"
+  },
+  "lapis_ore.png": {
+    "blockState": "lapis_ore",
+    "blockName": "lapis_ore"
+  },
+  "large_amethyst_bud.png": {
+    "blockState": "large_amethyst_bud",
+    "blockName": "large_amethyst_bud"
+  },
+  "large_fern_bottom.png": {
+    "blockState": "large_fern",
+    "blockName": "large_fern"
+  },
+  "large_fern_top.png": {
+    "blockState": "large_fern",
+    "blockName": "large_fern"
+  },
+  "lava_flow.png": {
+    "blockState": "lava",
+    "blockName": "lava"
+  },
+  "lava_still.png": {
+    "blockState": "lava",
+    "blockName": "lava"
+  },
+  "lectern_base.png": {
+    "blockState": "lectern",
+    "blockName": "lectern"
+  },
+  "lectern_front.png": {
+    "blockState": "lectern",
+    "blockName": "lectern"
+  },
+  "lectern_sides.png": {
+    "blockState": "lectern",
+    "blockName": "lectern"
+  },
+  "lectern_top.png": {
+    "blockState": "lectern",
+    "blockName": "lectern"
+  },
+  "lever.png": {
+    "blockState": "lever",
+    "blockName": "lever"
+  },
+  "light_blue_candle.png": {
+    "blockState": "light_blue_candle",
+    "blockName": "light_blue_candle"
+  },
+  "light_blue_candle_lit.png": {
+    "blockState": "light_blue_candle",
+    "blockName": "light_blue_candle"
+  },
+  "light_blue_concrete.png": {
+    "blockState": "light_blue_concrete",
+    "blockName": "light_blue_concrete"
+  },
+  "light_blue_concrete_powder.png": {
+    "blockState": "light_blue_concrete_powder",
+    "blockName": "light_blue_concrete_powder"
+  },
+  "light_blue_glazed_terracotta.png": {
+    "blockState": "light_blue_glazed_terracotta",
+    "blockName": "light_blue_glazed_terracotta"
+  },
+  "light_blue_shulker_box.png": {
+    "blockState": "light_blue_shulker_box",
+    "blockName": "light_blue_shulker_box"
+  },
+  "light_blue_stained_glass.png": {
+    "blockState": "light_blue_stained_glass",
+    "blockName": "light_blue_stained_glass"
+  },
+  "light_blue_stained_glass_pane_top.png": {
+    "blockState": "light_blue_stained_glass_pane",
+    "blockName": "light_blue_stained_glass_pane"
+  },
+  "light_blue_terracotta.png": {
+    "blockState": "light_blue_terracotta",
+    "blockName": "light_blue_terracotta"
+  },
+  "light_blue_wool.png": {
+    "blockState": "light_blue_wool",
+    "blockName": "light_blue_wool"
+  },
+  "light_gray_candle.png": {
+    "blockState": "light_gray_candle",
+    "blockName": "light_gray_candle"
+  },
+  "light_gray_candle_lit.png": {
+    "blockState": "light_gray_candle",
+    "blockName": "light_gray_candle"
+  },
+  "light_gray_concrete.png": {
+    "blockState": "light_gray_concrete",
+    "blockName": "light_gray_concrete"
+  },
+  "light_gray_concrete_powder.png": {
+    "blockState": "light_gray_concrete_powder",
+    "blockName": "light_gray_concrete_powder"
+  },
+  "light_gray_glazed_terracotta.png": {
+    "blockState": "light_gray_glazed_terracotta",
+    "blockName": "light_gray_glazed_terracotta"
+  },
+  "light_gray_shulker_box.png": {
+    "blockState": "light_gray_shulker_box",
+    "blockName": "light_gray_shulker_box"
+  },
+  "light_gray_stained_glass.png": {
+    "blockState": "light_gray_stained_glass",
+    "blockName": "light_gray_stained_glass"
+  },
+  "light_gray_stained_glass_pane_top.png": {
+    "blockState": "light_gray_stained_glass_pane",
+    "blockName": "light_gray_stained_glass_pane"
+  },
+  "light_gray_terracotta.png": {
+    "blockState": "light_gray_terracotta",
+    "blockName": "light_gray_terracotta"
+  },
+  "light_gray_wool.png": {
+    "blockState": "light_gray_wool",
+    "blockName": "light_gray_wool"
+  },
+  "lightning_rod.png": {
+    "blockState": "lightning_rod",
+    "blockName": "lightning_rod"
+  },
+  "lightning_rod_on.png": {
+    "blockState": "lightning_rod",
+    "blockName": "lightning_rod"
+  },
+  "lilac_bottom.png": {
+    "blockState": "lilac",
+    "blockName": "lilac"
+  },
+  "lilac_top.png": {
+    "blockState": "lilac",
+    "blockName": "lilac"
+  },
+  "lily_of_the_valley.png": {
+    "blockState": "lily_of_the_valley",
+    "blockName": "lily_of_the_valley"
+  },
+  "lily_pad.png": {
+    "blockState": "lily_pad",
+    "blockName": "lily_pad"
+  },
+  "lime_candle.png": {
+    "blockState": "lime_candle",
+    "blockName": "lime_candle"
+  },
+  "lime_candle_lit.png": {
+    "blockState": "lime_candle",
+    "blockName": "lime_candle"
+  },
+  "lime_concrete.png": {
+    "blockState": "lime_concrete",
+    "blockName": "lime_concrete"
+  },
+  "lime_concrete_powder.png": {
+    "blockState": "lime_concrete_powder",
+    "blockName": "lime_concrete_powder"
+  },
+  "lime_glazed_terracotta.png": {
+    "blockState": "lime_glazed_terracotta",
+    "blockName": "lime_glazed_terracotta"
+  },
+  "lime_shulker_box.png": {
+    "blockState": "lime_shulker_box",
+    "blockName": "lime_shulker_box"
+  },
+  "lime_stained_glass.png": {
+    "blockState": "lime_stained_glass",
+    "blockName": "lime_stained_glass"
+  },
+  "lime_stained_glass_pane_top.png": {
+    "blockState": "lime_stained_glass_pane",
+    "blockName": "lime_stained_glass_pane"
+  },
+  "lime_terracotta.png": {
+    "blockState": "lime_terracotta",
+    "blockName": "lime_terracotta"
+  },
+  "lime_wool.png": {
+    "blockState": "lime_wool",
+    "blockName": "lime_wool"
+  },
+  "lodestone_side.png": {
+    "blockState": "lodestone",
+    "blockName": "lodestone"
+  },
+  "lodestone_top.png": {
+    "blockState": "lodestone",
+    "blockName": "lodestone"
+  },
+  "loom_bottom.png": {
+    "blockState": "loom",
+    "blockName": "loom"
+  },
+  "loom_front.png": {
+    "blockState": "loom",
+    "blockName": "loom"
+  },
+  "loom_side.png": {
+    "blockState": "loom",
+    "blockName": "loom"
+  },
+  "loom_top.png": {
+    "blockState": "loom",
+    "blockName": "loom"
+  },
+  "magenta_candle.png": {
+    "blockState": "magenta_candle",
+    "blockName": "magenta_candle"
+  },
+  "magenta_candle_lit.png": {
+    "blockState": "magenta_candle",
+    "blockName": "magenta_candle"
+  },
+  "magenta_concrete.png": {
+    "blockState": "magenta_concrete",
+    "blockName": "magenta_concrete"
+  },
+  "magenta_concrete_powder.png": {
+    "blockState": "magenta_concrete_powder",
+    "blockName": "magenta_concrete_powder"
+  },
+  "magenta_glazed_terracotta.png": {
+    "blockState": "magenta_glazed_terracotta",
+    "blockName": "magenta_glazed_terracotta"
+  },
+  "magenta_shulker_box.png": {
+    "blockState": "magenta_shulker_box",
+    "blockName": "magenta_shulker_box"
+  },
+  "magenta_stained_glass.png": {
+    "blockState": "magenta_stained_glass",
+    "blockName": "magenta_stained_glass"
+  },
+  "magenta_stained_glass_pane_top.png": {
+    "blockState": "magenta_stained_glass_pane",
+    "blockName": "magenta_stained_glass_pane"
+  },
+  "magenta_terracotta.png": {
+    "blockState": "magenta_terracotta",
+    "blockName": "magenta_terracotta"
+  },
+  "magenta_wool.png": {
+    "blockState": "magenta_wool",
+    "blockName": "magenta_wool"
+  },
+  "mangrove_door_bottom.png": {
+    "blockState": "mangrove_door",
+    "blockName": "mangrove_door"
+  },
+  "mangrove_door_top.png": {
+    "blockState": "mangrove_door",
+    "blockName": "mangrove_door"
+  },
+  "mangrove_leaves.png": {
+    "blockState": "mangrove_leaves",
+    "blockName": "mangrove_leaves"
+  },
+  "mangrove_log.png": {
+    "blockState": "mangrove_log",
+    "blockName": "mangrove_log"
+  },
+  "mangrove_log_top.png": {
+    "blockState": "mangrove_log",
+    "blockName": "mangrove_log"
+  },
+  "mangrove_planks.png": {
+    "blockState": "mangrove_planks",
+    "blockName": "mangrove_planks"
+  },
+  "mangrove_propagule.png": {
+    "blockState": "mangrove_propagule",
+    "blockName": "mangrove_propagule"
+  },
+  "mangrove_propagule_hanging.png": {
+    "blockState": "mangrove_propagule",
+    "blockName": "mangrove_propagule"
+  },
+  "mangrove_roots_side.png": {
+    "blockState": "mangrove_roots",
+    "blockName": "mangrove_roots"
+  },
+  "mangrove_roots_top.png": {
+    "blockState": "mangrove_roots",
+    "blockName": "mangrove_roots"
+  },
+  "mangrove_trapdoor.png": {
+    "blockState": "mangrove_trapdoor",
+    "blockName": "mangrove_trapdoor"
+  },
+  "medium_amethyst_bud.png": {
+    "blockState": "medium_amethyst_bud",
+    "blockName": "medium_amethyst_bud"
+  },
+  "melon_side.png": {
+    "blockState": "melon",
+    "blockName": "melon"
+  },
+  "melon_stem.png": {
+    "blockState": "melon_stem",
+    "blockName": "melon_stem"
+  },
+  "melon_top.png": {
+    "blockState": "melon",
+    "blockName": "melon"
+  },
+  "moss_block.png": {
+    "blockState": "moss_block",
+    "blockName": "moss_block"
+  },
+  "mossy_cobblestone.png": {
+    "blockState": "mossy_cobblestone",
+    "blockName": "mossy_cobblestone"
+  },
+  "mossy_stone_bricks.png": {
+    "blockState": "mossy_stone_bricks",
+    "blockName": "mossy_stone_bricks"
+  },
+  "mud.png": {
+    "blockState": "mud",
+    "blockName": "mud"
+  },
+  "mud_bricks.png": {
+    "blockState": "mud_bricks",
+    "blockName": "mud_bricks"
+  },
+  "muddy_mangrove_roots_side.png": {
+    "blockState": "muddy_mangrove_roots",
+    "blockName": "muddy_mangrove_roots"
+  },
+  "muddy_mangrove_roots_top.png": {
+    "blockState": "muddy_mangrove_roots",
+    "blockName": "muddy_mangrove_roots"
+  },
+  "mushroom_stem.png": {
+    "blockState": "mushroom_stem",
+    "blockName": "mushroom_stem"
+  },
+  "mycelium_side.png": {
+    "blockState": "mycelium",
+    "blockName": "mycelium"
+  },
+  "mycelium_top.png": {
+    "blockState": "mycelium",
+    "blockName": "mycelium"
+  },
+  "nether_bricks.png": {
+    "blockState": "nether_bricks",
+    "blockName": "nether_bricks"
+  },
+  "nether_gold_ore.png": {
+    "blockState": "nether_gold_ore",
+    "blockName": "nether_gold_ore"
+  },
+  "nether_portal.png": {
+    "blockState": "nether_portal",
+    "blockName": "nether_portal"
+  },
+  "nether_quartz_ore.png": {
+    "blockState": "nether_quartz_ore",
+    "blockName": "nether_quartz_ore"
+  },
+  "nether_sprouts.png": {
+    "blockState": "nether_sprouts",
+    "blockName": "nether_sprouts"
+  },
+  "nether_wart_block.png": {
+    "blockState": "nether_wart_block",
+    "blockName": "nether_wart_block"
+  },
+  "nether_wart_stage0.png": {
+    "blockState": "nether_wart",
+    "blockName": "nether_wart"
+  },
+  "nether_wart_stage1.png": {
+    "blockState": "nether_wart",
+    "blockName": "nether_wart"
+  },
+  "nether_wart_stage2.png": {
+    "blockState": "nether_wart",
+    "blockName": "nether_wart"
+  },
+  "netherite_block.png": {
+    "blockState": "netherite_block",
+    "blockName": "netherite_block"
+  },
+  "netherrack.png": {
+    "blockState": "netherrack",
+    "blockName": "netherrack"
+  },
+  "note_block.png": {
+    "blockState": "note_block",
+    "blockName": "note_block"
+  },
+  "oak_door_bottom.png": {
+    "blockState": "oak_door",
+    "blockName": "oak_door"
+  },
+  "oak_door_top.png": {
+    "blockState": "oak_door",
+    "blockName": "oak_door"
+  },
+  "oak_leaves.png": {
+    "blockState": "oak_leaves",
+    "blockName": "oak_leaves"
+  },
+  "oak_log.png": {
+    "blockState": "oak_log",
+    "blockName": "oak_log"
+  },
+  "oak_log_top.png": {
+    "blockState": "oak_log",
+    "blockName": "oak_log"
+  },
+  "oak_planks.png": {
+    "blockState": "oak_planks",
+    "blockName": "oak_planks"
+  },
+  "oak_sapling.png": {
+    "blockState": "oak_sapling",
+    "blockName": "oak_sapling"
+  },
+  "oak_trapdoor.png": {
+    "blockState": "oak_trapdoor",
+    "blockName": "oak_trapdoor"
+  },
+  "observer_back.png": {
+    "blockState": "observer",
+    "blockName": "observer"
+  },
+  "observer_back_on.png": {
+    "blockState": "observer",
+    "blockName": "observer"
+  },
+  "observer_front.png": {
+    "blockState": "observer",
+    "blockName": "observer"
+  },
+  "observer_side.png": {
+    "blockState": "observer",
+    "blockName": "observer"
+  },
+  "observer_top.png": {
+    "blockState": "observer",
+    "blockName": "observer"
+  },
+  "obsidian.png": {
+    "blockState": "obsidian",
+    "blockName": "obsidian"
+  },
+  "ochre_froglight_side.png": {
+    "blockState": "ochre_froglight",
+    "blockName": "ochre_froglight"
+  },
+  "ochre_froglight_top.png": {
+    "blockState": "ochre_froglight",
+    "blockName": "ochre_froglight"
+  },
+  "orange_candle.png": {
+    "blockState": "orange_candle",
+    "blockName": "orange_candle"
+  },
+  "orange_candle_lit.png": {
+    "blockState": "orange_candle",
+    "blockName": "orange_candle"
+  },
+  "orange_concrete.png": {
+    "blockState": "orange_concrete",
+    "blockName": "orange_concrete"
+  },
+  "orange_concrete_powder.png": {
+    "blockState": "orange_concrete_powder",
+    "blockName": "orange_concrete_powder"
+  },
+  "orange_glazed_terracotta.png": {
+    "blockState": "orange_glazed_terracotta",
+    "blockName": "orange_glazed_terracotta"
+  },
+  "orange_shulker_box.png": {
+    "blockState": "orange_shulker_box",
+    "blockName": "orange_shulker_box"
+  },
+  "orange_stained_glass.png": {
+    "blockState": "orange_stained_glass",
+    "blockName": "orange_stained_glass"
+  },
+  "orange_stained_glass_pane_top.png": {
+    "blockState": "orange_stained_glass_pane",
+    "blockName": "orange_stained_glass_pane"
+  },
+  "orange_terracotta.png": {
+    "blockState": "orange_terracotta",
+    "blockName": "orange_terracotta"
+  },
+  "orange_tulip.png": {
+    "blockState": "orange_tulip",
+    "blockName": "orange_tulip"
+  },
+  "orange_wool.png": {
+    "blockState": "orange_wool",
+    "blockName": "orange_wool"
+  },
+  "oxeye_daisy.png": {
+    "blockState": "oxeye_daisy",
+    "blockName": "oxeye_daisy"
+  },
+  "oxidized_chiseled_copper.png": {
+    "blockState": "oxidized_chiseled_copper",
+    "blockName": "oxidized_chiseled_copper"
+  },
+  "oxidized_copper.png": {
+    "blockState": "oxidized_copper",
+    "blockName": "oxidized_copper"
+  },
+  "oxidized_copper_bulb.png": {
+    "blockState": "oxidized_copper_bulb",
+    "blockName": "oxidized_copper_bulb"
+  },
+  "oxidized_copper_bulb_lit.png": {
+    "blockState": "oxidized_copper_bulb",
+    "blockName": "oxidized_copper_bulb"
+  },
+  "oxidized_copper_bulb_lit_powered.png": {
+    "blockState": "oxidized_copper_bulb",
+    "blockName": "oxidized_copper_bulb"
+  },
+  "oxidized_copper_bulb_powered.png": {
+    "blockState": "oxidized_copper_bulb",
+    "blockName": "oxidized_copper_bulb"
+  },
+  "oxidized_copper_door_bottom.png": {
+    "blockState": "oxidized_copper_door",
+    "blockName": "oxidized_copper_door"
+  },
+  "oxidized_copper_door_top.png": {
+    "blockState": "oxidized_copper_door",
+    "blockName": "oxidized_copper_door"
+  },
+  "oxidized_copper_grate.png": {
+    "blockState": "oxidized_copper_grate",
+    "blockName": "oxidized_copper_grate"
+  },
+  "oxidized_copper_trapdoor.png": {
+    "blockState": "oxidized_copper_trapdoor",
+    "blockName": "oxidized_copper_trapdoor"
+  },
+  "oxidized_cut_copper.png": {
+    "blockState": "oxidized_cut_copper",
+    "blockName": "oxidized_cut_copper"
+  },
+  "packed_ice.png": {
+    "blockState": "packed_ice",
+    "blockName": "packed_ice"
+  },
+  "packed_mud.png": {
+    "blockState": "packed_mud",
+    "blockName": "packed_mud"
+  },
+  "pearlescent_froglight_side.png": {
+    "blockState": "pearlescent_froglight",
+    "blockName": "pearlescent_froglight"
+  },
+  "pearlescent_froglight_top.png": {
+    "blockState": "pearlescent_froglight",
+    "blockName": "pearlescent_froglight"
+  },
+  "peony_bottom.png": {
+    "blockState": "peony",
+    "blockName": "peony"
+  },
+  "peony_top.png": {
+    "blockState": "peony",
+    "blockName": "peony"
+  },
+  "pink_candle.png": {
+    "blockState": "pink_candle",
+    "blockName": "pink_candle"
+  },
+  "pink_candle_lit.png": {
+    "blockState": "pink_candle",
+    "blockName": "pink_candle"
+  },
+  "pink_concrete.png": {
+    "blockState": "pink_concrete",
+    "blockName": "pink_concrete"
+  },
+  "pink_concrete_powder.png": {
+    "blockState": "pink_concrete_powder",
+    "blockName": "pink_concrete_powder"
+  },
+  "pink_glazed_terracotta.png": {
+    "blockState": "pink_glazed_terracotta",
+    "blockName": "pink_glazed_terracotta"
+  },
+  "pink_petals.png": {
+    "blockState": "pink_petals",
+    "blockName": "pink_petals"
+  },
+  "pink_petals_stem.png": {
+    "blockState": "pink_petals",
+    "blockName": "pink_petals"
+  },
+  "pink_shulker_box.png": {
+    "blockState": "pink_shulker_box",
+    "blockName": "pink_shulker_box"
+  },
+  "pink_stained_glass.png": {
+    "blockState": "pink_stained_glass",
+    "blockName": "pink_stained_glass"
+  },
+  "pink_stained_glass_pane_top.png": {
+    "blockState": "pink_stained_glass_pane",
+    "blockName": "pink_stained_glass_pane"
+  },
+  "pink_terracotta.png": {
+    "blockState": "pink_terracotta",
+    "blockName": "pink_terracotta"
+  },
+  "pink_tulip.png": {
+    "blockState": "pink_tulip",
+    "blockName": "pink_tulip"
+  },
+  "pink_wool.png": {
+    "blockState": "pink_wool",
+    "blockName": "pink_wool"
+  },
+  "piston_bottom.png": {
+    "blockState": "piston",
+    "blockName": "piston"
+  },
+  "piston_inner.png": {
+    "blockState": "piston",
+    "blockName": "piston"
+  },
+  "piston_side.png": {
+    "blockState": "piston",
+    "blockName": "piston"
+  },
+  "piston_top.png": {
+    "blockState": "piston",
+    "blockName": "piston"
+  },
+  "piston_top_sticky.png": {
+    "blockState": "piston",
+    "blockName": "piston"
+  },
+  "pitcher_crop_bottom.png": {
+    "blockState": "pitcher_crop",
+    "blockName": "pitcher_crop"
+  },
+  "pitcher_crop_bottom_stage_1.png": {
+    "blockState": "pitcher_crop",
+    "blockName": "pitcher_crop"
+  },
+  "pitcher_crop_bottom_stage_2.png": {
+    "blockState": "pitcher_crop",
+    "blockName": "pitcher_crop"
+  },
+  "pitcher_crop_bottom_stage_3.png": {
+    "blockState": "pitcher_crop",
+    "blockName": "pitcher_crop"
+  },
+  "pitcher_crop_bottom_stage_4.png": {
+    "blockState": "pitcher_crop",
+    "blockName": "pitcher_crop"
+  },
+  "pitcher_crop_side.png": {
+    "blockState": "pitcher_crop",
+    "blockName": "pitcher_crop"
+  },
+  "pitcher_crop_top.png": {
+    "blockState": "pitcher_crop",
+    "blockName": "pitcher_crop"
+  },
+  "pitcher_crop_top_stage_3.png": {
+    "blockState": "pitcher_crop",
+    "blockName": "pitcher_crop"
+  },
+  "pitcher_crop_top_stage_4.png": {
+    "blockState": "pitcher_crop",
+    "blockName": "pitcher_crop"
+  },
+  "podzol_side.png": {
+    "blockState": "podzol",
+    "blockName": "podzol"
+  },
+  "podzol_top.png": {
+    "blockState": "podzol",
+    "blockName": "podzol"
+  },
+  "pointed_dripstone_down_base.png": {
+    "blockState": "pointed_dripstone",
+    "blockName": "pointed_dripstone"
+  },
+  "pointed_dripstone_down_frustum.png": {
+    "blockState": "pointed_dripstone",
+    "blockName": "pointed_dripstone"
+  },
+  "pointed_dripstone_down_middle.png": {
+    "blockState": "pointed_dripstone",
+    "blockName": "pointed_dripstone"
+  },
+  "pointed_dripstone_down_tip.png": {
+    "blockState": "pointed_dripstone",
+    "blockName": "pointed_dripstone"
+  },
+  "pointed_dripstone_down_tip_merge.png": {
+    "blockState": "pointed_dripstone",
+    "blockName": "pointed_dripstone"
+  },
+  "pointed_dripstone_up_base.png": {
+    "blockState": "pointed_dripstone",
+    "blockName": "pointed_dripstone"
+  },
+  "pointed_dripstone_up_frustum.png": {
+    "blockState": "pointed_dripstone",
+    "blockName": "pointed_dripstone"
+  },
+  "pointed_dripstone_up_middle.png": {
+    "blockState": "pointed_dripstone",
+    "blockName": "pointed_dripstone"
+  },
+  "pointed_dripstone_up_tip.png": {
+    "blockState": "pointed_dripstone",
+    "blockName": "pointed_dripstone"
+  },
+  "pointed_dripstone_up_tip_merge.png": {
+    "blockState": "pointed_dripstone",
+    "blockName": "pointed_dripstone"
+  },
+  "polished_andesite.png": {
+    "blockState": "polished_andesite",
+    "blockName": "polished_andesite"
+  },
+  "polished_basalt_side.png": {
+    "blockState": "polished_basalt",
+    "blockName": "polished_basalt"
+  },
+  "polished_basalt_top.png": {
+    "blockState": "polished_basalt",
+    "blockName": "polished_basalt"
+  },
+  "polished_blackstone.png": {
+    "blockState": "polished_blackstone",
+    "blockName": "polished_blackstone"
+  },
+  "polished_blackstone_bricks.png": {
+    "blockState": "polished_blackstone_bricks",
+    "blockName": "polished_blackstone_bricks"
+  },
+  "polished_deepslate.png": {
+    "blockState": "polished_deepslate",
+    "blockName": "polished_deepslate"
+  },
+  "polished_diorite.png": {
+    "blockState": "polished_diorite",
+    "blockName": "polished_diorite"
+  },
+  "polished_granite.png": {
+    "blockState": "polished_granite",
+    "blockName": "polished_granite"
+  },
+  "polished_tuff.png": {
+    "blockState": "polished_tuff",
+    "blockName": "polished_tuff"
+  },
+  "poppy.png": {
+    "blockState": "poppy",
+    "blockName": "poppy"
+  },
+  "potatoes_stage0.png": {
+    "blockState": "potatoes",
+    "blockName": "potatoes"
+  },
+  "potatoes_stage1.png": {
+    "blockState": "potatoes",
+    "blockName": "potatoes"
+  },
+  "potatoes_stage2.png": {
+    "blockState": "potatoes",
+    "blockName": "potatoes"
+  },
+  "potatoes_stage3.png": {
+    "blockState": "potatoes",
+    "blockName": "potatoes"
+  },
+  "potted_azalea_bush_plant.png": {
+    "blockState": "potted_azalea_bush",
+    "blockName": "potted_azalea_bush"
+  },
+  "potted_azalea_bush_side.png": {
+    "blockState": "potted_azalea_bush",
+    "blockName": "potted_azalea_bush"
+  },
+  "potted_azalea_bush_top.png": {
+    "blockState": "potted_azalea_bush",
+    "blockName": "potted_azalea_bush"
+  },
+  "potted_flowering_azalea_bush_plant.png": {
+    "blockState": "potted_flowering_azalea_bush",
+    "blockName": "potted_flowering_azalea_bush"
+  },
+  "potted_flowering_azalea_bush_side.png": {
+    "blockState": "potted_flowering_azalea_bush",
+    "blockName": "potted_flowering_azalea_bush"
+  },
+  "potted_flowering_azalea_bush_top.png": {
+    "blockState": "potted_flowering_azalea_bush",
+    "blockName": "potted_flowering_azalea_bush"
+  },
+  "powder_snow.png": {
+    "blockState": "powder_snow",
+    "blockName": "powder_snow"
+  },
+  "powered_rail.png": {
+    "blockState": "powered_rail",
+    "blockName": "powered_rail"
+  },
+  "powered_rail_on.png": {
+    "blockState": "powered_rail",
+    "blockName": "powered_rail"
+  },
+  "prismarine.png": {
+    "blockState": "prismarine",
+    "blockName": "prismarine"
+  },
+  "prismarine_bricks.png": {
+    "blockState": "prismarine_bricks",
+    "blockName": "prismarine_bricks"
+  },
+  "pumpkin_side.png": {
+    "blockState": "pumpkin",
+    "blockName": "pumpkin"
+  },
+  "pumpkin_stem.png": {
+    "blockState": "pumpkin_stem",
+    "blockName": "pumpkin_stem"
+  },
+  "pumpkin_top.png": {
+    "blockState": "pumpkin",
+    "blockName": "pumpkin"
+  },
+  "purple_candle.png": {
+    "blockState": "purple_candle",
+    "blockName": "purple_candle"
+  },
+  "purple_candle_lit.png": {
+    "blockState": "purple_candle",
+    "blockName": "purple_candle"
+  },
+  "purple_concrete.png": {
+    "blockState": "purple_concrete",
+    "blockName": "purple_concrete"
+  },
+  "purple_concrete_powder.png": {
+    "blockState": "purple_concrete_powder",
+    "blockName": "purple_concrete_powder"
+  },
+  "purple_glazed_terracotta.png": {
+    "blockState": "purple_glazed_terracotta",
+    "blockName": "purple_glazed_terracotta"
+  },
+  "purple_shulker_box.png": {
+    "blockState": "purple_shulker_box",
+    "blockName": "purple_shulker_box"
+  },
+  "purple_stained_glass.png": {
+    "blockState": "purple_stained_glass",
+    "blockName": "purple_stained_glass"
+  },
+  "purple_stained_glass_pane_top.png": {
+    "blockState": "purple_stained_glass_pane",
+    "blockName": "purple_stained_glass_pane"
+  },
+  "purple_terracotta.png": {
+    "blockState": "purple_terracotta",
+    "blockName": "purple_terracotta"
+  },
+  "purple_wool.png": {
+    "blockState": "purple_wool",
+    "blockName": "purple_wool"
+  },
+  "purpur_block.png": {
+    "blockState": "purpur_block",
+    "blockName": "purpur_block"
+  },
+  "purpur_pillar.png": {
+    "blockState": "purpur_pillar",
+    "blockName": "purpur_pillar"
+  },
+  "purpur_pillar_top.png": {
+    "blockState": "purpur_pillar",
+    "blockName": "purpur_pillar"
+  },
+  "quartz_block_bottom.png": {
+    "blockState": "quartz_block",
+    "blockName": "quartz_block"
+  },
+  "quartz_block_side.png": {
+    "blockState": "quartz_block",
+    "blockName": "quartz_block"
+  },
+  "quartz_block_top.png": {
+    "blockState": "quartz_block",
+    "blockName": "quartz_block"
+  },
+  "quartz_bricks.png": {
+    "blockState": "quartz_bricks",
+    "blockName": "quartz_bricks"
+  },
+  "quartz_pillar.png": {
+    "blockState": "quartz_pillar",
+    "blockName": "quartz_pillar"
+  },
+  "quartz_pillar_top.png": {
+    "blockState": "quartz_pillar",
+    "blockName": "quartz_pillar"
+  },
+  "rail.png": {
+    "blockState": "rail",
+    "blockName": "rail"
+  },
+  "rail_corner.png": {
+    "blockState": "rail",
+    "blockName": "rail"
+  },
+  "raw_copper_block.png": {
+    "blockState": "raw_copper_block",
+    "blockName": "raw_copper_block"
+  },
+  "raw_gold_block.png": {
+    "blockState": "raw_gold_block",
+    "blockName": "raw_gold_block"
+  },
+  "raw_iron_block.png": {
+    "blockState": "raw_iron_block",
+    "blockName": "raw_iron_block"
+  },
+  "red_candle.png": {
+    "blockState": "red_candle",
+    "blockName": "red_candle"
+  },
+  "red_candle_lit.png": {
+    "blockState": "red_candle",
+    "blockName": "red_candle"
+  },
+  "red_concrete.png": {
+    "blockState": "red_concrete",
+    "blockName": "red_concrete"
+  },
+  "red_concrete_powder.png": {
+    "blockState": "red_concrete_powder",
+    "blockName": "red_concrete_powder"
+  },
+  "red_glazed_terracotta.png": {
+    "blockState": "red_glazed_terracotta",
+    "blockName": "red_glazed_terracotta"
+  },
+  "red_mushroom.png": {
+    "blockState": "red_mushroom",
+    "blockName": "red_mushroom"
+  },
+  "red_mushroom_block.png": {
+    "blockState": "red_mushroom_block",
+    "blockName": "red_mushroom_block"
+  },
+  "red_nether_bricks.png": {
+    "blockState": "red_nether_bricks",
+    "blockName": "red_nether_bricks"
+  },
+  "red_sand.png": {
+    "blockState": "red_sand",
+    "blockName": "red_sand"
+  },
+  "red_sandstone.png": {
+    "blockState": "red_sandstone",
+    "blockName": "red_sandstone"
+  },
+  "red_sandstone_bottom.png": {
+    "blockState": "red_sandstone",
+    "blockName": "red_sandstone"
+  },
+  "red_sandstone_top.png": {
+    "blockState": "red_sandstone",
+    "blockName": "red_sandstone"
+  },
+  "red_shulker_box.png": {
+    "blockState": "red_shulker_box",
+    "blockName": "red_shulker_box"
+  },
+  "red_stained_glass.png": {
+    "blockState": "red_stained_glass",
+    "blockName": "red_stained_glass"
+  },
+  "red_stained_glass_pane_top.png": {
+    "blockState": "red_stained_glass_pane",
+    "blockName": "red_stained_glass_pane"
+  },
+  "red_terracotta.png": {
+    "blockState": "red_terracotta",
+    "blockName": "red_terracotta"
+  },
+  "red_tulip.png": {
+    "blockState": "red_tulip",
+    "blockName": "red_tulip"
+  },
+  "red_wool.png": {
+    "blockState": "red_wool",
+    "blockName": "red_wool"
+  },
+  "redstone_block.png": {
+    "blockState": "redstone_block",
+    "blockName": "redstone_block"
+  },
+  "redstone_lamp.png": {
+    "blockState": "redstone_lamp",
+    "blockName": "redstone_lamp"
+  },
+  "redstone_lamp_on.png": {
+    "blockState": "redstone_lamp",
+    "blockName": "redstone_lamp"
+  },
+  "redstone_ore.png": {
+    "blockState": "redstone_ore",
+    "blockName": "redstone_ore"
+  },
+  "redstone_torch.png": {
+    "blockState": "redstone_torch",
+    "blockName": "redstone_torch"
+  },
+  "redstone_torch_off.png": {
+    "blockState": "redstone_torch",
+    "blockName": "redstone_torch"
+  },
+  "reinforced_deepslate_bottom.png": {
+    "blockState": "reinforced_deepslate",
+    "blockName": "reinforced_deepslate"
+  },
+  "reinforced_deepslate_side.png": {
+    "blockState": "reinforced_deepslate",
+    "blockName": "reinforced_deepslate"
+  },
+  "reinforced_deepslate_top.png": {
+    "blockState": "reinforced_deepslate",
+    "blockName": "reinforced_deepslate"
+  },
+  "repeater.png": {
+    "blockState": "repeater",
+    "blockName": "repeater"
+  },
+  "repeater_on.png": {
+    "blockState": "repeater",
+    "blockName": "repeater"
+  },
+  "repeating_command_block_back.png": {
+    "blockState": "repeating_command_block",
+    "blockName": "repeating_command_block"
+  },
+  "repeating_command_block_conditional.png": {
+    "blockState": "repeating_command_block",
+    "blockName": "repeating_command_block"
+  },
+  "repeating_command_block_front.png": {
+    "blockState": "repeating_command_block",
+    "blockName": "repeating_command_block"
+  },
+  "repeating_command_block_side.png": {
+    "blockState": "repeating_command_block",
+    "blockName": "repeating_command_block"
+  },
+  "respawn_anchor_bottom.png": {
+    "blockState": "respawn_anchor",
+    "blockName": "respawn_anchor"
+  },
+  "respawn_anchor_side0.png": {
+    "blockState": "respawn_anchor",
+    "blockName": "respawn_anchor"
+  },
+  "respawn_anchor_side1.png": {
+    "blockState": "respawn_anchor",
+    "blockName": "respawn_anchor"
+  },
+  "respawn_anchor_side2.png": {
+    "blockState": "respawn_anchor",
+    "blockName": "respawn_anchor"
+  },
+  "respawn_anchor_side3.png": {
+    "blockState": "respawn_anchor",
+    "blockName": "respawn_anchor"
+  },
+  "respawn_anchor_side4.png": {
+    "blockState": "respawn_anchor",
+    "blockName": "respawn_anchor"
+  },
+  "respawn_anchor_top.png": {
+    "blockState": "respawn_anchor",
+    "blockName": "respawn_anchor"
+  },
+  "respawn_anchor_top_off.png": {
+    "blockState": "respawn_anchor",
+    "blockName": "respawn_anchor"
+  },
+  "rooted_dirt.png": {
+    "blockState": "rooted_dirt",
+    "blockName": "rooted_dirt"
+  },
+  "rose_bush_bottom.png": {
+    "blockState": "rose_bush",
+    "blockName": "rose_bush"
+  },
+  "rose_bush_top.png": {
+    "blockState": "rose_bush",
+    "blockName": "rose_bush"
+  },
+  "sand.png": {
+    "blockState": "sand",
+    "blockName": "sand"
+  },
+  "sandstone.png": {
+    "blockState": "sandstone",
+    "blockName": "sandstone"
+  },
+  "sandstone_bottom.png": {
+    "blockState": "sandstone",
+    "blockName": "sandstone"
+  },
+  "sandstone_top.png": {
+    "blockState": "sandstone",
+    "blockName": "sandstone"
+  },
+  "scaffolding_bottom.png": {
+    "blockState": "scaffolding",
+    "blockName": "scaffolding"
+  },
+  "scaffolding_side.png": {
+    "blockState": "scaffolding",
+    "blockName": "scaffolding"
+  },
+  "scaffolding_top.png": {
+    "blockState": "scaffolding",
+    "blockName": "scaffolding"
+  },
+  "sculk.png": {
+    "blockState": "sculk",
+    "blockName": "sculk"
+  },
+  "sculk_catalyst_bottom.png": {
+    "blockState": "sculk_catalyst",
+    "blockName": "sculk_catalyst"
+  },
+  "sculk_catalyst_side.png": {
+    "blockState": "sculk_catalyst",
+    "blockName": "sculk_catalyst"
+  },
+  "sculk_catalyst_side_bloom.png": {
+    "blockState": "sculk_catalyst",
+    "blockName": "sculk_catalyst"
+  },
+  "sculk_catalyst_top.png": {
+    "blockState": "sculk_catalyst",
+    "blockName": "sculk_catalyst"
+  },
+  "sculk_catalyst_top_bloom.png": {
+    "blockState": "sculk_catalyst",
+    "blockName": "sculk_catalyst"
+  },
+  "sculk_sensor_bottom.png": {
+    "blockState": "sculk_sensor",
+    "blockName": "sculk_sensor"
+  },
+  "sculk_sensor_side.png": {
+    "blockState": "sculk_sensor",
+    "blockName": "sculk_sensor"
+  },
+  "sculk_sensor_tendril_active.png": {
+    "blockState": "sculk_sensor",
+    "blockName": "sculk_sensor"
+  },
+  "sculk_sensor_tendril_inactive.png": {
+    "blockState": "sculk_sensor",
+    "blockName": "sculk_sensor"
+  },
+  "sculk_sensor_top.png": {
+    "blockState": "sculk_sensor",
+    "blockName": "sculk_sensor"
+  },
+  "sculk_shrieker_bottom.png": {
+    "blockState": "sculk_shrieker",
+    "blockName": "sculk_shrieker"
+  },
+  "sculk_shrieker_can_summon_inner_top.png": {
+    "blockState": "sculk_shrieker",
+    "blockName": "sculk_shrieker"
+  },
+  "sculk_shrieker_inner_top.png": {
+    "blockState": "sculk_shrieker",
+    "blockName": "sculk_shrieker"
+  },
+  "sculk_shrieker_side.png": {
+    "blockState": "sculk_shrieker",
+    "blockName": "sculk_shrieker"
+  },
+  "sculk_shrieker_top.png": {
+    "blockState": "sculk_shrieker",
+    "blockName": "sculk_shrieker"
+  },
+  "sculk_vein.png": {
+    "blockState": "sculk_vein",
+    "blockName": "sculk_vein"
+  },
+  "sea_lantern.png": {
+    "blockState": "sea_lantern",
+    "blockName": "sea_lantern"
+  },
+  "sea_pickle.png": {
+    "blockState": "sea_pickle",
+    "blockName": "sea_pickle"
+  },
+  "seagrass.png": {
+    "blockState": "seagrass",
+    "blockName": "seagrass"
+  },
+  "short_grass.png": {
+    "blockState": "short_grass",
+    "blockName": "short_grass"
+  },
+  "shroomlight.png": {
+    "blockState": "shroomlight",
+    "blockName": "shroomlight"
+  },
+  "shulker_box.png": {
+    "blockState": "shulker_box",
+    "blockName": "shulker_box"
+  },
+  "slime_block.png": {
+    "blockState": "slime_block",
+    "blockName": "slime_block"
+  },
+  "small_amethyst_bud.png": {
+    "blockState": "small_amethyst_bud",
+    "blockName": "small_amethyst_bud"
+  },
+  "small_dripleaf_side.png": {
+    "blockState": "small_dripleaf",
+    "blockName": "small_dripleaf"
+  },
+  "small_dripleaf_stem_bottom.png": {
+    "blockState": "small_dripleaf",
+    "blockName": "small_dripleaf"
+  },
+  "small_dripleaf_stem_top.png": {
+    "blockState": "small_dripleaf",
+    "blockName": "small_dripleaf"
+  },
+  "small_dripleaf_top.png": {
+    "blockState": "small_dripleaf",
+    "blockName": "small_dripleaf"
+  },
+  "smithing_table_bottom.png": {
+    "blockState": "smithing_table",
+    "blockName": "smithing_table"
+  },
+  "smithing_table_front.png": {
+    "blockState": "smithing_table",
+    "blockName": "smithing_table"
+  },
+  "smithing_table_side.png": {
+    "blockState": "smithing_table",
+    "blockName": "smithing_table"
+  },
+  "smithing_table_top.png": {
+    "blockState": "smithing_table",
+    "blockName": "smithing_table"
+  },
+  "smoker_bottom.png": {
+    "blockState": "smoker",
+    "blockName": "smoker"
+  },
+  "smoker_front.png": {
+    "blockState": "smoker",
+    "blockName": "smoker"
+  },
+  "smoker_front_on.png": {
+    "blockState": "smoker",
+    "blockName": "smoker"
+  },
+  "smoker_side.png": {
+    "blockState": "smoker",
+    "blockName": "smoker"
+  },
+  "smoker_top.png": {
+    "blockState": "smoker",
+    "blockName": "smoker"
+  },
+  "smooth_basalt.png": {
+    "blockState": "smooth_basalt",
+    "blockName": "smooth_basalt"
+  },
+  "smooth_stone.png": {
+    "blockState": "smooth_stone",
+    "blockName": "smooth_stone"
+  },
+  "smooth_stone_slab_side.png": {
+    "blockState": "smooth_stone_slab",
+    "blockName": "smooth_stone_slab"
+  },
+  "sniffer_egg_not_cracked_bottom.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_not_cracked_east.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_not_cracked_north.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_not_cracked_south.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_not_cracked_top.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_not_cracked_west.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_slightly_cracked_bottom.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_slightly_cracked_east.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_slightly_cracked_north.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_slightly_cracked_south.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_slightly_cracked_top.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_slightly_cracked_west.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_very_cracked_bottom.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_very_cracked_east.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_very_cracked_north.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_very_cracked_south.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_very_cracked_top.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "sniffer_egg_very_cracked_west.png": {
+    "blockState": "sniffer_egg",
+    "blockName": "sniffer_egg"
+  },
+  "snow.png": {
+    "blockState": "snow",
+    "blockName": "snow"
+  },
+  "soul_campfire_fire.png": {
+    "blockState": "soul_campfire",
+    "blockName": "soul_campfire"
+  },
+  "soul_campfire_log_lit.png": {
+    "blockState": "soul_campfire",
+    "blockName": "soul_campfire"
+  },
+  "soul_fire_0.png": {
+    "blockState": "soul_fire",
+    "blockName": "soul_fire"
+  },
+  "soul_fire_1.png": {
+    "blockState": "soul_fire",
+    "blockName": "soul_fire"
+  },
+  "soul_lantern.png": {
+    "blockState": "soul_lantern",
+    "blockName": "soul_lantern"
+  },
+  "soul_sand.png": {
+    "blockState": "soul_sand",
+    "blockName": "soul_sand"
+  },
+  "soul_soil.png": {
+    "blockState": "soul_soil",
+    "blockName": "soul_soil"
+  },
+  "soul_torch.png": {
+    "blockState": "soul_torch",
+    "blockName": "soul_torch"
+  },
+  "spawner.png": {
+    "blockState": "spawner",
+    "blockName": "spawner"
+  },
+  "sponge.png": {
+    "blockState": "sponge",
+    "blockName": "sponge"
+  },
+  "spore_blossom.png": {
+    "blockState": "spore_blossom",
+    "blockName": "spore_blossom"
+  },
+  "spore_blossom_base.png": {
+    "blockState": "spore_blossom",
+    "blockName": "spore_blossom"
+  },
+  "spruce_door_bottom.png": {
+    "blockState": "spruce_door",
+    "blockName": "spruce_door"
+  },
+  "spruce_door_top.png": {
+    "blockState": "spruce_door",
+    "blockName": "spruce_door"
+  },
+  "spruce_leaves.png": {
+    "blockState": "spruce_leaves",
+    "blockName": "spruce_leaves"
+  },
+  "spruce_log.png": {
+    "blockState": "spruce_log",
+    "blockName": "spruce_log"
+  },
+  "spruce_log_top.png": {
+    "blockState": "spruce_log",
+    "blockName": "spruce_log"
+  },
+  "spruce_planks.png": {
+    "blockState": "spruce_planks",
+    "blockName": "spruce_planks"
+  },
+  "spruce_sapling.png": {
+    "blockState": "spruce_sapling",
+    "blockName": "spruce_sapling"
+  },
+  "spruce_trapdoor.png": {
+    "blockState": "spruce_trapdoor",
+    "blockName": "spruce_trapdoor"
+  },
+  "stone.png": {
+    "blockState": "stone",
+    "blockName": "stone"
+  },
+  "stone_bricks.png": {
+    "blockState": "stone_bricks",
+    "blockName": "stone_bricks"
+  },
+  "stonecutter_bottom.png": {
+    "blockState": "stonecutter",
+    "blockName": "stonecutter"
+  },
+  "stonecutter_saw.png": {
+    "blockState": "stonecutter",
+    "blockName": "stonecutter"
+  },
+  "stonecutter_side.png": {
+    "blockState": "stonecutter",
+    "blockName": "stonecutter"
+  },
+  "stonecutter_top.png": {
+    "blockState": "stonecutter",
+    "blockName": "stonecutter"
+  },
+  "stripped_acacia_log.png": {
+    "blockState": "stripped_acacia_log",
+    "blockName": "stripped_acacia_log"
+  },
+  "stripped_acacia_log_top.png": {
+    "blockState": "stripped_acacia_log",
+    "blockName": "stripped_acacia_log"
+  },
+  "stripped_bamboo_block.png": {
+    "blockState": "stripped_bamboo_block",
+    "blockName": "stripped_bamboo_block"
+  },
+  "stripped_bamboo_block_top.png": {
+    "blockState": "stripped_bamboo_block",
+    "blockName": "stripped_bamboo_block"
+  },
+  "stripped_birch_log.png": {
+    "blockState": "stripped_birch_log",
+    "blockName": "stripped_birch_log"
+  },
+  "stripped_birch_log_top.png": {
+    "blockState": "stripped_birch_log",
+    "blockName": "stripped_birch_log"
+  },
+  "stripped_cherry_log.png": {
+    "blockState": "stripped_cherry_log",
+    "blockName": "stripped_cherry_log"
+  },
+  "stripped_cherry_log_top.png": {
+    "blockState": "stripped_cherry_log",
+    "blockName": "stripped_cherry_log"
+  },
+  "stripped_crimson_stem.png": {
+    "blockState": "stripped_crimson_stem",
+    "blockName": "stripped_crimson_stem"
+  },
+  "stripped_crimson_stem_top.png": {
+    "blockState": "stripped_crimson_stem",
+    "blockName": "stripped_crimson_stem"
+  },
+  "stripped_dark_oak_log.png": {
+    "blockState": "stripped_dark_oak_log",
+    "blockName": "stripped_dark_oak_log"
+  },
+  "stripped_dark_oak_log_top.png": {
+    "blockState": "stripped_dark_oak_log",
+    "blockName": "stripped_dark_oak_log"
+  },
+  "stripped_jungle_log.png": {
+    "blockState": "stripped_jungle_log",
+    "blockName": "stripped_jungle_log"
+  },
+  "stripped_jungle_log_top.png": {
+    "blockState": "stripped_jungle_log",
+    "blockName": "stripped_jungle_log"
+  },
+  "stripped_mangrove_log.png": {
+    "blockState": "stripped_mangrove_log",
+    "blockName": "stripped_mangrove_log"
+  },
+  "stripped_mangrove_log_top.png": {
+    "blockState": "stripped_mangrove_log",
+    "blockName": "stripped_mangrove_log"
+  },
+  "stripped_oak_log.png": {
+    "blockState": "stripped_oak_log",
+    "blockName": "stripped_oak_log"
+  },
+  "stripped_oak_log_top.png": {
+    "blockState": "stripped_oak_log",
+    "blockName": "stripped_oak_log"
+  },
+  "stripped_spruce_log.png": {
+    "blockState": "stripped_spruce_log",
+    "blockName": "stripped_spruce_log"
+  },
+  "stripped_spruce_log_top.png": {
+    "blockState": "stripped_spruce_log",
+    "blockName": "stripped_spruce_log"
+  },
+  "stripped_warped_stem.png": {
+    "blockState": "stripped_warped_stem",
+    "blockName": "stripped_warped_stem"
+  },
+  "stripped_warped_stem_top.png": {
+    "blockState": "stripped_warped_stem",
+    "blockName": "stripped_warped_stem"
+  },
+  "structure_block.png": {
+    "blockState": "structure_block",
+    "blockName": "structure_block"
+  },
+  "structure_block_corner.png": {
+    "blockState": "structure_block",
+    "blockName": "structure_block"
+  },
+  "structure_block_data.png": {
+    "blockState": "structure_block",
+    "blockName": "structure_block"
+  },
+  "structure_block_load.png": {
+    "blockState": "structure_block",
+    "blockName": "structure_block"
+  },
+  "structure_block_save.png": {
+    "blockState": "structure_block",
+    "blockName": "structure_block"
+  },
+  "sugar_cane.png": {
+    "blockState": "sugar_cane",
+    "blockName": "sugar_cane"
+  },
+  "sunflower_back.png": {
+    "blockState": "sunflower",
+    "blockName": "sunflower"
+  },
+  "sunflower_bottom.png": {
+    "blockState": "sunflower",
+    "blockName": "sunflower"
+  },
+  "sunflower_front.png": {
+    "blockState": "sunflower",
+    "blockName": "sunflower"
+  },
+  "sunflower_top.png": {
+    "blockState": "sunflower",
+    "blockName": "sunflower"
+  },
+  "suspicious_gravel_0.png": {
+    "blockState": "suspicious_gravel",
+    "blockName": "suspicious_gravel"
+  },
+  "suspicious_gravel_1.png": {
+    "blockState": "suspicious_gravel",
+    "blockName": "suspicious_gravel"
+  },
+  "suspicious_gravel_2.png": {
+    "blockState": "suspicious_gravel",
+    "blockName": "suspicious_gravel"
+  },
+  "suspicious_gravel_3.png": {
+    "blockState": "suspicious_gravel",
+    "blockName": "suspicious_gravel"
+  },
+  "suspicious_sand_0.png": {
+    "blockState": "suspicious_sand",
+    "blockName": "suspicious_sand"
+  },
+  "suspicious_sand_1.png": {
+    "blockState": "suspicious_sand",
+    "blockName": "suspicious_sand"
+  },
+  "suspicious_sand_2.png": {
+    "blockState": "suspicious_sand",
+    "blockName": "suspicious_sand"
+  },
+  "suspicious_sand_3.png": {
+    "blockState": "suspicious_sand",
+    "blockName": "suspicious_sand"
+  },
+  "sweet_berry_bush_stage0.png": {
+    "blockState": "sweet_berry_bush",
+    "blockName": "sweet_berry_bush"
+  },
+  "sweet_berry_bush_stage1.png": {
+    "blockState": "sweet_berry_bush",
+    "blockName": "sweet_berry_bush"
+  },
+  "sweet_berry_bush_stage2.png": {
+    "blockState": "sweet_berry_bush",
+    "blockName": "sweet_berry_bush"
+  },
+  "sweet_berry_bush_stage3.png": {
+    "blockState": "sweet_berry_bush",
+    "blockName": "sweet_berry_bush"
+  },
+  "tall_grass_bottom.png": {
+    "blockState": "tall_grass",
+    "blockName": "tall_grass"
+  },
+  "tall_grass_top.png": {
+    "blockState": "tall_grass",
+    "blockName": "tall_grass"
+  },
+  "tall_seagrass_bottom.png": {
+    "blockState": "tall_seagrass",
+    "blockName": "tall_seagrass"
+  },
+  "tall_seagrass_top.png": {
+    "blockState": "tall_seagrass",
+    "blockName": "tall_seagrass"
+  },
+  "target_side.png": {
+    "blockState": "target",
+    "blockName": "target"
+  },
+  "target_top.png": {
+    "blockState": "target",
+    "blockName": "target"
+  },
+  "terracotta.png": {
+    "blockState": "terracotta",
+    "blockName": "terracotta"
+  },
+  "tinted_glass.png": {
+    "blockState": "tinted_glass",
+    "blockName": "tinted_glass"
+  },
+  "tnt_bottom.png": {
+    "blockState": "tnt",
+    "blockName": "tnt"
+  },
+  "tnt_side.png": {
+    "blockState": "tnt",
+    "blockName": "tnt"
+  },
+  "tnt_top.png": {
+    "blockState": "tnt",
+    "blockName": "tnt"
+  },
+  "torch.png": {
+    "blockState": "torch",
+    "blockName": "torch"
+  },
+  "torchflower.png": {
+    "blockState": "torchflower",
+    "blockName": "torchflower"
+  },
+  "torchflower_crop_stage0.png": {
+    "blockState": "torchflower_crop",
+    "blockName": "torchflower_crop"
+  },
+  "torchflower_crop_stage1.png": {
+    "blockState": "torchflower_crop",
+    "blockName": "torchflower_crop"
+  },
+  "trial_spawner_bottom.png": {
+    "blockState": "trial_spawner",
+    "blockName": "trial_spawner"
+  },
+  "trial_spawner_side_active.png": {
+    "blockState": "trial_spawner",
+    "blockName": "trial_spawner"
+  },
+  "trial_spawner_side_active_ominous.png": {
+    "blockState": "trial_spawner",
+    "blockName": "trial_spawner"
+  },
+  "trial_spawner_side_inactive.png": {
+    "blockState": "trial_spawner",
+    "blockName": "trial_spawner"
+  },
+  "trial_spawner_side_inactive_ominous.png": {
+    "blockState": "trial_spawner",
+    "blockName": "trial_spawner"
+  },
+  "trial_spawner_top_active.png": {
+    "blockState": "trial_spawner",
+    "blockName": "trial_spawner"
+  },
+  "trial_spawner_top_active_ominous.png": {
+    "blockState": "trial_spawner",
+    "blockName": "trial_spawner"
+  },
+  "trial_spawner_top_ejecting_reward.png": {
+    "blockState": "trial_spawner",
+    "blockName": "trial_spawner"
+  },
+  "trial_spawner_top_ejecting_reward_ominous.png": {
+    "blockState": "trial_spawner",
+    "blockName": "trial_spawner"
+  },
+  "trial_spawner_top_inactive.png": {
+    "blockState": "trial_spawner",
+    "blockName": "trial_spawner"
+  },
+  "trial_spawner_top_inactive_ominous.png": {
+    "blockState": "trial_spawner",
+    "blockName": "trial_spawner"
+  },
+  "tripwire.png": {
+    "blockState": "tripwire",
+    "blockName": "tripwire"
+  },
+  "tripwire_hook.png": {
+    "blockState": "tripwire_hook",
+    "blockName": "tripwire_hook"
+  },
+  "tube_coral.png": {
+    "blockState": "tube_coral",
+    "blockName": "tube_coral"
+  },
+  "tube_coral_block.png": {
+    "blockState": "tube_coral_block",
+    "blockName": "tube_coral_block"
+  },
+  "tube_coral_fan.png": {
+    "blockState": "tube_coral_fan",
+    "blockName": "tube_coral_fan"
+  },
+  "tuff.png": {
+    "blockState": "tuff",
+    "blockName": "tuff"
+  },
+  "tuff_bricks.png": {
+    "blockState": "tuff_bricks",
+    "blockName": "tuff_bricks"
+  },
+  "turtle_egg.png": {
+    "blockState": "turtle_egg",
+    "blockName": "turtle_egg"
+  },
+  "turtle_egg_slightly_cracked.png": {
+    "blockState": "turtle_egg",
+    "blockName": "turtle_egg"
+  },
+  "turtle_egg_very_cracked.png": {
+    "blockState": "turtle_egg",
+    "blockName": "turtle_egg"
+  },
+  "twisting_vines.png": {
+    "blockState": "twisting_vines",
+    "blockName": "twisting_vines"
+  },
+  "twisting_vines_plant.png": {
+    "blockState": "twisting_vines_plant",
+    "blockName": "twisting_vines_plant"
+  },
+  "vault_bottom.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "vault_bottom_ominous.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "vault_front_ejecting.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "vault_front_ejecting_ominous.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "vault_front_off.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "vault_front_off_ominous.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "vault_front_on.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "vault_front_on_ominous.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "vault_side_off.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "vault_side_off_ominous.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "vault_side_on.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "vault_side_on_ominous.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "vault_top.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "vault_top_ejecting.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "vault_top_ejecting_ominous.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "vault_top_ominous.png": {
+    "blockState": "vault",
+    "blockName": "vault"
+  },
+  "verdant_froglight_side.png": {
+    "blockState": "verdant_froglight",
+    "blockName": "verdant_froglight"
+  },
+  "verdant_froglight_top.png": {
+    "blockState": "verdant_froglight",
+    "blockName": "verdant_froglight"
+  },
+  "vine.png": {
+    "blockState": "vine",
+    "blockName": "vine"
+  },
+  "warped_door_bottom.png": {
+    "blockState": "warped_door",
+    "blockName": "warped_door"
+  },
+  "warped_door_top.png": {
+    "blockState": "warped_door",
+    "blockName": "warped_door"
+  },
+  "warped_fungus.png": {
+    "blockState": "warped_fungus",
+    "blockName": "warped_fungus"
+  },
+  "warped_nylium.png": {
+    "blockState": "warped_nylium",
+    "blockName": "warped_nylium"
+  },
+  "warped_nylium_side.png": {
+    "blockState": "warped_nylium",
+    "blockName": "warped_nylium"
+  },
+  "warped_planks.png": {
+    "blockState": "warped_planks",
+    "blockName": "warped_planks"
+  },
+  "warped_roots.png": {
+    "blockState": "warped_roots",
+    "blockName": "warped_roots"
+  },
+  "warped_roots_pot.png": {
+    "blockState": "warped_roots",
+    "blockName": "warped_roots"
+  },
+  "warped_stem.png": {
+    "blockState": "warped_stem",
+    "blockName": "warped_stem"
+  },
+  "warped_stem_top.png": {
+    "blockState": "warped_stem",
+    "blockName": "warped_stem"
+  },
+  "warped_trapdoor.png": {
+    "blockState": "warped_trapdoor",
+    "blockName": "warped_trapdoor"
+  },
+  "warped_wart_block.png": {
+    "blockState": "warped_wart_block",
+    "blockName": "warped_wart_block"
+  },
+  "water_flow.png": {
+    "blockState": "water",
+    "blockName": "water"
+  },
+  "water_overlay.png": {
+    "blockState": "water",
+    "blockName": "water"
+  },
+  "water_still.png": {
+    "blockState": "water",
+    "blockName": "water"
+  },
+  "weathered_chiseled_copper.png": {
+    "blockState": "weathered_chiseled_copper",
+    "blockName": "weathered_chiseled_copper"
+  },
+  "weathered_copper.png": {
+    "blockState": "weathered_copper",
+    "blockName": "weathered_copper"
+  },
+  "weathered_copper_bulb.png": {
+    "blockState": "weathered_copper_bulb",
+    "blockName": "weathered_copper_bulb"
+  },
+  "weathered_copper_bulb_lit.png": {
+    "blockState": "weathered_copper_bulb",
+    "blockName": "weathered_copper_bulb"
+  },
+  "weathered_copper_bulb_lit_powered.png": {
+    "blockState": "weathered_copper_bulb",
+    "blockName": "weathered_copper_bulb"
+  },
+  "weathered_copper_bulb_powered.png": {
+    "blockState": "weathered_copper_bulb",
+    "blockName": "weathered_copper_bulb"
+  },
+  "weathered_copper_door_bottom.png": {
+    "blockState": "weathered_copper_door",
+    "blockName": "weathered_copper_door"
+  },
+  "weathered_copper_door_top.png": {
+    "blockState": "weathered_copper_door",
+    "blockName": "weathered_copper_door"
+  },
+  "weathered_copper_grate.png": {
+    "blockState": "weathered_copper_grate",
+    "blockName": "weathered_copper_grate"
+  },
+  "weathered_copper_trapdoor.png": {
+    "blockState": "weathered_copper_trapdoor",
+    "blockName": "weathered_copper_trapdoor"
+  },
+  "weathered_cut_copper.png": {
+    "blockState": "weathered_cut_copper",
+    "blockName": "weathered_cut_copper"
+  },
+  "weeping_vines.png": {
+    "blockState": "weeping_vines",
+    "blockName": "weeping_vines"
+  },
+  "weeping_vines_plant.png": {
+    "blockState": "weeping_vines_plant",
+    "blockName": "weeping_vines_plant"
+  },
+  "wet_sponge.png": {
+    "blockState": "wet_sponge",
+    "blockName": "wet_sponge"
+  },
+  "wheat_stage0.png": {
+    "blockState": "wheat",
+    "blockName": "wheat"
+  },
+  "wheat_stage1.png": {
+    "blockState": "wheat",
+    "blockName": "wheat"
+  },
+  "wheat_stage2.png": {
+    "blockState": "wheat",
+    "blockName": "wheat"
+  },
+  "wheat_stage3.png": {
+    "blockState": "wheat",
+    "blockName": "wheat"
+  },
+  "wheat_stage4.png": {
+    "blockState": "wheat",
+    "blockName": "wheat"
+  },
+  "wheat_stage5.png": {
+    "blockState": "wheat",
+    "blockName": "wheat"
+  },
+  "wheat_stage6.png": {
+    "blockState": "wheat",
+    "blockName": "wheat"
+  },
+  "wheat_stage7.png": {
+    "blockState": "wheat",
+    "blockName": "wheat"
+  },
+  "white_candle.png": {
+    "blockState": "white_candle",
+    "blockName": "white_candle"
+  },
+  "white_candle_lit.png": {
+    "blockState": "white_candle",
+    "blockName": "white_candle"
+  },
+  "white_concrete.png": {
+    "blockState": "white_concrete",
+    "blockName": "white_concrete"
+  },
+  "white_concrete_powder.png": {
+    "blockState": "white_concrete_powder",
+    "blockName": "white_concrete_powder"
+  },
+  "white_glazed_terracotta.png": {
+    "blockState": "white_glazed_terracotta",
+    "blockName": "white_glazed_terracotta"
+  },
+  "white_shulker_box.png": {
+    "blockState": "white_shulker_box",
+    "blockName": "white_shulker_box"
+  },
+  "white_stained_glass.png": {
+    "blockState": "white_stained_glass",
+    "blockName": "white_stained_glass"
+  },
+  "white_stained_glass_pane_top.png": {
+    "blockState": "white_stained_glass_pane",
+    "blockName": "white_stained_glass_pane"
+  },
+  "white_terracotta.png": {
+    "blockState": "white_terracotta",
+    "blockName": "white_terracotta"
+  },
+  "white_tulip.png": {
+    "blockState": "white_tulip",
+    "blockName": "white_tulip"
+  },
+  "white_wool.png": {
+    "blockState": "white_wool",
+    "blockName": "white_wool"
+  },
+  "wither_rose.png": {
+    "blockState": "wither_rose",
+    "blockName": "wither_rose"
+  },
+  "yellow_candle.png": {
+    "blockState": "yellow_candle",
+    "blockName": "yellow_candle"
+  },
+  "yellow_candle_lit.png": {
+    "blockState": "yellow_candle",
+    "blockName": "yellow_candle"
+  },
+  "yellow_concrete.png": {
+    "blockState": "yellow_concrete",
+    "blockName": "yellow_concrete"
+  },
+  "yellow_concrete_powder.png": {
+    "blockState": "yellow_concrete_powder",
+    "blockName": "yellow_concrete_powder"
+  },
+  "yellow_glazed_terracotta.png": {
+    "blockState": "yellow_glazed_terracotta",
+    "blockName": "yellow_glazed_terracotta"
+  },
+  "yellow_shulker_box.png": {
+    "blockState": "yellow_shulker_box",
+    "blockName": "yellow_shulker_box"
+  },
+  "yellow_stained_glass.png": {
+    "blockState": "yellow_stained_glass",
+    "blockName": "yellow_stained_glass"
+  },
+  "yellow_stained_glass_pane_top.png": {
+    "blockState": "yellow_stained_glass_pane",
+    "blockName": "yellow_stained_glass_pane"
+  },
+  "yellow_terracotta.png": {
+    "blockState": "yellow_terracotta",
+    "blockName": "yellow_terracotta"
+  },
+  "yellow_wool.png": {
+    "blockState": "yellow_wool",
+    "blockName": "yellow_wool"
+  }
+}

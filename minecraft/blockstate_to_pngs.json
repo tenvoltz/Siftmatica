@@ -1,0 +1,2197 @@
+{
+  "acacia_door": [
+    "acacia_door_bottom.png",
+    "acacia_door_top.png"
+  ],
+  "acacia_leaves": [
+    "acacia_leaves.png"
+  ],
+  "acacia_log": [
+    "acacia_log.png",
+    "acacia_log_top.png"
+  ],
+  "acacia_planks": [
+    "acacia_planks.png"
+  ],
+  "acacia_sapling": [
+    "acacia_sapling.png"
+  ],
+  "acacia_trapdoor": [
+    "acacia_trapdoor.png"
+  ],
+  "activator_rail": [
+    "activator_rail.png",
+    "activator_rail_on.png"
+  ],
+  "allium": [
+    "allium.png"
+  ],
+  "amethyst_block": [
+    "amethyst_block.png"
+  ],
+  "amethyst_cluster": [
+    "amethyst_cluster.png"
+  ],
+  "ancient_debris": [
+    "ancient_debris_side.png",
+    "ancient_debris_top.png"
+  ],
+  "andesite": [
+    "andesite.png"
+  ],
+  "anvil": [
+    "anvil.png",
+    "anvil_top.png"
+  ],
+  "attached_melon_stem": [
+    "attached_melon_stem.png"
+  ],
+  "attached_pumpkin_stem": [
+    "attached_pumpkin_stem.png"
+  ],
+  "azalea": [
+    "azalea_plant.png",
+    "azalea_side.png",
+    "azalea_top.png"
+  ],
+  "azalea_leaves": [
+    "azalea_leaves.png"
+  ],
+  "azure_bluet": [
+    "azure_bluet.png"
+  ],
+  "bamboo": [
+    "bamboo_large_leaves.png",
+    "bamboo_singleleaf.png",
+    "bamboo_small_leaves.png",
+    "bamboo_stage0.png",
+    "bamboo_stalk.png"
+  ],
+  "bamboo_block": [
+    "bamboo_block.png",
+    "bamboo_block_top.png"
+  ],
+  "bamboo_door": [
+    "bamboo_door_bottom.png",
+    "bamboo_door_top.png"
+  ],
+  "bamboo_fence": [
+    "bamboo_fence.png",
+    "bamboo_fence_particle.png"
+  ],
+  "bamboo_fence_gate": [
+    "bamboo_fence_gate.png",
+    "bamboo_fence_gate_particle.png"
+  ],
+  "bamboo_mosaic": [
+    "bamboo_mosaic.png"
+  ],
+  "bamboo_planks": [
+    "bamboo_planks.png"
+  ],
+  "bamboo_trapdoor": [
+    "bamboo_trapdoor.png"
+  ],
+  "barrel": [
+    "barrel_bottom.png",
+    "barrel_side.png",
+    "barrel_top.png",
+    "barrel_top_open.png"
+  ],
+  "basalt": [
+    "basalt_side.png",
+    "basalt_top.png"
+  ],
+  "beacon": [
+    "beacon.png"
+  ],
+  "bedrock": [
+    "bedrock.png"
+  ],
+  "bee_nest": [
+    "bee_nest_bottom.png",
+    "bee_nest_front.png",
+    "bee_nest_front_honey.png",
+    "bee_nest_side.png",
+    "bee_nest_top.png"
+  ],
+  "beehive": [
+    "beehive_end.png",
+    "beehive_front.png",
+    "beehive_front_honey.png",
+    "beehive_side.png"
+  ],
+  "beetroots": [
+    "beetroots_stage0.png",
+    "beetroots_stage1.png",
+    "beetroots_stage2.png",
+    "beetroots_stage3.png"
+  ],
+  "bell": [
+    "bell_bottom.png",
+    "bell_side.png",
+    "bell_top.png"
+  ],
+  "big_dripleaf": [
+    "big_dripleaf_side.png",
+    "big_dripleaf_tip.png",
+    "big_dripleaf_top.png"
+  ],
+  "big_dripleaf_stem": [
+    "big_dripleaf_stem.png"
+  ],
+  "birch_door": [
+    "birch_door_bottom.png",
+    "birch_door_top.png"
+  ],
+  "birch_leaves": [
+    "birch_leaves.png"
+  ],
+  "birch_log": [
+    "birch_log.png",
+    "birch_log_top.png"
+  ],
+  "birch_planks": [
+    "birch_planks.png"
+  ],
+  "birch_sapling": [
+    "birch_sapling.png"
+  ],
+  "birch_trapdoor": [
+    "birch_trapdoor.png"
+  ],
+  "black_candle": [
+    "black_candle.png",
+    "black_candle_lit.png"
+  ],
+  "black_concrete": [
+    "black_concrete.png"
+  ],
+  "black_concrete_powder": [
+    "black_concrete_powder.png"
+  ],
+  "black_glazed_terracotta": [
+    "black_glazed_terracotta.png"
+  ],
+  "black_shulker_box": [
+    "black_shulker_box.png"
+  ],
+  "black_stained_glass": [
+    "black_stained_glass.png"
+  ],
+  "black_stained_glass_pane": [
+    "black_stained_glass_pane_top.png"
+  ],
+  "black_terracotta": [
+    "black_terracotta.png"
+  ],
+  "black_wool": [
+    "black_wool.png"
+  ],
+  "blackstone": [
+    "blackstone.png",
+    "blackstone_top.png"
+  ],
+  "blast_furnace": [
+    "blast_furnace_front.png",
+    "blast_furnace_front_on.png",
+    "blast_furnace_side.png",
+    "blast_furnace_top.png"
+  ],
+  "blue_candle": [
+    "blue_candle.png",
+    "blue_candle_lit.png"
+  ],
+  "blue_concrete": [
+    "blue_concrete.png"
+  ],
+  "blue_concrete_powder": [
+    "blue_concrete_powder.png"
+  ],
+  "blue_glazed_terracotta": [
+    "blue_glazed_terracotta.png"
+  ],
+  "blue_ice": [
+    "blue_ice.png"
+  ],
+  "blue_orchid": [
+    "blue_orchid.png"
+  ],
+  "blue_shulker_box": [
+    "blue_shulker_box.png"
+  ],
+  "blue_stained_glass": [
+    "blue_stained_glass.png"
+  ],
+  "blue_stained_glass_pane": [
+    "blue_stained_glass_pane_top.png"
+  ],
+  "blue_terracotta": [
+    "blue_terracotta.png"
+  ],
+  "blue_wool": [
+    "blue_wool.png"
+  ],
+  "bone_block": [
+    "bone_block_side.png",
+    "bone_block_top.png"
+  ],
+  "bookshelf": [
+    "bookshelf.png"
+  ],
+  "brain_coral": [
+    "brain_coral.png"
+  ],
+  "brain_coral_block": [
+    "brain_coral_block.png"
+  ],
+  "brain_coral_fan": [
+    "brain_coral_fan.png"
+  ],
+  "brewing_stand": [
+    "brewing_stand.png",
+    "brewing_stand_base.png"
+  ],
+  "bricks": [
+    "bricks.png"
+  ],
+  "brown_candle": [
+    "brown_candle.png",
+    "brown_candle_lit.png"
+  ],
+  "brown_concrete": [
+    "brown_concrete.png"
+  ],
+  "brown_concrete_powder": [
+    "brown_concrete_powder.png"
+  ],
+  "brown_glazed_terracotta": [
+    "brown_glazed_terracotta.png"
+  ],
+  "brown_mushroom": [
+    "brown_mushroom.png"
+  ],
+  "brown_mushroom_block": [
+    "brown_mushroom_block.png"
+  ],
+  "brown_shulker_box": [
+    "brown_shulker_box.png"
+  ],
+  "brown_stained_glass": [
+    "brown_stained_glass.png"
+  ],
+  "brown_stained_glass_pane": [
+    "brown_stained_glass_pane_top.png"
+  ],
+  "brown_terracotta": [
+    "brown_terracotta.png"
+  ],
+  "brown_wool": [
+    "brown_wool.png"
+  ],
+  "bubble_coral": [
+    "bubble_coral.png"
+  ],
+  "bubble_coral_block": [
+    "bubble_coral_block.png"
+  ],
+  "bubble_coral_fan": [
+    "bubble_coral_fan.png"
+  ],
+  "budding_amethyst": [
+    "budding_amethyst.png"
+  ],
+  "cactus": [
+    "cactus_bottom.png",
+    "cactus_side.png",
+    "cactus_top.png"
+  ],
+  "cake": [
+    "cake_bottom.png",
+    "cake_inner.png",
+    "cake_side.png",
+    "cake_top.png"
+  ],
+  "calcite": [
+    "calcite.png"
+  ],
+  "calibrated_sculk_sensor": [
+    "calibrated_sculk_sensor_amethyst.png",
+    "calibrated_sculk_sensor_input_side.png",
+    "calibrated_sculk_sensor_top.png"
+  ],
+  "campfire": [
+    "campfire_fire.png",
+    "campfire_log.png",
+    "campfire_log_lit.png"
+  ],
+  "candle": [
+    "candle.png",
+    "candle_lit.png"
+  ],
+  "carrots": [
+    "carrots_stage0.png",
+    "carrots_stage1.png",
+    "carrots_stage2.png",
+    "carrots_stage3.png"
+  ],
+  "cartography_table": [
+    "cartography_table_side1.png",
+    "cartography_table_side2.png",
+    "cartography_table_side3.png",
+    "cartography_table_top.png"
+  ],
+  "carved_pumpkin": [
+    "carved_pumpkin.png"
+  ],
+  "cauldron": [
+    "cauldron_bottom.png",
+    "cauldron_inner.png",
+    "cauldron_side.png",
+    "cauldron_top.png"
+  ],
+  "cave_vines": [
+    "cave_vines.png",
+    "cave_vines_lit.png"
+  ],
+  "cave_vines_plant": [
+    "cave_vines_plant.png",
+    "cave_vines_plant_lit.png"
+  ],
+  "chain": [
+    "chain.png"
+  ],
+  "chain_command_block": [
+    "chain_command_block_back.png",
+    "chain_command_block_conditional.png",
+    "chain_command_block_front.png",
+    "chain_command_block_side.png"
+  ],
+  "cherry_door": [
+    "cherry_door_bottom.png",
+    "cherry_door_top.png"
+  ],
+  "cherry_leaves": [
+    "cherry_leaves.png"
+  ],
+  "cherry_log": [
+    "cherry_log.png",
+    "cherry_log_top.png"
+  ],
+  "cherry_planks": [
+    "cherry_planks.png"
+  ],
+  "cherry_sapling": [
+    "cherry_sapling.png"
+  ],
+  "cherry_trapdoor": [
+    "cherry_trapdoor.png"
+  ],
+  "chipped_anvil": [
+    "chipped_anvil_top.png"
+  ],
+  "chiseled_bookshelf": [
+    "chiseled_bookshelf_empty.png",
+    "chiseled_bookshelf_occupied.png",
+    "chiseled_bookshelf_side.png",
+    "chiseled_bookshelf_top.png"
+  ],
+  "chiseled_copper": [
+    "chiseled_copper.png"
+  ],
+  "chiseled_deepslate": [
+    "chiseled_deepslate.png"
+  ],
+  "chiseled_nether_bricks": [
+    "chiseled_nether_bricks.png"
+  ],
+  "chiseled_polished_blackstone": [
+    "chiseled_polished_blackstone.png"
+  ],
+  "chiseled_quartz_block": [
+    "chiseled_quartz_block.png",
+    "chiseled_quartz_block_top.png"
+  ],
+  "chiseled_red_sandstone": [
+    "chiseled_red_sandstone.png"
+  ],
+  "chiseled_sandstone": [
+    "chiseled_sandstone.png"
+  ],
+  "chiseled_stone_bricks": [
+    "chiseled_stone_bricks.png"
+  ],
+  "chiseled_tuff": [
+    "chiseled_tuff.png",
+    "chiseled_tuff_top.png"
+  ],
+  "chiseled_tuff_bricks": [
+    "chiseled_tuff_bricks.png",
+    "chiseled_tuff_bricks_top.png"
+  ],
+  "chorus_flower": [
+    "chorus_flower.png",
+    "chorus_flower_dead.png"
+  ],
+  "chorus_plant": [
+    "chorus_plant.png"
+  ],
+  "clay": [
+    "clay.png"
+  ],
+  "coal_block": [
+    "coal_block.png"
+  ],
+  "coal_ore": [
+    "coal_ore.png"
+  ],
+  "coarse_dirt": [
+    "coarse_dirt.png"
+  ],
+  "cobbled_deepslate": [
+    "cobbled_deepslate.png"
+  ],
+  "cobblestone": [
+    "cobblestone.png"
+  ],
+  "cobweb": [
+    "cobweb.png"
+  ],
+  "cocoa": [
+    "cocoa_stage0.png",
+    "cocoa_stage1.png",
+    "cocoa_stage2.png"
+  ],
+  "command_block": [
+    "command_block_back.png",
+    "command_block_conditional.png",
+    "command_block_front.png",
+    "command_block_side.png"
+  ],
+  "comparator": [
+    "comparator.png",
+    "comparator_on.png"
+  ],
+  "composter": [
+    "composter_bottom.png",
+    "composter_compost.png",
+    "composter_ready.png",
+    "composter_side.png",
+    "composter_top.png"
+  ],
+  "conduit": [
+    "conduit.png"
+  ],
+  "copper_block": [
+    "copper_block.png"
+  ],
+  "copper_bulb": [
+    "copper_bulb.png",
+    "copper_bulb_lit.png",
+    "copper_bulb_lit_powered.png",
+    "copper_bulb_powered.png"
+  ],
+  "copper_door": [
+    "copper_door_bottom.png",
+    "copper_door_top.png"
+  ],
+  "copper_grate": [
+    "copper_grate.png"
+  ],
+  "copper_ore": [
+    "copper_ore.png"
+  ],
+  "copper_trapdoor": [
+    "copper_trapdoor.png"
+  ],
+  "cornflower": [
+    "cornflower.png"
+  ],
+  "cracked_deepslate_bricks": [
+    "cracked_deepslate_bricks.png"
+  ],
+  "cracked_deepslate_tiles": [
+    "cracked_deepslate_tiles.png"
+  ],
+  "cracked_nether_bricks": [
+    "cracked_nether_bricks.png"
+  ],
+  "cracked_polished_blackstone_bricks": [
+    "cracked_polished_blackstone_bricks.png"
+  ],
+  "cracked_stone_bricks": [
+    "cracked_stone_bricks.png"
+  ],
+  "crafter": [
+    "crafter_bottom.png",
+    "crafter_east.png",
+    "crafter_east_crafting.png",
+    "crafter_east_triggered.png",
+    "crafter_north.png",
+    "crafter_north_crafting.png",
+    "crafter_south.png",
+    "crafter_south_triggered.png",
+    "crafter_top.png",
+    "crafter_top_crafting.png",
+    "crafter_top_triggered.png",
+    "crafter_west.png",
+    "crafter_west_crafting.png",
+    "crafter_west_triggered.png"
+  ],
+  "crafting_table": [
+    "crafting_table_front.png",
+    "crafting_table_side.png",
+    "crafting_table_top.png"
+  ],
+  "crimson_door": [
+    "crimson_door_bottom.png",
+    "crimson_door_top.png"
+  ],
+  "crimson_fungus": [
+    "crimson_fungus.png"
+  ],
+  "crimson_nylium": [
+    "crimson_nylium.png",
+    "crimson_nylium_side.png"
+  ],
+  "crimson_planks": [
+    "crimson_planks.png"
+  ],
+  "crimson_roots": [
+    "crimson_roots.png",
+    "crimson_roots_pot.png"
+  ],
+  "crimson_stem": [
+    "crimson_stem.png",
+    "crimson_stem_top.png"
+  ],
+  "crimson_trapdoor": [
+    "crimson_trapdoor.png"
+  ],
+  "crying_obsidian": [
+    "crying_obsidian.png"
+  ],
+  "cut_copper": [
+    "cut_copper.png"
+  ],
+  "cut_red_sandstone": [
+    "cut_red_sandstone.png"
+  ],
+  "cut_sandstone": [
+    "cut_sandstone.png"
+  ],
+  "cyan_candle": [
+    "cyan_candle.png",
+    "cyan_candle_lit.png"
+  ],
+  "cyan_concrete": [
+    "cyan_concrete.png"
+  ],
+  "cyan_concrete_powder": [
+    "cyan_concrete_powder.png"
+  ],
+  "cyan_glazed_terracotta": [
+    "cyan_glazed_terracotta.png"
+  ],
+  "cyan_shulker_box": [
+    "cyan_shulker_box.png"
+  ],
+  "cyan_stained_glass": [
+    "cyan_stained_glass.png"
+  ],
+  "cyan_stained_glass_pane": [
+    "cyan_stained_glass_pane_top.png"
+  ],
+  "cyan_terracotta": [
+    "cyan_terracotta.png"
+  ],
+  "cyan_wool": [
+    "cyan_wool.png"
+  ],
+  "damaged_anvil": [
+    "damaged_anvil_top.png"
+  ],
+  "dandelion": [
+    "dandelion.png"
+  ],
+  "dark_oak_door": [
+    "dark_oak_door_bottom.png",
+    "dark_oak_door_top.png"
+  ],
+  "dark_oak_leaves": [
+    "dark_oak_leaves.png"
+  ],
+  "dark_oak_log": [
+    "dark_oak_log.png",
+    "dark_oak_log_top.png"
+  ],
+  "dark_oak_planks": [
+    "dark_oak_planks.png"
+  ],
+  "dark_oak_sapling": [
+    "dark_oak_sapling.png"
+  ],
+  "dark_oak_trapdoor": [
+    "dark_oak_trapdoor.png"
+  ],
+  "dark_prismarine": [
+    "dark_prismarine.png"
+  ],
+  "daylight_detector": [
+    "daylight_detector_inverted_top.png",
+    "daylight_detector_side.png",
+    "daylight_detector_top.png"
+  ],
+  "dead_brain_coral": [
+    "dead_brain_coral.png"
+  ],
+  "dead_brain_coral_block": [
+    "dead_brain_coral_block.png"
+  ],
+  "dead_brain_coral_fan": [
+    "dead_brain_coral_fan.png"
+  ],
+  "dead_bubble_coral": [
+    "dead_bubble_coral.png"
+  ],
+  "dead_bubble_coral_block": [
+    "dead_bubble_coral_block.png"
+  ],
+  "dead_bubble_coral_fan": [
+    "dead_bubble_coral_fan.png"
+  ],
+  "dead_bush": [
+    "dead_bush.png"
+  ],
+  "dead_fire_coral": [
+    "dead_fire_coral.png"
+  ],
+  "dead_fire_coral_block": [
+    "dead_fire_coral_block.png"
+  ],
+  "dead_fire_coral_fan": [
+    "dead_fire_coral_fan.png"
+  ],
+  "dead_horn_coral": [
+    "dead_horn_coral.png"
+  ],
+  "dead_horn_coral_block": [
+    "dead_horn_coral_block.png"
+  ],
+  "dead_horn_coral_fan": [
+    "dead_horn_coral_fan.png"
+  ],
+  "dead_tube_coral": [
+    "dead_tube_coral.png"
+  ],
+  "dead_tube_coral_block": [
+    "dead_tube_coral_block.png"
+  ],
+  "dead_tube_coral_fan": [
+    "dead_tube_coral_fan.png"
+  ],
+  "deepslate": [
+    "deepslate.png",
+    "deepslate_top.png"
+  ],
+  "deepslate_bricks": [
+    "deepslate_bricks.png"
+  ],
+  "deepslate_coal_ore": [
+    "deepslate_coal_ore.png"
+  ],
+  "deepslate_copper_ore": [
+    "deepslate_copper_ore.png"
+  ],
+  "deepslate_diamond_ore": [
+    "deepslate_diamond_ore.png"
+  ],
+  "deepslate_emerald_ore": [
+    "deepslate_emerald_ore.png"
+  ],
+  "deepslate_gold_ore": [
+    "deepslate_gold_ore.png"
+  ],
+  "deepslate_iron_ore": [
+    "deepslate_iron_ore.png"
+  ],
+  "deepslate_lapis_ore": [
+    "deepslate_lapis_ore.png"
+  ],
+  "deepslate_redstone_ore": [
+    "deepslate_redstone_ore.png"
+  ],
+  "deepslate_tiles": [
+    "deepslate_tiles.png"
+  ],
+  "detector_rail": [
+    "detector_rail.png",
+    "detector_rail_on.png"
+  ],
+  "diamond_block": [
+    "diamond_block.png"
+  ],
+  "diamond_ore": [
+    "diamond_ore.png"
+  ],
+  "diorite": [
+    "diorite.png"
+  ],
+  "dirt": [
+    "dirt.png"
+  ],
+  "dirt_path": [
+    "dirt_path_side.png",
+    "dirt_path_top.png"
+  ],
+  "dispenser": [
+    "dispenser_front.png",
+    "dispenser_front_vertical.png"
+  ],
+  "dragon_egg": [
+    "dragon_egg.png"
+  ],
+  "dripstone_block": [
+    "dripstone_block.png"
+  ],
+  "dropper": [
+    "dropper_front.png",
+    "dropper_front_vertical.png"
+  ],
+  "emerald_block": [
+    "emerald_block.png"
+  ],
+  "emerald_ore": [
+    "emerald_ore.png"
+  ],
+  "enchanting_table": [
+    "enchanting_table_bottom.png",
+    "enchanting_table_side.png",
+    "enchanting_table_top.png"
+  ],
+  "end_portal_frame": [
+    "end_portal_frame_eye.png",
+    "end_portal_frame_side.png",
+    "end_portal_frame_top.png"
+  ],
+  "end_rod": [
+    "end_rod.png"
+  ],
+  "end_stone": [
+    "end_stone.png"
+  ],
+  "end_stone_bricks": [
+    "end_stone_bricks.png"
+  ],
+  "exposed_chiseled_copper": [
+    "exposed_chiseled_copper.png"
+  ],
+  "exposed_copper": [
+    "exposed_copper.png"
+  ],
+  "exposed_copper_bulb": [
+    "exposed_copper_bulb.png",
+    "exposed_copper_bulb_lit.png",
+    "exposed_copper_bulb_lit_powered.png",
+    "exposed_copper_bulb_powered.png"
+  ],
+  "exposed_copper_door": [
+    "exposed_copper_door_bottom.png",
+    "exposed_copper_door_top.png"
+  ],
+  "exposed_copper_grate": [
+    "exposed_copper_grate.png"
+  ],
+  "exposed_copper_trapdoor": [
+    "exposed_copper_trapdoor.png"
+  ],
+  "exposed_cut_copper": [
+    "exposed_cut_copper.png"
+  ],
+  "farmland": [
+    "farmland.png",
+    "farmland_moist.png"
+  ],
+  "fern": [
+    "fern.png"
+  ],
+  "fire": [
+    "fire_0.png",
+    "fire_1.png"
+  ],
+  "fire_coral": [
+    "fire_coral.png"
+  ],
+  "fire_coral_block": [
+    "fire_coral_block.png"
+  ],
+  "fire_coral_fan": [
+    "fire_coral_fan.png"
+  ],
+  "fletching_table": [
+    "fletching_table_front.png",
+    "fletching_table_side.png",
+    "fletching_table_top.png"
+  ],
+  "flower_pot": [
+    "flower_pot.png"
+  ],
+  "flowering_azalea": [
+    "flowering_azalea_side.png",
+    "flowering_azalea_top.png"
+  ],
+  "flowering_azalea_leaves": [
+    "flowering_azalea_leaves.png"
+  ],
+  "frogspawn": [
+    "frogspawn.png"
+  ],
+  "frosted_ice": [
+    "frosted_ice_0.png",
+    "frosted_ice_1.png",
+    "frosted_ice_2.png",
+    "frosted_ice_3.png"
+  ],
+  "furnace": [
+    "furnace_front.png",
+    "furnace_front_on.png",
+    "furnace_side.png",
+    "furnace_top.png"
+  ],
+  "gilded_blackstone": [
+    "gilded_blackstone.png"
+  ],
+  "glass": [
+    "glass.png"
+  ],
+  "glass_pane": [
+    "glass_pane_top.png"
+  ],
+  "glow_lichen": [
+    "glow_lichen.png"
+  ],
+  "glowstone": [
+    "glowstone.png"
+  ],
+  "gold_block": [
+    "gold_block.png"
+  ],
+  "gold_ore": [
+    "gold_ore.png"
+  ],
+  "granite": [
+    "granite.png"
+  ],
+  "grass_block": [
+    "grass_block_side.png",
+    "grass_block_side_overlay.png",
+    "grass_block_snow.png",
+    "grass_block_top.png"
+  ],
+  "gravel": [
+    "gravel.png"
+  ],
+  "gray_candle": [
+    "gray_candle.png",
+    "gray_candle_lit.png"
+  ],
+  "gray_concrete": [
+    "gray_concrete.png"
+  ],
+  "gray_concrete_powder": [
+    "gray_concrete_powder.png"
+  ],
+  "gray_glazed_terracotta": [
+    "gray_glazed_terracotta.png"
+  ],
+  "gray_shulker_box": [
+    "gray_shulker_box.png"
+  ],
+  "gray_stained_glass": [
+    "gray_stained_glass.png"
+  ],
+  "gray_stained_glass_pane": [
+    "gray_stained_glass_pane_top.png"
+  ],
+  "gray_terracotta": [
+    "gray_terracotta.png"
+  ],
+  "gray_wool": [
+    "gray_wool.png"
+  ],
+  "green_candle": [
+    "green_candle.png",
+    "green_candle_lit.png"
+  ],
+  "green_concrete": [
+    "green_concrete.png"
+  ],
+  "green_concrete_powder": [
+    "green_concrete_powder.png"
+  ],
+  "green_glazed_terracotta": [
+    "green_glazed_terracotta.png"
+  ],
+  "green_shulker_box": [
+    "green_shulker_box.png"
+  ],
+  "green_stained_glass": [
+    "green_stained_glass.png"
+  ],
+  "green_stained_glass_pane": [
+    "green_stained_glass_pane_top.png"
+  ],
+  "green_terracotta": [
+    "green_terracotta.png"
+  ],
+  "green_wool": [
+    "green_wool.png"
+  ],
+  "grindstone": [
+    "grindstone_pivot.png",
+    "grindstone_round.png",
+    "grindstone_side.png"
+  ],
+  "hanging_roots": [
+    "hanging_roots.png"
+  ],
+  "hay_block": [
+    "hay_block_side.png",
+    "hay_block_top.png"
+  ],
+  "heavy_core": [
+    "heavy_core.png"
+  ],
+  "honey_block": [
+    "honey_block_bottom.png",
+    "honey_block_side.png",
+    "honey_block_top.png"
+  ],
+  "honeycomb_block": [
+    "honeycomb_block.png"
+  ],
+  "hopper": [
+    "hopper_inside.png",
+    "hopper_outside.png",
+    "hopper_top.png"
+  ],
+  "horn_coral": [
+    "horn_coral.png"
+  ],
+  "horn_coral_block": [
+    "horn_coral_block.png"
+  ],
+  "horn_coral_fan": [
+    "horn_coral_fan.png"
+  ],
+  "ice": [
+    "ice.png"
+  ],
+  "iron_bars": [
+    "iron_bars.png"
+  ],
+  "iron_block": [
+    "iron_block.png"
+  ],
+  "iron_door": [
+    "iron_door_bottom.png",
+    "iron_door_top.png"
+  ],
+  "iron_ore": [
+    "iron_ore.png"
+  ],
+  "iron_trapdoor": [
+    "iron_trapdoor.png"
+  ],
+  "jack_o_lantern": [
+    "jack_o_lantern.png"
+  ],
+  "jigsaw": [
+    "jigsaw_bottom.png",
+    "jigsaw_lock.png",
+    "jigsaw_side.png",
+    "jigsaw_top.png"
+  ],
+  "jukebox": [
+    "jukebox_side.png",
+    "jukebox_top.png"
+  ],
+  "jungle_door": [
+    "jungle_door_bottom.png",
+    "jungle_door_top.png"
+  ],
+  "jungle_leaves": [
+    "jungle_leaves.png"
+  ],
+  "jungle_log": [
+    "jungle_log.png",
+    "jungle_log_top.png"
+  ],
+  "jungle_planks": [
+    "jungle_planks.png"
+  ],
+  "jungle_sapling": [
+    "jungle_sapling.png"
+  ],
+  "jungle_trapdoor": [
+    "jungle_trapdoor.png"
+  ],
+  "kelp": [
+    "kelp.png"
+  ],
+  "kelp_plant": [
+    "kelp_plant.png"
+  ],
+  "ladder": [
+    "ladder.png"
+  ],
+  "lantern": [
+    "lantern.png"
+  ],
+  "lapis_block": [
+    "lapis_block.png"
+  ],
+  "lapis_ore": [
+    "lapis_ore.png"
+  ],
+  "large_amethyst_bud": [
+    "large_amethyst_bud.png"
+  ],
+  "large_fern": [
+    "large_fern_bottom.png",
+    "large_fern_top.png"
+  ],
+  "lava": [
+    "lava_flow.png",
+    "lava_still.png"
+  ],
+  "lectern": [
+    "lectern_base.png",
+    "lectern_front.png",
+    "lectern_sides.png",
+    "lectern_top.png"
+  ],
+  "lever": [
+    "lever.png"
+  ],
+  "light_blue_candle": [
+    "light_blue_candle.png",
+    "light_blue_candle_lit.png"
+  ],
+  "light_blue_concrete": [
+    "light_blue_concrete.png"
+  ],
+  "light_blue_concrete_powder": [
+    "light_blue_concrete_powder.png"
+  ],
+  "light_blue_glazed_terracotta": [
+    "light_blue_glazed_terracotta.png"
+  ],
+  "light_blue_shulker_box": [
+    "light_blue_shulker_box.png"
+  ],
+  "light_blue_stained_glass": [
+    "light_blue_stained_glass.png"
+  ],
+  "light_blue_stained_glass_pane": [
+    "light_blue_stained_glass_pane_top.png"
+  ],
+  "light_blue_terracotta": [
+    "light_blue_terracotta.png"
+  ],
+  "light_blue_wool": [
+    "light_blue_wool.png"
+  ],
+  "light_gray_candle": [
+    "light_gray_candle.png",
+    "light_gray_candle_lit.png"
+  ],
+  "light_gray_concrete": [
+    "light_gray_concrete.png"
+  ],
+  "light_gray_concrete_powder": [
+    "light_gray_concrete_powder.png"
+  ],
+  "light_gray_glazed_terracotta": [
+    "light_gray_glazed_terracotta.png"
+  ],
+  "light_gray_shulker_box": [
+    "light_gray_shulker_box.png"
+  ],
+  "light_gray_stained_glass": [
+    "light_gray_stained_glass.png"
+  ],
+  "light_gray_stained_glass_pane": [
+    "light_gray_stained_glass_pane_top.png"
+  ],
+  "light_gray_terracotta": [
+    "light_gray_terracotta.png"
+  ],
+  "light_gray_wool": [
+    "light_gray_wool.png"
+  ],
+  "lightning_rod": [
+    "lightning_rod.png",
+    "lightning_rod_on.png"
+  ],
+  "lilac": [
+    "lilac_bottom.png",
+    "lilac_top.png"
+  ],
+  "lily_of_the_valley": [
+    "lily_of_the_valley.png"
+  ],
+  "lily_pad": [
+    "lily_pad.png"
+  ],
+  "lime_candle": [
+    "lime_candle.png",
+    "lime_candle_lit.png"
+  ],
+  "lime_concrete": [
+    "lime_concrete.png"
+  ],
+  "lime_concrete_powder": [
+    "lime_concrete_powder.png"
+  ],
+  "lime_glazed_terracotta": [
+    "lime_glazed_terracotta.png"
+  ],
+  "lime_shulker_box": [
+    "lime_shulker_box.png"
+  ],
+  "lime_stained_glass": [
+    "lime_stained_glass.png"
+  ],
+  "lime_stained_glass_pane": [
+    "lime_stained_glass_pane_top.png"
+  ],
+  "lime_terracotta": [
+    "lime_terracotta.png"
+  ],
+  "lime_wool": [
+    "lime_wool.png"
+  ],
+  "lodestone": [
+    "lodestone_side.png",
+    "lodestone_top.png"
+  ],
+  "loom": [
+    "loom_bottom.png",
+    "loom_front.png",
+    "loom_side.png",
+    "loom_top.png"
+  ],
+  "magenta_candle": [
+    "magenta_candle.png",
+    "magenta_candle_lit.png"
+  ],
+  "magenta_concrete": [
+    "magenta_concrete.png"
+  ],
+  "magenta_concrete_powder": [
+    "magenta_concrete_powder.png"
+  ],
+  "magenta_glazed_terracotta": [
+    "magenta_glazed_terracotta.png"
+  ],
+  "magenta_shulker_box": [
+    "magenta_shulker_box.png"
+  ],
+  "magenta_stained_glass": [
+    "magenta_stained_glass.png"
+  ],
+  "magenta_stained_glass_pane": [
+    "magenta_stained_glass_pane_top.png"
+  ],
+  "magenta_terracotta": [
+    "magenta_terracotta.png"
+  ],
+  "magenta_wool": [
+    "magenta_wool.png"
+  ],
+  "mangrove_door": [
+    "mangrove_door_bottom.png",
+    "mangrove_door_top.png"
+  ],
+  "mangrove_leaves": [
+    "mangrove_leaves.png"
+  ],
+  "mangrove_log": [
+    "mangrove_log.png",
+    "mangrove_log_top.png"
+  ],
+  "mangrove_planks": [
+    "mangrove_planks.png"
+  ],
+  "mangrove_propagule": [
+    "mangrove_propagule.png",
+    "mangrove_propagule_hanging.png"
+  ],
+  "mangrove_roots": [
+    "mangrove_roots_side.png",
+    "mangrove_roots_top.png"
+  ],
+  "mangrove_trapdoor": [
+    "mangrove_trapdoor.png"
+  ],
+  "medium_amethyst_bud": [
+    "medium_amethyst_bud.png"
+  ],
+  "melon": [
+    "melon_side.png",
+    "melon_top.png"
+  ],
+  "melon_stem": [
+    "melon_stem.png"
+  ],
+  "moss_block": [
+    "moss_block.png"
+  ],
+  "mossy_cobblestone": [
+    "mossy_cobblestone.png"
+  ],
+  "mossy_stone_bricks": [
+    "mossy_stone_bricks.png"
+  ],
+  "mud": [
+    "mud.png"
+  ],
+  "mud_bricks": [
+    "mud_bricks.png"
+  ],
+  "muddy_mangrove_roots": [
+    "muddy_mangrove_roots_side.png",
+    "muddy_mangrove_roots_top.png"
+  ],
+  "mushroom_stem": [
+    "mushroom_stem.png"
+  ],
+  "mycelium": [
+    "mycelium_side.png",
+    "mycelium_top.png"
+  ],
+  "nether_bricks": [
+    "nether_bricks.png"
+  ],
+  "nether_gold_ore": [
+    "nether_gold_ore.png"
+  ],
+  "nether_portal": [
+    "nether_portal.png"
+  ],
+  "nether_quartz_ore": [
+    "nether_quartz_ore.png"
+  ],
+  "nether_sprouts": [
+    "nether_sprouts.png"
+  ],
+  "nether_wart": [
+    "nether_wart_stage0.png",
+    "nether_wart_stage1.png",
+    "nether_wart_stage2.png"
+  ],
+  "nether_wart_block": [
+    "nether_wart_block.png"
+  ],
+  "netherite_block": [
+    "netherite_block.png"
+  ],
+  "netherrack": [
+    "netherrack.png"
+  ],
+  "note_block": [
+    "note_block.png"
+  ],
+  "oak_door": [
+    "oak_door_bottom.png",
+    "oak_door_top.png"
+  ],
+  "oak_leaves": [
+    "oak_leaves.png"
+  ],
+  "oak_log": [
+    "oak_log.png",
+    "oak_log_top.png"
+  ],
+  "oak_planks": [
+    "oak_planks.png"
+  ],
+  "oak_sapling": [
+    "oak_sapling.png"
+  ],
+  "oak_trapdoor": [
+    "oak_trapdoor.png"
+  ],
+  "observer": [
+    "observer_back.png",
+    "observer_back_on.png",
+    "observer_front.png",
+    "observer_side.png",
+    "observer_top.png"
+  ],
+  "obsidian": [
+    "obsidian.png"
+  ],
+  "ochre_froglight": [
+    "ochre_froglight_side.png",
+    "ochre_froglight_top.png"
+  ],
+  "orange_candle": [
+    "orange_candle.png",
+    "orange_candle_lit.png"
+  ],
+  "orange_concrete": [
+    "orange_concrete.png"
+  ],
+  "orange_concrete_powder": [
+    "orange_concrete_powder.png"
+  ],
+  "orange_glazed_terracotta": [
+    "orange_glazed_terracotta.png"
+  ],
+  "orange_shulker_box": [
+    "orange_shulker_box.png"
+  ],
+  "orange_stained_glass": [
+    "orange_stained_glass.png"
+  ],
+  "orange_stained_glass_pane": [
+    "orange_stained_glass_pane_top.png"
+  ],
+  "orange_terracotta": [
+    "orange_terracotta.png"
+  ],
+  "orange_tulip": [
+    "orange_tulip.png"
+  ],
+  "orange_wool": [
+    "orange_wool.png"
+  ],
+  "oxeye_daisy": [
+    "oxeye_daisy.png"
+  ],
+  "oxidized_chiseled_copper": [
+    "oxidized_chiseled_copper.png"
+  ],
+  "oxidized_copper": [
+    "oxidized_copper.png"
+  ],
+  "oxidized_copper_bulb": [
+    "oxidized_copper_bulb.png",
+    "oxidized_copper_bulb_lit.png",
+    "oxidized_copper_bulb_lit_powered.png",
+    "oxidized_copper_bulb_powered.png"
+  ],
+  "oxidized_copper_door": [
+    "oxidized_copper_door_bottom.png",
+    "oxidized_copper_door_top.png"
+  ],
+  "oxidized_copper_grate": [
+    "oxidized_copper_grate.png"
+  ],
+  "oxidized_copper_trapdoor": [
+    "oxidized_copper_trapdoor.png"
+  ],
+  "oxidized_cut_copper": [
+    "oxidized_cut_copper.png"
+  ],
+  "packed_ice": [
+    "packed_ice.png"
+  ],
+  "packed_mud": [
+    "packed_mud.png"
+  ],
+  "pearlescent_froglight": [
+    "pearlescent_froglight_side.png",
+    "pearlescent_froglight_top.png"
+  ],
+  "peony": [
+    "peony_bottom.png",
+    "peony_top.png"
+  ],
+  "pink_candle": [
+    "pink_candle.png",
+    "pink_candle_lit.png"
+  ],
+  "pink_concrete": [
+    "pink_concrete.png"
+  ],
+  "pink_concrete_powder": [
+    "pink_concrete_powder.png"
+  ],
+  "pink_glazed_terracotta": [
+    "pink_glazed_terracotta.png"
+  ],
+  "pink_petals": [
+    "pink_petals.png",
+    "pink_petals_stem.png"
+  ],
+  "pink_shulker_box": [
+    "pink_shulker_box.png"
+  ],
+  "pink_stained_glass": [
+    "pink_stained_glass.png"
+  ],
+  "pink_stained_glass_pane": [
+    "pink_stained_glass_pane_top.png"
+  ],
+  "pink_terracotta": [
+    "pink_terracotta.png"
+  ],
+  "pink_tulip": [
+    "pink_tulip.png"
+  ],
+  "pink_wool": [
+    "pink_wool.png"
+  ],
+  "piston": [
+    "piston_bottom.png",
+    "piston_inner.png",
+    "piston_side.png",
+    "piston_top.png",
+    "piston_top_sticky.png"
+  ],
+  "pitcher_crop": [
+    "pitcher_crop_bottom.png",
+    "pitcher_crop_bottom_stage_1.png",
+    "pitcher_crop_bottom_stage_2.png",
+    "pitcher_crop_bottom_stage_3.png",
+    "pitcher_crop_bottom_stage_4.png",
+    "pitcher_crop_side.png",
+    "pitcher_crop_top.png",
+    "pitcher_crop_top_stage_3.png",
+    "pitcher_crop_top_stage_4.png"
+  ],
+  "podzol": [
+    "podzol_side.png",
+    "podzol_top.png"
+  ],
+  "pointed_dripstone": [
+    "pointed_dripstone_down_base.png",
+    "pointed_dripstone_down_frustum.png",
+    "pointed_dripstone_down_middle.png",
+    "pointed_dripstone_down_tip.png",
+    "pointed_dripstone_down_tip_merge.png",
+    "pointed_dripstone_up_base.png",
+    "pointed_dripstone_up_frustum.png",
+    "pointed_dripstone_up_middle.png",
+    "pointed_dripstone_up_tip.png",
+    "pointed_dripstone_up_tip_merge.png"
+  ],
+  "polished_andesite": [
+    "polished_andesite.png"
+  ],
+  "polished_basalt": [
+    "polished_basalt_side.png",
+    "polished_basalt_top.png"
+  ],
+  "polished_blackstone": [
+    "polished_blackstone.png"
+  ],
+  "polished_blackstone_bricks": [
+    "polished_blackstone_bricks.png"
+  ],
+  "polished_deepslate": [
+    "polished_deepslate.png"
+  ],
+  "polished_diorite": [
+    "polished_diorite.png"
+  ],
+  "polished_granite": [
+    "polished_granite.png"
+  ],
+  "polished_tuff": [
+    "polished_tuff.png"
+  ],
+  "poppy": [
+    "poppy.png"
+  ],
+  "potatoes": [
+    "potatoes_stage0.png",
+    "potatoes_stage1.png",
+    "potatoes_stage2.png",
+    "potatoes_stage3.png"
+  ],
+  "potted_azalea_bush": [
+    "potted_azalea_bush_plant.png",
+    "potted_azalea_bush_side.png",
+    "potted_azalea_bush_top.png"
+  ],
+  "potted_flowering_azalea_bush": [
+    "potted_flowering_azalea_bush_plant.png",
+    "potted_flowering_azalea_bush_side.png",
+    "potted_flowering_azalea_bush_top.png"
+  ],
+  "powder_snow": [
+    "powder_snow.png"
+  ],
+  "powered_rail": [
+    "powered_rail.png",
+    "powered_rail_on.png"
+  ],
+  "prismarine": [
+    "prismarine.png"
+  ],
+  "prismarine_bricks": [
+    "prismarine_bricks.png"
+  ],
+  "pumpkin": [
+    "pumpkin_side.png",
+    "pumpkin_top.png"
+  ],
+  "pumpkin_stem": [
+    "pumpkin_stem.png"
+  ],
+  "purple_candle": [
+    "purple_candle.png",
+    "purple_candle_lit.png"
+  ],
+  "purple_concrete": [
+    "purple_concrete.png"
+  ],
+  "purple_concrete_powder": [
+    "purple_concrete_powder.png"
+  ],
+  "purple_glazed_terracotta": [
+    "purple_glazed_terracotta.png"
+  ],
+  "purple_shulker_box": [
+    "purple_shulker_box.png"
+  ],
+  "purple_stained_glass": [
+    "purple_stained_glass.png"
+  ],
+  "purple_stained_glass_pane": [
+    "purple_stained_glass_pane_top.png"
+  ],
+  "purple_terracotta": [
+    "purple_terracotta.png"
+  ],
+  "purple_wool": [
+    "purple_wool.png"
+  ],
+  "purpur_block": [
+    "purpur_block.png"
+  ],
+  "purpur_pillar": [
+    "purpur_pillar.png",
+    "purpur_pillar_top.png"
+  ],
+  "quartz_block": [
+    "quartz_block_bottom.png",
+    "quartz_block_side.png",
+    "quartz_block_top.png"
+  ],
+  "quartz_bricks": [
+    "quartz_bricks.png"
+  ],
+  "quartz_pillar": [
+    "quartz_pillar.png",
+    "quartz_pillar_top.png"
+  ],
+  "rail": [
+    "rail.png",
+    "rail_corner.png"
+  ],
+  "raw_copper_block": [
+    "raw_copper_block.png"
+  ],
+  "raw_gold_block": [
+    "raw_gold_block.png"
+  ],
+  "raw_iron_block": [
+    "raw_iron_block.png"
+  ],
+  "red_candle": [
+    "red_candle.png",
+    "red_candle_lit.png"
+  ],
+  "red_concrete": [
+    "red_concrete.png"
+  ],
+  "red_concrete_powder": [
+    "red_concrete_powder.png"
+  ],
+  "red_glazed_terracotta": [
+    "red_glazed_terracotta.png"
+  ],
+  "red_mushroom": [
+    "red_mushroom.png"
+  ],
+  "red_mushroom_block": [
+    "red_mushroom_block.png"
+  ],
+  "red_nether_bricks": [
+    "red_nether_bricks.png"
+  ],
+  "red_sand": [
+    "red_sand.png"
+  ],
+  "red_sandstone": [
+    "red_sandstone.png",
+    "red_sandstone_bottom.png",
+    "red_sandstone_top.png"
+  ],
+  "red_shulker_box": [
+    "red_shulker_box.png"
+  ],
+  "red_stained_glass": [
+    "red_stained_glass.png"
+  ],
+  "red_stained_glass_pane": [
+    "red_stained_glass_pane_top.png"
+  ],
+  "red_terracotta": [
+    "red_terracotta.png"
+  ],
+  "red_tulip": [
+    "red_tulip.png"
+  ],
+  "red_wool": [
+    "red_wool.png"
+  ],
+  "redstone_block": [
+    "redstone_block.png"
+  ],
+  "redstone_lamp": [
+    "redstone_lamp.png",
+    "redstone_lamp_on.png"
+  ],
+  "redstone_ore": [
+    "redstone_ore.png"
+  ],
+  "redstone_torch": [
+    "redstone_torch.png",
+    "redstone_torch_off.png"
+  ],
+  "reinforced_deepslate": [
+    "reinforced_deepslate_bottom.png",
+    "reinforced_deepslate_side.png",
+    "reinforced_deepslate_top.png"
+  ],
+  "repeater": [
+    "repeater.png",
+    "repeater_on.png"
+  ],
+  "repeating_command_block": [
+    "repeating_command_block_back.png",
+    "repeating_command_block_conditional.png",
+    "repeating_command_block_front.png",
+    "repeating_command_block_side.png"
+  ],
+  "respawn_anchor": [
+    "respawn_anchor_bottom.png",
+    "respawn_anchor_side0.png",
+    "respawn_anchor_side1.png",
+    "respawn_anchor_side2.png",
+    "respawn_anchor_side3.png",
+    "respawn_anchor_side4.png",
+    "respawn_anchor_top.png",
+    "respawn_anchor_top_off.png"
+  ],
+  "rooted_dirt": [
+    "rooted_dirt.png"
+  ],
+  "rose_bush": [
+    "rose_bush_bottom.png",
+    "rose_bush_top.png"
+  ],
+  "sand": [
+    "sand.png"
+  ],
+  "sandstone": [
+    "sandstone.png",
+    "sandstone_bottom.png",
+    "sandstone_top.png"
+  ],
+  "scaffolding": [
+    "scaffolding_bottom.png",
+    "scaffolding_side.png",
+    "scaffolding_top.png"
+  ],
+  "sculk": [
+    "sculk.png"
+  ],
+  "sculk_catalyst": [
+    "sculk_catalyst_bottom.png",
+    "sculk_catalyst_side.png",
+    "sculk_catalyst_side_bloom.png",
+    "sculk_catalyst_top.png",
+    "sculk_catalyst_top_bloom.png"
+  ],
+  "sculk_sensor": [
+    "sculk_sensor_bottom.png",
+    "sculk_sensor_side.png",
+    "sculk_sensor_tendril_active.png",
+    "sculk_sensor_tendril_inactive.png",
+    "sculk_sensor_top.png"
+  ],
+  "sculk_shrieker": [
+    "sculk_shrieker_bottom.png",
+    "sculk_shrieker_can_summon_inner_top.png",
+    "sculk_shrieker_inner_top.png",
+    "sculk_shrieker_side.png",
+    "sculk_shrieker_top.png"
+  ],
+  "sculk_vein": [
+    "sculk_vein.png"
+  ],
+  "sea_lantern": [
+    "sea_lantern.png"
+  ],
+  "sea_pickle": [
+    "sea_pickle.png"
+  ],
+  "seagrass": [
+    "seagrass.png"
+  ],
+  "short_grass": [
+    "short_grass.png"
+  ],
+  "shroomlight": [
+    "shroomlight.png"
+  ],
+  "shulker_box": [
+    "shulker_box.png"
+  ],
+  "slime_block": [
+    "slime_block.png"
+  ],
+  "small_amethyst_bud": [
+    "small_amethyst_bud.png"
+  ],
+  "small_dripleaf": [
+    "small_dripleaf_side.png",
+    "small_dripleaf_stem_bottom.png",
+    "small_dripleaf_stem_top.png",
+    "small_dripleaf_top.png"
+  ],
+  "smithing_table": [
+    "smithing_table_bottom.png",
+    "smithing_table_front.png",
+    "smithing_table_side.png",
+    "smithing_table_top.png"
+  ],
+  "smoker": [
+    "smoker_bottom.png",
+    "smoker_front.png",
+    "smoker_front_on.png",
+    "smoker_side.png",
+    "smoker_top.png"
+  ],
+  "smooth_basalt": [
+    "smooth_basalt.png"
+  ],
+  "smooth_stone": [
+    "smooth_stone.png"
+  ],
+  "smooth_stone_slab": [
+    "smooth_stone_slab_side.png"
+  ],
+  "sniffer_egg": [
+    "sniffer_egg_not_cracked_bottom.png",
+    "sniffer_egg_not_cracked_east.png",
+    "sniffer_egg_not_cracked_north.png",
+    "sniffer_egg_not_cracked_south.png",
+    "sniffer_egg_not_cracked_top.png",
+    "sniffer_egg_not_cracked_west.png",
+    "sniffer_egg_slightly_cracked_bottom.png",
+    "sniffer_egg_slightly_cracked_east.png",
+    "sniffer_egg_slightly_cracked_north.png",
+    "sniffer_egg_slightly_cracked_south.png",
+    "sniffer_egg_slightly_cracked_top.png",
+    "sniffer_egg_slightly_cracked_west.png",
+    "sniffer_egg_very_cracked_bottom.png",
+    "sniffer_egg_very_cracked_east.png",
+    "sniffer_egg_very_cracked_north.png",
+    "sniffer_egg_very_cracked_south.png",
+    "sniffer_egg_very_cracked_top.png",
+    "sniffer_egg_very_cracked_west.png"
+  ],
+  "snow": [
+    "snow.png"
+  ],
+  "soul_campfire": [
+    "soul_campfire_fire.png",
+    "soul_campfire_log_lit.png"
+  ],
+  "soul_fire": [
+    "soul_fire_0.png",
+    "soul_fire_1.png"
+  ],
+  "soul_lantern": [
+    "soul_lantern.png"
+  ],
+  "soul_sand": [
+    "soul_sand.png"
+  ],
+  "soul_soil": [
+    "soul_soil.png"
+  ],
+  "soul_torch": [
+    "soul_torch.png"
+  ],
+  "spawner": [
+    "spawner.png"
+  ],
+  "sponge": [
+    "sponge.png"
+  ],
+  "spore_blossom": [
+    "spore_blossom.png",
+    "spore_blossom_base.png"
+  ],
+  "spruce_door": [
+    "spruce_door_bottom.png",
+    "spruce_door_top.png"
+  ],
+  "spruce_leaves": [
+    "spruce_leaves.png"
+  ],
+  "spruce_log": [
+    "spruce_log.png",
+    "spruce_log_top.png"
+  ],
+  "spruce_planks": [
+    "spruce_planks.png"
+  ],
+  "spruce_sapling": [
+    "spruce_sapling.png"
+  ],
+  "spruce_trapdoor": [
+    "spruce_trapdoor.png"
+  ],
+  "stone": [
+    "stone.png"
+  ],
+  "stone_bricks": [
+    "stone_bricks.png"
+  ],
+  "stonecutter": [
+    "stonecutter_bottom.png",
+    "stonecutter_saw.png",
+    "stonecutter_side.png",
+    "stonecutter_top.png"
+  ],
+  "stripped_acacia_log": [
+    "stripped_acacia_log.png",
+    "stripped_acacia_log_top.png"
+  ],
+  "stripped_bamboo_block": [
+    "stripped_bamboo_block.png",
+    "stripped_bamboo_block_top.png"
+  ],
+  "stripped_birch_log": [
+    "stripped_birch_log.png",
+    "stripped_birch_log_top.png"
+  ],
+  "stripped_cherry_log": [
+    "stripped_cherry_log.png",
+    "stripped_cherry_log_top.png"
+  ],
+  "stripped_crimson_stem": [
+    "stripped_crimson_stem.png",
+    "stripped_crimson_stem_top.png"
+  ],
+  "stripped_dark_oak_log": [
+    "stripped_dark_oak_log.png",
+    "stripped_dark_oak_log_top.png"
+  ],
+  "stripped_jungle_log": [
+    "stripped_jungle_log.png",
+    "stripped_jungle_log_top.png"
+  ],
+  "stripped_mangrove_log": [
+    "stripped_mangrove_log.png",
+    "stripped_mangrove_log_top.png"
+  ],
+  "stripped_oak_log": [
+    "stripped_oak_log.png",
+    "stripped_oak_log_top.png"
+  ],
+  "stripped_spruce_log": [
+    "stripped_spruce_log.png",
+    "stripped_spruce_log_top.png"
+  ],
+  "stripped_warped_stem": [
+    "stripped_warped_stem.png",
+    "stripped_warped_stem_top.png"
+  ],
+  "structure_block": [
+    "structure_block.png",
+    "structure_block_corner.png",
+    "structure_block_data.png",
+    "structure_block_load.png",
+    "structure_block_save.png"
+  ],
+  "sugar_cane": [
+    "sugar_cane.png"
+  ],
+  "sunflower": [
+    "sunflower_back.png",
+    "sunflower_bottom.png",
+    "sunflower_front.png",
+    "sunflower_top.png"
+  ],
+  "suspicious_gravel": [
+    "suspicious_gravel_0.png",
+    "suspicious_gravel_1.png",
+    "suspicious_gravel_2.png",
+    "suspicious_gravel_3.png"
+  ],
+  "suspicious_sand": [
+    "suspicious_sand_0.png",
+    "suspicious_sand_1.png",
+    "suspicious_sand_2.png",
+    "suspicious_sand_3.png"
+  ],
+  "sweet_berry_bush": [
+    "sweet_berry_bush_stage0.png",
+    "sweet_berry_bush_stage1.png",
+    "sweet_berry_bush_stage2.png",
+    "sweet_berry_bush_stage3.png"
+  ],
+  "tall_grass": [
+    "tall_grass_bottom.png",
+    "tall_grass_top.png"
+  ],
+  "tall_seagrass": [
+    "tall_seagrass_bottom.png",
+    "tall_seagrass_top.png"
+  ],
+  "target": [
+    "target_side.png",
+    "target_top.png"
+  ],
+  "terracotta": [
+    "terracotta.png"
+  ],
+  "tinted_glass": [
+    "tinted_glass.png"
+  ],
+  "tnt": [
+    "tnt_bottom.png",
+    "tnt_side.png",
+    "tnt_top.png"
+  ],
+  "torch": [
+    "torch.png"
+  ],
+  "torchflower": [
+    "torchflower.png"
+  ],
+  "torchflower_crop": [
+    "torchflower_crop_stage0.png",
+    "torchflower_crop_stage1.png"
+  ],
+  "trial_spawner": [
+    "trial_spawner_bottom.png",
+    "trial_spawner_side_active.png",
+    "trial_spawner_side_active_ominous.png",
+    "trial_spawner_side_inactive.png",
+    "trial_spawner_side_inactive_ominous.png",
+    "trial_spawner_top_active.png",
+    "trial_spawner_top_active_ominous.png",
+    "trial_spawner_top_ejecting_reward.png",
+    "trial_spawner_top_ejecting_reward_ominous.png",
+    "trial_spawner_top_inactive.png",
+    "trial_spawner_top_inactive_ominous.png"
+  ],
+  "tripwire": [
+    "tripwire.png"
+  ],
+  "tripwire_hook": [
+    "tripwire_hook.png"
+  ],
+  "tube_coral": [
+    "tube_coral.png"
+  ],
+  "tube_coral_block": [
+    "tube_coral_block.png"
+  ],
+  "tube_coral_fan": [
+    "tube_coral_fan.png"
+  ],
+  "tuff": [
+    "tuff.png"
+  ],
+  "tuff_bricks": [
+    "tuff_bricks.png"
+  ],
+  "turtle_egg": [
+    "turtle_egg.png",
+    "turtle_egg_slightly_cracked.png",
+    "turtle_egg_very_cracked.png"
+  ],
+  "twisting_vines": [
+    "twisting_vines.png"
+  ],
+  "twisting_vines_plant": [
+    "twisting_vines_plant.png"
+  ],
+  "vault": [
+    "vault_bottom.png",
+    "vault_bottom_ominous.png",
+    "vault_front_ejecting.png",
+    "vault_front_ejecting_ominous.png",
+    "vault_front_off.png",
+    "vault_front_off_ominous.png",
+    "vault_front_on.png",
+    "vault_front_on_ominous.png",
+    "vault_side_off.png",
+    "vault_side_off_ominous.png",
+    "vault_side_on.png",
+    "vault_side_on_ominous.png",
+    "vault_top.png",
+    "vault_top_ejecting.png",
+    "vault_top_ejecting_ominous.png",
+    "vault_top_ominous.png"
+  ],
+  "verdant_froglight": [
+    "verdant_froglight_side.png",
+    "verdant_froglight_top.png"
+  ],
+  "vine": [
+    "vine.png"
+  ],
+  "warped_door": [
+    "warped_door_bottom.png",
+    "warped_door_top.png"
+  ],
+  "warped_fungus": [
+    "warped_fungus.png"
+  ],
+  "warped_nylium": [
+    "warped_nylium.png",
+    "warped_nylium_side.png"
+  ],
+  "warped_planks": [
+    "warped_planks.png"
+  ],
+  "warped_roots": [
+    "warped_roots.png",
+    "warped_roots_pot.png"
+  ],
+  "warped_stem": [
+    "warped_stem.png",
+    "warped_stem_top.png"
+  ],
+  "warped_trapdoor": [
+    "warped_trapdoor.png"
+  ],
+  "warped_wart_block": [
+    "warped_wart_block.png"
+  ],
+  "water": [
+    "water_flow.png",
+    "water_overlay.png",
+    "water_still.png"
+  ],
+  "weathered_chiseled_copper": [
+    "weathered_chiseled_copper.png"
+  ],
+  "weathered_copper": [
+    "weathered_copper.png"
+  ],
+  "weathered_copper_bulb": [
+    "weathered_copper_bulb.png",
+    "weathered_copper_bulb_lit.png",
+    "weathered_copper_bulb_lit_powered.png",
+    "weathered_copper_bulb_powered.png"
+  ],
+  "weathered_copper_door": [
+    "weathered_copper_door_bottom.png",
+    "weathered_copper_door_top.png"
+  ],
+  "weathered_copper_grate": [
+    "weathered_copper_grate.png"
+  ],
+  "weathered_copper_trapdoor": [
+    "weathered_copper_trapdoor.png"
+  ],
+  "weathered_cut_copper": [
+    "weathered_cut_copper.png"
+  ],
+  "weeping_vines": [
+    "weeping_vines.png"
+  ],
+  "weeping_vines_plant": [
+    "weeping_vines_plant.png"
+  ],
+  "wet_sponge": [
+    "wet_sponge.png"
+  ],
+  "wheat": [
+    "wheat_stage0.png",
+    "wheat_stage1.png",
+    "wheat_stage2.png",
+    "wheat_stage3.png",
+    "wheat_stage4.png",
+    "wheat_stage5.png",
+    "wheat_stage6.png",
+    "wheat_stage7.png"
+  ],
+  "white_candle": [
+    "white_candle.png",
+    "white_candle_lit.png"
+  ],
+  "white_concrete": [
+    "white_concrete.png"
+  ],
+  "white_concrete_powder": [
+    "white_concrete_powder.png"
+  ],
+  "white_glazed_terracotta": [
+    "white_glazed_terracotta.png"
+  ],
+  "white_shulker_box": [
+    "white_shulker_box.png"
+  ],
+  "white_stained_glass": [
+    "white_stained_glass.png"
+  ],
+  "white_stained_glass_pane": [
+    "white_stained_glass_pane_top.png"
+  ],
+  "white_terracotta": [
+    "white_terracotta.png"
+  ],
+  "white_tulip": [
+    "white_tulip.png"
+  ],
+  "white_wool": [
+    "white_wool.png"
+  ],
+  "wither_rose": [
+    "wither_rose.png"
+  ],
+  "yellow_candle": [
+    "yellow_candle.png",
+    "yellow_candle_lit.png"
+  ],
+  "yellow_concrete": [
+    "yellow_concrete.png"
+  ],
+  "yellow_concrete_powder": [
+    "yellow_concrete_powder.png"
+  ],
+  "yellow_glazed_terracotta": [
+    "yellow_glazed_terracotta.png"
+  ],
+  "yellow_shulker_box": [
+    "yellow_shulker_box.png"
+  ],
+  "yellow_stained_glass": [
+    "yellow_stained_glass.png"
+  ],
+  "yellow_stained_glass_pane": [
+    "yellow_stained_glass_pane_top.png"
+  ],
+  "yellow_terracotta": [
+    "yellow_terracotta.png"
+  ],
+  "yellow_wool": [
+    "yellow_wool.png"
+  ]
+}

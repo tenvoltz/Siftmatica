@@ -1,0 +1,66 @@
+================================================================================
+PNG to Block State Database - Summary Report
+================================================================================
+
+STATISTICS
+--------------------------------------------------------------------------------
+Total PNG files:              1,012
+Successfully mapped:         989 (97.7%)
+Unmapped (debug/special):    23 (2.3%)
+
+Unique block states:         603
+Blocks with multiple textures: 192
+
+TOP 20 BLOCKS BY TEXTURE COUNT
+--------------------------------------------------------------------------------
+sniffer_egg                               18 textures
+vault                                     16 textures
+crafter                                   14 textures
+trial_spawner                             11 textures
+pointed_dripstone                         10 textures
+pitcher_crop                               9 textures
+respawn_anchor                             8 textures
+wheat                                      8 textures
+bamboo                                     5 textures
+bee_nest                                   5 textures
+composter                                  5 textures
+observer                                   5 textures
+piston                                     5 textures
+sculk_catalyst                             5 textures
+sculk_sensor                               5 textures
+sculk_shrieker                             5 textures
+smoker                                     5 textures
+structure_block                            5 textures
+barrel                                     4 textures
+beehive                                    4 textures
+
+UNMAPPED TEXTURES
+--------------------------------------------------------------------------------
+The following textures could not be mapped to any block state:
+(These are typically debug textures, animation frames, or special effects)
+
+  debug.png
+  debug2.png
+  destroy_stage_0.png
+  destroy_stage_1.png
+  destroy_stage_2.png
+  destroy_stage_3.png
+  destroy_stage_4.png
+  destroy_stage_5.png
+  destroy_stage_6.png
+  destroy_stage_7.png
+  destroy_stage_8.png
+  destroy_stage_9.png
+  dried_kelp_bottom.png
+  dried_kelp_side.png
+  dried_kelp_top.png
+  glow_item_frame.png
+  item_frame.png
+  magma.png
+  mushroom_block_inside.png
+  redstone_dust_dot.png
+  redstone_dust_line0.png
+  redstone_dust_line1.png
+  redstone_dust_overlay.png
+
+================================================================================
