@@ -207,8 +207,9 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
-# Project workspace outputs
-workspace/
-
 # Instant-NGP
 instant-ngp/
+
+# Workspace stuff
+workspace/
+!workspace/**/*.ply

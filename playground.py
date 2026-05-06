@@ -13,8 +13,8 @@ def main():
     pcd = o3d.io.read_point_cloud(str(input_path))
     aligner = PointCloudAlignment()
     voxel_grid = aligner.align_point_cloud(pcd)
-    print("Alignment completed. Voxel grid created.")
     
+    print("Alignment completed. Voxel grid created.")
     print(f"Number of voxels: {len(voxel_grid)}")
     print("Sample voxel data:")
     for i, (voxel_key, voxel_data) in enumerate(voxel_grid.items()):
