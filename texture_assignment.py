@@ -3,7 +3,6 @@ from pathlib import Path
 from src.model import model
 from src.pipeline.alignment import PointCloudAlignment
 from src.model.model import MinecraftTextureClassifier
-from playground import create_voxel_grid
 import json
 import torch
 import numpy as np
@@ -43,10 +42,10 @@ def points_to_image(points, colors, face, size=16):
     return img.astype(np.uint8)
 
 def assign_textures():
-    data_dir = Path("snapped_point_cloud.ply")
+    data_dir = Path("./data/house2-dense/workspace/dense/0/fused.ply")
     pcd = o3d.io.read_point_cloud(str(data_dir))
     aligner = PointCloudAlignment()
-    voxel_grid = aligner._voxelize_point_cloud(pcd)
+    voxel_grid = aligner.align_point_cloud(pcd)
 
     # o3d.visualization.draw_geometries([pcd], window_name="Original Point Cloud")
 
