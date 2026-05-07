@@ -10,7 +10,9 @@ def _parse_voxel_key(voxel_key: str) -> Tuple[int, int, int]:
     return int(x_str), int(y_str), int(z_str)
 
 
-def assign_textures(assignments_path: Path = Path("output/voxel_face_block_assignments.json")) -> Dict[Tuple[int, int, int], str]:
+def assign_textures(
+    assignments_path: Path = Path("output/voxel_face_block_assignments.json"),
+) -> Dict[Tuple[int, int, int], str]:
     if not assignments_path.exists():
         raise FileNotFoundError(
             f"Assignments file not found at {assignments_path}. "
@@ -63,7 +65,3 @@ def create_schematic(
     output_path.parent.mkdir(parents=True, exist_ok=True)
     schematic.save(str(output_path))
     print(f"Saved schematic to: {output_path}")
-
-
-if __name__ == "__main__":
-    create_schematic()

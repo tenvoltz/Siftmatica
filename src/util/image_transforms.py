@@ -79,11 +79,17 @@ def numpy_to_pil(image: np.ndarray) -> Image.Image:
 def tensor_to_numpy_hwc(tensor: torch.Tensor) -> np.ndarray:
     if isinstance(tensor, torch.Tensor):
         tensor = tensor.cpu().numpy()
-    
+
     if len(tensor.shape) == 3 and tensor.shape[0] == 3:
         tensor = np.transpose(tensor, (1, 2, 0))
-    
+
     return np.clip(tensor * 255, 0, 255).astype(np.uint8)
+
+def tensor_to_image(t):
+    if isinstance(t, torch.Tensor):
+        t = t.numpy()
+    t = np.transpose(t, (1, 2, 0))  # CHW -> HWC
+    return np.clip(t, 0, 1)
 
 
 def save_tensor(tensor: torch.Tensor, path: Union[str, Path]) -> None:

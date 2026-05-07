@@ -50,15 +50,6 @@ class SiftmaticaLogger:
         )
         self._logger.handle(record)
     
-    def perf(self, stage: str, duration: float, count: Optional[int] = None):
-        rate = f" | {count/duration:.0f} ops/sec" if count else ""
-        filename, lineno = self._get_caller_info(2)
-        record = self._logger.makeRecord(
-            self._logger.name, logging.INFO, filename, lineno,
-            f"[{stage}] Duration: {duration:.4f}s{rate}", (), None
-        )
-        self._logger.handle(record)
-    
     def validate(self, check_name: str, passed: bool, details: str = ""):
         status = "✓" if passed else "✗"
         detail_str = f" - {details}" if details else ""

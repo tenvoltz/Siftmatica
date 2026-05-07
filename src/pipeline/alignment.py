@@ -88,9 +88,6 @@ class PointCloudAlignment:
         
         voxel_grid_obj = VoxelGrid.from_point_cloud(snapped_pcd)
         voxel_grid_obj.pixelate_faces(resolution=self.config.voxel_resolution, logger_instance=self.logger)
-
-        self._save_point_cloud(snapped_pcd, "snapped_point_cloud.ply")
-
         return voxel_grid_obj.grid
 
     def _estimate_phase_from_plane(

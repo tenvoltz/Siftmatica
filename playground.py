@@ -5,37 +5,26 @@ from pathlib import Path
 from typing import Dict, Any, Tuple
 
 from src.pipeline.alignment import PointCloudAlignment
-from minecraft.block_database_query import get_database, BlockDatabase
+from minecraft.block_database import get_database, BlockDatabase
 from src.classification.nearest_neighbor.nearest_neighbor import MaskedNearestNeighbor
+from src.util.schematic import create_schematic
 
 
 FACE_KEYS = ["+x", "-x", "+y", "-y", "+z", "-z"]
 
 
-def _to_python_voxel_key(voxel_key: Tuple[int, int, int]) -> Tuple[int, int, int]:
-    return (int(voxel_key[0]), int(voxel_key[1]), int(voxel_key[2]))
-
 
 def _face_grid_to_chw(face_grid: np.ndarray) -> Tuple[np.ndarray, int]:
     valid_pixels = ~np.isnan(face_grid).any(axis=2)
     valid_count = int(valid_pixels.sum())
-
-    if valid_count == 0:
-        return np.zeros((3, face_grid.shape[0], face_grid.shape[1]), dtype=np.float32), 0
-
+    if valid_count == 0: return np.zeros((3, face_grid.shape[0], face_grid.shape[1]), dtype=np.float32), 0
     clean_grid = np.nan_to_num(face_grid, nan=0.0, posinf=0.0, neginf=0.0).astype(np.float32)
     chw = clean_grid.transpose(2, 0, 1)
     return chw, valid_count
 
-
-def _classify_face(
-    face_grid: np.ndarray,
-    classifier: MaskedNearestNeighbor,
-    database: BlockDatabase
-) -> Dict[str, Any]:
+def _classify_face(face_grid: np.ndarray, classifier: MaskedNearestNeighbor, database: BlockDatabase, pixel_threshold: int = 10) -> Dict[str, Any]:
     image_chw, valid_pixel_count = _face_grid_to_chw(face_grid)
-
-    if valid_pixel_count == 0:
+    if valid_pixel_count < pixel_threshold:
         return {
             "texture": None,
             "blockstate": None,
@@ -54,11 +43,7 @@ def _classify_face(
     }
 
 
-def assign_textures_to_voxels(
-    voxel_grid: Dict[Tuple[int, int, int], Dict[str, Any]],
-    database: BlockDatabase,
-    black_threshold: float = 0.05,
-) -> Dict[Tuple[int, int, int], Dict[str, Any]]:
+def assign_textures_to_voxels(voxel_grid: Dict[Tuple[int, int, int], Dict[str, Any]], database: BlockDatabase, black_threshold: float = 0.05) -> Dict[Tuple[int, int, int], Dict[str, Any]]:
     classifier = MaskedNearestNeighbor(
         database=database,
         distance_metric="cosine",
@@ -67,15 +52,11 @@ def assign_textures_to_voxels(
     classifier.add_reference_images_from_database()
 
     assignments = {}
-
     for voxel_key, voxel_data in voxel_grid.items():
-        py_voxel_key = _to_python_voxel_key(voxel_key)
         face_assignments = {}
         agreement_scores: Dict[str, float] = {}
-
         for face in FACE_KEYS:
             face_grid = voxel_data.get(f"{face}_color_grid")
-
             if face_grid is None:
                 face_result = {
                     "texture": None,
@@ -83,11 +64,9 @@ def assign_textures_to_voxels(
                     "distance": None,
                     "valid_pixels": 0,
                 }
-            else:
-                face_result = _classify_face(face_grid, classifier, database)
+            else: face_result = _classify_face(face_grid, classifier, database)
 
             face_assignments[face] = face_result
-
             blockstate = face_result["blockstate"]
             pixel_weight = face_result["valid_pixels"]
             if blockstate is not None and pixel_weight > 0:
@@ -97,7 +76,7 @@ def assign_textures_to_voxels(
         if agreement_scores:
             final_blockstate = max(agreement_scores.items(), key=lambda item: item[1])[0]
 
-        assignments[py_voxel_key] = {
+        assignments[voxel_key] = {
             "faces": face_assignments,
             "agreement_scores": agreement_scores,
             "voxel_blockstate": final_blockstate,
@@ -108,15 +87,12 @@ def assign_textures_to_voxels(
 
 def save_assignments(assignments: Dict[Tuple[int, int, int], Dict[str, Any]], output_path: Path) -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
-
     serializable = {
         f"{x},{y},{z}": value
         for (x, y, z), value in assignments.items()
     }
-
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(serializable, f, indent=2)
-
     print(f"Saved voxel block assignments to: {output_path}")
 
 def main():
@@ -146,7 +122,7 @@ def main():
 
     output_file = Path("output/voxel_face_block_assignments.json")
     save_assignments(assignments, output_file)
-
+    create_schematic(assignments_path=output_file, output_path=Path("output/output.litematic"))
 
 if __name__ == "__main__":
     main()
