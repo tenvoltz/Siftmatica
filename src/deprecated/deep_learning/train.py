@@ -20,7 +20,7 @@ import time
 
 from .model import create_model
 from .dataset import create_dataloaders
-from ..augmentation import AugmentationPipeline
+from ...classification.augmentation import AugmentationPipeline
 
 
 class TrainingConfig:

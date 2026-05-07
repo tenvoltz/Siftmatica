@@ -28,15 +28,15 @@ class EdgeBleeding:
     """
 
     GRID_POSITIONS = ((0, 0), (0, 1), (0, 2), (1, 0), (1, 2), (2, 0), (2, 1), (2, 2))
-    LOW_BLEEDING = (1.0)
-    MEDIUM_BLEEDING = (3.0)
-    HIGH_BLEEDING = (8.0)
+    LOW_BLEEDING = (3, 2.0)
+    MEDIUM_BLEEDING = (5, 2.0)
+    HIGH_BLEEDING = (8, 2.0)
 
     def __init__(
         self,
         image_database: BlockDatabase = None,
-        max_shift: int = 4,
-        bias_factor: float = 3.0,
+        max_shift: int = 3,
+        bias_factor: float = 2.0,
     ):
         self.max_shift = max_shift
         self.bias_factor = bias_factor
@@ -61,10 +61,10 @@ class EdgeBleeding:
     ) -> torch.Tensor:
         weights = torch.ones(self.num_textures, dtype=torch.float32, device=device)
         target_idx = min(target_idx, self.num_textures - 1)
-        weights[target_idx] *= self.bias_factor
+        weights[target_idx] *= self.bias_factor * (self.num_textures - 1)
         return torch.multinomial(weights, count, replacement=True)
 
-    def __call__(self, image: torch.Tensor, image_idx: int) -> torch.Tensor:
+    def __call__(self, image: torch.Tensor, image_filename: str) -> torch.Tensor:
         image = ensure_3channel(ensure_tensor(image)).float()        
         c, h, w = image.shape
         device = image.device
@@ -72,7 +72,8 @@ class EdgeBleeding:
         canvas = torch.zeros((c, h * 3, w * 3), dtype=image.dtype, device=device)
         canvas[:, h : 2 * h, w : 2 * w] = image
 
-        sampled = self._sample_indices(target_idx=image_idx, count=8, device=device)
+        target_idx = self.image_database.get_texture_index(image_filename)
+        sampled = self._sample_indices(target_idx=target_idx, count=8, device=device)
         for idx, (gy, gx) in enumerate(self.GRID_POSITIONS):
             tex = self.texture_cache[sampled[idx].item()].to(
                 device=device, dtype=image.dtype
@@ -88,11 +89,11 @@ class EdgeBleeding:
 
     def set_noise_level(self, level: str):
         if level == 'low':
-            self.bias_factor = self.LOW_BLEEDING
+            self.max_shift, self.bias_factor = self.LOW_BLEEDING
         elif level == 'medium':
-            self.bias_factor = self.MEDIUM_BLEEDING
+            self.max_shift, self.bias_factor = self.MEDIUM_BLEEDING
         elif level == 'high':
-            self.bias_factor = self.HIGH_BLEEDING
+            self.max_shift, self.bias_factor = self.HIGH_BLEEDING
         else:
             raise ValueError(f"Invalid bleeding level: {level}. Choose from 'low', 'medium', 'high'.")
 
@@ -135,8 +136,8 @@ class AdjacentNoise:
             y = torch.randint(0, h, (1,)).item()
             x = torch.randint(0, w, (1,)).item()
             direction = self.NEIGHBORS[torch.randint(0, 8, (1,))][0]
-            ny = int(torch.clamp(torch.tensor(y + direction[0]), 0, h - 1))
-            nx = int(torch.clamp(torch.tensor(x + direction[1]), 0, w - 1))
+            ny = int(torch.clamp((y + direction[0]).detach().clone(), 0, h - 1))
+            nx = int(torch.clamp((x + direction[1]).detach().clone(), 0, w - 1))
             image[:, y, x] = self.intensity * image[:, ny, nx] + (1 - self.intensity) * image[:, y, x]
         return image.clamp(0, 1)
 
@@ -150,7 +151,7 @@ class IrregularHoles:
 
     Args:
         patch_size_range (Tuple[int, int]): Range of patch sizes in pixels. Default: (1, 6)
-        operation_ranges (Tuple[int, int]): Range of number of operations to apply. Default: (3, 5)
+        operation_ranges (Tuple[int, int]): Range of number of operations to apply. Default: (5, 8)
         fill_value (float): Value to fill holes with. Default: 0.0 (black)
         density (float): Density of holes within each patch (0.0 to 1.0). Default: 0.5
     """
@@ -159,7 +160,7 @@ class IrregularHoles:
     MEDIUM_HOLES = ((2, 5), (8, 12), 0.7)
     HIGH_HOLES = ((3, 8), (12, 20), 0.9)
 
-    def __init__(self, patch_size_range: tuple[int, int] = (1, 6), operation_ranges: tuple[int, int] = (3, 5), fill_value: float = 0.0, density: float = 0.5):
+    def __init__(self, patch_size_range: tuple[int, int] = (1, 6), operation_ranges: tuple[int, int] = (5, 8), fill_value: float = 0.0, density: float = 0.5):
         self.patch_size_range = patch_size_range
         self.operations_range = operation_ranges
         self.fill_value = fill_value
@@ -194,7 +195,7 @@ class AugmentationPipeline:
         self,
         database: BlockDatabase = None,
         edge_bleeding_prob: float = 0.5,
-        adjacent_noise_prob: float = 0.5,
+        adjacent_noise_prob: float = 1.0,
         irregular_holes_prob: float = 0.5,
     ):
         if database is None: database = get_database()
@@ -205,9 +206,9 @@ class AugmentationPipeline:
         self.adjacent_noise_prob = adjacent_noise_prob
         self.irregular_holes_prob = irregular_holes_prob
 
-    def __call__(self, image: torch.Tensor, class_idx: int = 0) -> torch.Tensor:
+    def __call__(self, image: torch.Tensor, image_filename: str = "") -> torch.Tensor:
         if torch.rand(1) < self.edge_bleeding_prob:
-            image = self.edge_bleeding(image, class_idx)
+            image = self.edge_bleeding(image, image_filename)
         if torch.rand(1) < self.adjacent_noise_prob:
             image = self.adjacent_noise(image)
         if torch.rand(1) < self.irregular_holes_prob:
@@ -226,7 +227,13 @@ OUTPUT_DIR = Path("output/augmentation")
 
 def load_test_images(database, num_samples=NUM_SAMPLES, size=(16, 16)):
     textures = list(database.get_all_valid_textures())[:num_samples]
-    return [pil_to_tensor(database.get_image(texture_name), size=size)for texture_name in textures]
+    return [
+        {
+            "texture_name": texture_name,
+            "image": pil_to_tensor(database.get_image(texture_name), size=size).float()
+        }
+        for texture_name in textures
+    ]
 
 
 def configure_augmentation(augmentation, level):
@@ -244,15 +251,15 @@ def configure_augmentation(augmentation, level):
         )
 
 
-def apply_augmentation(augmentation, image, image_idx):
+def apply_augmentation(augmentation, image, image_filename):
     """
     Handle differing augmentation call signatures.
     """
     if isinstance(augmentation, EdgeBleeding):
-        return augmentation(image, image_idx=image_idx)
+        return augmentation(image, image_filename)
 
     if isinstance(augmentation, AugmentationPipeline):
-        return augmentation(image, class_idx=image_idx)
+        return augmentation(image, image_filename)
 
     return augmentation(image)
 
@@ -268,14 +275,14 @@ def visualize_augmentation(augmentation, test_images, title, output_filename):
         *[f"{title} ({level.capitalize()})" for level in LEVELS],
     ]
 
-    for col, image in enumerate(test_images):
-        axes[0, col].imshow(tensor_to_image(image))
+    for col, test_image in enumerate(test_images):
+        axes[0, col].imshow(tensor_to_image(test_image["image"]))
         axes[0, col].axis("off")
         if col == 0: axes[0, col].set_title(row_labels[0],fontsize=14,pad=20, loc="left")
         
         for row, level in enumerate(LEVELS, start=1):
             configure_augmentation(augmentation, level)
-            augmented = apply_augmentation(augmentation, image, image_idx=col % 989)
+            augmented = apply_augmentation(augmentation, test_image["image"], test_image["texture_name"])
             axes[row, col].imshow(tensor_to_image(augmented))
             axes[row, col].axis("off")
             if col == 0: axes[row, col].set_title(row_labels[row],fontsize=14,pad=20, loc="left")

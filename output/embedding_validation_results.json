@@ -1,0 +1,52 @@
+{
+  "original": {
+    "nearest_neighbor": {
+      "accuracy": 0.9721311475409836,
+      "correct": 593,
+      "total": 610
+    },
+    "embedding": {
+      "accuracy": 0.9852459016393442,
+      "correct": 601,
+      "total": 610
+    }
+  },
+  "augmented": {
+    "low": {
+      "nearest_neighbor": {
+        "accuracy": 0.54,
+        "correct": 27,
+        "total": 50
+      },
+      "embedding": {
+        "accuracy": 0.82,
+        "correct": 41,
+        "total": 50
+      }
+    },
+    "medium": {
+      "nearest_neighbor": {
+        "accuracy": 0.66,
+        "correct": 33,
+        "total": 50
+      },
+      "embedding": {
+        "accuracy": 0.64,
+        "correct": 32,
+        "total": 50
+      }
+    },
+    "high": {
+      "nearest_neighbor": {
+        "accuracy": 0.4,
+        "correct": 20,
+        "total": 50
+      },
+      "embedding": {
+        "accuracy": 0.44,
+        "correct": 22,
+        "total": 50
+      }
+    }
+  }
+}

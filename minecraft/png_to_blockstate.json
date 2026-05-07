@@ -1,4 +1,8 @@
 {
+  "air.png": {
+    "blockState": "air",
+    "blockName": "air"
+  },
   "acacia_door_bottom.png": {
     "blockState": "acacia_door",
     "blockName": "acacia_door"

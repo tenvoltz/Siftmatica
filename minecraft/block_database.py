@@ -41,6 +41,8 @@ class BlockDatabase:
         return sorted(valid_textures)
     
     def is_image_a_full_block(self, png_file: str) -> bool:
+        if png_file == "air.png":
+            return True
         # Load the image and check if all pixels are non-transparent
         img_path = self.blocks_path / png_file
         if not img_path.exists():
@@ -99,6 +101,12 @@ class BlockDatabase:
                 from PIL import Image
                 return Image.open(img_path)
         return None
+    
+    def get_texture_index(self, texture_name: str) -> Optional[int]:
+        try:
+            return self.valid_textures_list.index(texture_name)
+        except ValueError:
+            return None
     
 
 _db_instance: Optional[BlockDatabase] = None
