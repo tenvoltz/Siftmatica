@@ -10,7 +10,7 @@ from src.util.image_transforms import pil_to_tensor
 
 class TripletTextureDataset(Dataset):
 
-    def __init__(self, database: Optional[BlockDatabase] = None, semi_hard_negative: bool = True):
+    def __init__(self, database: Optional[BlockDatabase] = None, semi_hard_negative: bool = False):
         self.database = database or get_database()
         self.textures = self.database.get_all_valid_textures()
         self.num_textures = len(self.textures)
@@ -33,10 +33,15 @@ class TripletTextureDataset(Dataset):
             return self.__getitem__((idx + 1) % len(self))
 
         anchor = pil_to_tensor(pil_image, size=(16, 16)).float()
-        positive = self.augmentation(anchor, image_filename=texture_name)
+        positive = self._get_augmented_positive(anchor, image_filename=texture_name)
         negative = self._get_negative(anchor_idx, anchor)
 
         return anchor, positive, negative
+
+    def _get_augmented_positive(self, anchor: torch.Tensor, image_filename: str, level_distribution: List[float] = [0.2, 0.4, 0.4]) -> torch.Tensor:
+        level = LEVELS[torch.multinomial(torch.tensor(level_distribution), 1).item()]
+        self.augmentation.set_noise_levels(level, level, level)
+        return self.augmentation(anchor, image_filename=image_filename)
 
     def set_precomputed_embeddings(self, embeddings: torch.Tensor, margin: float = 0.3):
         self.precomputed_embeddings = embeddings  # Shape: (num_textures, embedding_dim)
@@ -52,7 +57,7 @@ class TripletTextureDataset(Dataset):
         anchor_emb = self.precomputed_embeddings[anchor_idx]
         anchor_emb = anchor_emb / anchor_emb.norm(p=2)
         
-        pos_aug = self.augmentation(anchor, image_filename=texture_name)
+        pos_aug = self._get_augmented_positive(anchor, image_filename=texture_name)
         pos_dist = 1 - torch.sum(anchor_emb * anchor_emb)
 
         all_indices = torch.arange(self.num_textures)
