@@ -48,9 +48,10 @@ class EmbeddingClassifier:
     
     def classify(self, image_chw: np.ndarray) -> Dict[str, Any]:
         import torch
-        from src.util.image_transforms import ensure_tensor
+        from src.util.image_transforms import ensure_tensor, ensure_unit_range
         
         image = ensure_tensor(image_chw).float()
+        # image = ensure_unit_range(image)
         texture_name, score, idx = self.matcher.find_best_match(image)
         blockstate = self.matcher.database.get_blockstate(texture_name)
         return {

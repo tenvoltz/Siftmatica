@@ -5,12 +5,13 @@ from typing import Union, Tuple, Optional
 from PIL import Image
 import matplotlib.pyplot as plt
 
+MODE = 'RGB'  
 
 def pil_to_tensor(pil_image: Image.Image, size: Tuple[int, int] = None) -> torch.Tensor:
     if size and pil_image.size != size:
         pil_image = pil_image.resize(size)
-    
-    pil_image = pil_image.convert('RGB')
+
+    pil_image = pil_image.convert(MODE)
     img_array = np.array(pil_image, dtype=np.float32) / 255.0
     return torch.from_numpy(img_array).permute(2, 0, 1)
 
@@ -19,7 +20,7 @@ def pil_to_numpy(pil_image: Image.Image, size: Tuple[int, int] = None) -> np.nda
     if size and pil_image.size != size:
         pil_image = pil_image.resize(size)
     
-    pil_image = pil_image.convert('RGB')
+    pil_image = pil_image.convert(MODE)
     img_array = np.array(pil_image, dtype=np.float32) / 255.0
     return img_array.transpose(2, 0, 1)
 
@@ -45,6 +46,12 @@ def ensure_numpy(image: Union[np.ndarray, torch.Tensor]) -> np.ndarray:
         return image.numpy()
     return image
 
+def ensure_unit_range(image: Union[np.ndarray, torch.Tensor]) -> Union[np.ndarray, torch.Tensor]:
+    # If the image is larger than 1, assume it's in [0, 255] and convert to [0, 1]
+    if isinstance(image, torch.Tensor):
+        if image.max() > 1.0:
+            return image / 255.0
+        return image
 
 def ensure_3channel(image: Union[np.ndarray, torch.Tensor]) -> Union[np.ndarray, torch.Tensor]:
     if isinstance(image, torch.Tensor):
