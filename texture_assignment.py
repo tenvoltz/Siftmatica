@@ -1,8 +1,7 @@
 import open3d as o3d
 from pathlib import Path
-from src.model import model
 from src.pipeline.alignment import PointCloudAlignment
-from src.model.model import MinecraftTextureClassifier
+from src.classification.model import MinecraftTextureClassifier
 import json
 import torch
 import numpy as np
