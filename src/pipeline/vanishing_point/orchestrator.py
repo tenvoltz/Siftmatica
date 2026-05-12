@@ -1,6 +1,6 @@
-from src.pipeline.preprocess import GaussianBlur, BilateralFilter, ETFComputer
-from src.pipeline.edge_detector import CannyDetector, SobelDetector, XDoGDetector, FDoGDetector, DoGEdgeDetector
-from src.pipeline.postprocessing import Dilate, Pixelate
+from src.pipeline.vanishing_point.preprocess import GaussianBlur, BilateralFilter, ETFComputer
+from src.pipeline.vanishing_point.edge_detector import CannyDetector, SobelDetector, XDoGDetector, FDoGDetector, DoGEdgeDetector
+from src.pipeline.vanishing_point.postprocessing import Dilate, Pixelate
 
 
 class EdgePipeline:

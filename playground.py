@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from typing import Dict, Any, Tuple, Optional
 
-from src.pipeline.alignment import PointCloudAlignment
+from src.pipeline.voxelization.alignment import PointCloudAlignment
 from minecraft.block_database import get_database, BlockDatabase
 from src.util.schematic import create_schematic
 

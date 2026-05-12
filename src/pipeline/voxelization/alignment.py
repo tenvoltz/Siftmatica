@@ -4,9 +4,9 @@ import open3d as o3d
 from src.util.geometry import normalize_vector
 from src.util.logger import get_logger
 from src.config import AlignmentConfig
-from src.pipeline.plane_analyzer import PlaneAnalyzer, PlaneModel
-from src.pipeline.color_gradient_analyzer import ColorGradientAnalyzer
-from src.pipeline.voxel_grid import VoxelGrid, VoxelGridType
+from src.pipeline.voxelization.plane_analyzer import PlaneAnalyzer, PlaneModel
+from src.pipeline.voxelization.color_gradient_analyzer import ColorGradientAnalyzer
+from src.pipeline.voxelization.voxel_grid import VoxelGrid, VoxelGridType
 
 logger = get_logger(__name__)
 
