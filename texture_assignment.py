@@ -49,12 +49,12 @@ def assign_textures():
 
     # o3d.visualization.draw_geometries([pcd], window_name="Original Point Cloud")
 
-    with open("./src/model/minecraft_class_names.json", 'r') as f:
+    with open("./src/classification/minecraft_class_names.json", 'r') as f:
         idx_to_class = json.load(f)
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = MinecraftTextureClassifier(num_classes=len(idx_to_class))
-    model.load_state_dict(torch.load("./src/model/minecraft_texture_classifier.pth", map_location=device, weights_only=False))
+    model.load_state_dict(torch.load("./src/classification/minecraft_texture_classifier.pth", map_location=device, weights_only=False))
     model.eval()
 
     print(f"Number of voxels: {len(voxel_grid)}")
