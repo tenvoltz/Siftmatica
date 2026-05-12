@@ -10,45 +10,45 @@ import numpy as np
 import os
 import json
 
-# class EdgeRandomizer(object):
-#     def __init__(self, center_ratio=0.8, source_dataset=None):
-#         self.center_ratio = center_ratio
-#         self.source_dataset = source_dataset
+class EdgeRandomizer(object):
+    def __init__(self, center_ratio=0.8, source_dataset=None):
+        self.center_ratio = center_ratio
+        self.source_dataset = source_dataset
 
-#     def __call__(self, img):
-#         img_np = np.array(img)
-#         h, w, c = img_np.shape
+    def __call__(self, img):
+        img_np = np.array(img)
+        h, w, c = img_np.shape
 
-#         center_h_start = int(h * (1 - self.center_ratio) / 2)
-#         center_h_end = int(h * (1 + self.center_ratio) / 2)
-#         center_w_start = int(w * (1 - self.center_ratio) / 2)
-#         center_w_end = int(w * (1 + self.center_ratio) / 2)
+        center_h_start = int(h * (1 - self.center_ratio) / 2)
+        center_h_end = int(h * (1 + self.center_ratio) / 2)
+        center_w_start = int(w * (1 - self.center_ratio) / 2)
+        center_w_end = int(w * (1 + self.center_ratio) / 2)
 
-#         center_mask = np.zeros((h, w), dtype=bool)
-#         center_mask[center_h_start:center_h_end, center_w_start:center_w_end] = True
-#         edge_mask = ~center_mask
+        center_mask = np.zeros((h, w), dtype=bool)
+        center_mask[center_h_start:center_h_end, center_w_start:center_w_end] = True
+        edge_mask = ~center_mask
 
-#         modified_img_np = np.copy(img_np)
+        modified_img_np = np.copy(img_np)
 
-#         if self.source_dataset is not None and len(self.source_dataset) > 0:
-#             random_source_idx = random.randint(0, len(self.source_dataset) - 1)
-#             source_img_pil, _ = self.source_dataset[random_source_idx]
-#             source_img_np = np.array(source_img_pil)
+        if self.source_dataset is not None and len(self.source_dataset) > 0:
+            random_source_idx = random.randint(0, len(self.source_dataset) - 1)
+            source_img_pil, _ = self.source_dataset[random_source_idx]
+            source_img_np = np.array(source_img_pil)
 
-#             source_pixels = source_img_np.reshape(-1, 3)
+            source_pixels = source_img_np.reshape(-1, 3)
 
-#             for r, col in np.argwhere(edge_mask):
-#                 idx = random.randint(0, len(source_pixels) - 1)
-#                 modified_img_np[r, col] = source_pixels[idx]
-#         else:
-#             center_pixels_coords = np.argwhere(center_mask)
-#             if len(center_pixels_coords) == 0:
-#                 return img
-#             for r, col in np.argwhere(edge_mask):
-#                 rand_center_r, rand_center_col = random.choice(center_pixels_coords)
-#                 modified_img_np[r, col] = img_np[rand_center_r, rand_center_col]
+            for r, col in np.argwhere(edge_mask):
+                idx = random.randint(0, len(source_pixels) - 1)
+                modified_img_np[r, col] = source_pixels[idx]
+        else:
+            center_pixels_coords = np.argwhere(center_mask)
+            if len(center_pixels_coords) == 0:
+                return img
+            for r, col in np.argwhere(edge_mask):
+                rand_center_r, rand_center_col = random.choice(center_pixels_coords)
+                modified_img_np[r, col] = img_np[rand_center_r, rand_center_col]
 
-#         return Image.fromarray(modified_img_np)
+        return Image.fromarray(modified_img_np)
 
 class MinecraftTextureClassifier(nn.Module):
     def __init__(self, num_classes=1000):
@@ -200,6 +200,7 @@ if __name__ == "__main__":
 
     train_transform = transforms.v2.Compose([
         transforms.Resize((16, 16)),
+        EdgeRandomizer(center_ratio=0.8, source_dataset=base_data),
         transforms.ToTensor(),
         transforms.v2.GaussianNoise(),
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
@@ -207,6 +208,7 @@ if __name__ == "__main__":
 
     test_transform = transforms.Compose([
         transforms.Resize((16, 16)),
+        EdgeRandomizer(center_ratio=0.8, source_dataset=base_data),
         transforms.ToTensor(),
         transforms.v2.GaussianNoise(),
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
@@ -243,8 +245,8 @@ if __name__ == "__main__":
     print("Starting evaluation...")
     evaluate_model(model, test_loader)
 
-    model_path = './src/model/minecraft_texture_classifier.pth'
-    class_path = './src/model/minecraft_class_names.json'
+    model_path = './src/classification/minecraft_texture_classifier.pth'
+    class_path = './src/classification/minecraft_class_names.json'
 
     torch.save(model.state_dict(), model_path)
     print(f"Model saved to {model_path}")
