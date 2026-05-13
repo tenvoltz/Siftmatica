@@ -1,0 +1,202 @@
+[
+  {
+    "pngFile": "debug.png",
+    "candidates": [
+      "debug"
+    ],
+    "bestGuess": "debug"
+  },
+  {
+    "pngFile": "debug2.png",
+    "candidates": [
+      "debug2"
+    ],
+    "bestGuess": "debug2"
+  },
+  {
+    "pngFile": "destroy_stage_0.png",
+    "candidates": [
+      "destroy_stage_0",
+      "destroy_stage",
+      "destroy"
+    ],
+    "bestGuess": "destroy_stage_0"
+  },
+  {
+    "pngFile": "destroy_stage_1.png",
+    "candidates": [
+      "destroy_stage_1",
+      "destroy_stage",
+      "destroy"
+    ],
+    "bestGuess": "destroy_stage_1"
+  },
+  {
+    "pngFile": "destroy_stage_2.png",
+    "candidates": [
+      "destroy_stage_2",
+      "destroy_stage",
+      "destroy"
+    ],
+    "bestGuess": "destroy_stage_2"
+  },
+  {
+    "pngFile": "destroy_stage_3.png",
+    "candidates": [
+      "destroy_stage_3",
+      "destroy_stage",
+      "destroy"
+    ],
+    "bestGuess": "destroy_stage_3"
+  },
+  {
+    "pngFile": "destroy_stage_4.png",
+    "candidates": [
+      "destroy_stage_4",
+      "destroy_stage",
+      "destroy"
+    ],
+    "bestGuess": "destroy_stage_4"
+  },
+  {
+    "pngFile": "destroy_stage_5.png",
+    "candidates": [
+      "destroy_stage_5",
+      "destroy_stage",
+      "destroy"
+    ],
+    "bestGuess": "destroy_stage_5"
+  },
+  {
+    "pngFile": "destroy_stage_6.png",
+    "candidates": [
+      "destroy_stage_6",
+      "destroy_stage",
+      "destroy"
+    ],
+    "bestGuess": "destroy_stage_6"
+  },
+  {
+    "pngFile": "destroy_stage_7.png",
+    "candidates": [
+      "destroy_stage_7",
+      "destroy_stage",
+      "destroy"
+    ],
+    "bestGuess": "destroy_stage_7"
+  },
+  {
+    "pngFile": "destroy_stage_8.png",
+    "candidates": [
+      "destroy_stage_8",
+      "destroy_stage",
+      "destroy"
+    ],
+    "bestGuess": "destroy_stage_8"
+  },
+  {
+    "pngFile": "destroy_stage_9.png",
+    "candidates": [
+      "destroy_stage_9",
+      "destroy_stage",
+      "destroy"
+    ],
+    "bestGuess": "destroy_stage_9"
+  },
+  {
+    "pngFile": "dried_kelp_bottom.png",
+    "candidates": [
+      "dried_kelp_bottom",
+      "dried_kelp",
+      "dried"
+    ],
+    "bestGuess": "dried_kelp_bottom"
+  },
+  {
+    "pngFile": "dried_kelp_side.png",
+    "candidates": [
+      "dried_kelp_side",
+      "dried_kelp",
+      "dried"
+    ],
+    "bestGuess": "dried_kelp_side"
+  },
+  {
+    "pngFile": "dried_kelp_top.png",
+    "candidates": [
+      "dried_kelp_top",
+      "dried_kelp",
+      "dried"
+    ],
+    "bestGuess": "dried_kelp_top"
+  },
+  {
+    "pngFile": "glow_item_frame.png",
+    "candidates": [
+      "glow_item_frame",
+      "glow_item",
+      "glow"
+    ],
+    "bestGuess": "glow_item_frame"
+  },
+  {
+    "pngFile": "item_frame.png",
+    "candidates": [
+      "item_frame",
+      "item"
+    ],
+    "bestGuess": "item_frame"
+  },
+  {
+    "pngFile": "magma.png",
+    "candidates": [
+      "magma"
+    ],
+    "bestGuess": "magma"
+  },
+  {
+    "pngFile": "mushroom_block_inside.png",
+    "candidates": [
+      "mushroom_block_inside",
+      "mushroom_block",
+      "mushroom"
+    ],
+    "bestGuess": "mushroom_block_inside"
+  },
+  {
+    "pngFile": "redstone_dust_dot.png",
+    "candidates": [
+      "redstone_dust_dot",
+      "redstone_dust",
+      "redstone"
+    ],
+    "bestGuess": "redstone_dust_dot"
+  },
+  {
+    "pngFile": "redstone_dust_line0.png",
+    "candidates": [
+      "redstone_dust_line0",
+      "redstone_dust",
+      "redstone"
+    ],
+    "bestGuess": "redstone_dust_line0"
+  },
+  {
+    "pngFile": "redstone_dust_line1.png",
+    "candidates": [
+      "redstone_dust_line1",
+      "redstone_dust",
+      "redstone"
+    ],
+    "bestGuess": "redstone_dust_line1"
+  },
+  {
+    "pngFile": "redstone_dust_overlay.png",
+    "candidates": [
+      "redstone_dust_overlay",
+      "redstone_dust",
+      "redstone"
+    ],
+    "bestGuess": "redstone_dust_overlay"
+  }
+]
