@@ -1,4 +1,4 @@
-# Siftmatica — Tech Stack
+# Siftmatica
 
 Automated Minecraft structure reconstruction from multi-view images via 3D geometry and learned texture classification.
 
